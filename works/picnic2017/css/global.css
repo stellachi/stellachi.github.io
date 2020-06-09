@@ -1,0 +1,39 @@
+/* global.css */
+
+/*所有通用設定-----------------------------------------------------------------------*/
+*, *:before, *:after { font-family: Meiryo, "Meiryo UI", "Microsoft JhengHei UI", "Microsoft JhengHei", sans-serif;
+-webkit-box-sizing: border-box; 
+box-sizing: border-box;}
+html{ height:100%;
+-webkit-overflow-scrolling:touch;/*修正ios滾動順暢*/
+-webkit-text-size-adjust:none;/*修正旋轉後文字會變大*/
+-webkit-tap-highlight-color:transparent; outline: 0;/*去除連結的藍底*/}
+body{ height:100%; background:#bfbfbf; font-size:16px; color:#000; line-height:1.7; letter-spacing:0.5px; word-wrap:break-word;/*自動折行*/}
+
+/*清除 clearfix*/
+.clearfix:after{ clear:both; display:block; height:0px; content:"."; visibility: hidden;}
+.clearfix {*zoom: 1; _zoom: 1;}
+
+/*預設連結狀態*/
+a:link, a:visited{ color:#000; text-decoration:none;}
+
+/*圖片無框*/
+a img { border:none;}
+
+/*樣式歸零*/
+ul{ list-style:none;}
+
+/*h標題設定*/
+h1{ font-size:20px; line-height:1.5;}
+h2{ font-size:20px; line-height:1.5;}
+h3{ font-size:18px; line-height:1.5;}
+h4{ font-size:16px; line-height:1.5;}
+
+/* .gototop 滾回網頁最上面 ============*/
+.gototop{ width:45px; height:45px; background:url(../images/gototop.png) no-repeat left top / 45px 45px; text-indent:100%; white-space:nowrap; overflow:hidden; opacity:0.5; position:fixed; right:5px; bottom:30px; z-index:100;
+-webkit-transition:0.3s ease-in-out;
+transition:0.3s ease-in-out;}
+/*大於800 定位內容旁
+@media only screen and (min-width:800px){
+	.gototop{ position:fixed; right:30%; margin-right:-400px;}
+}*/

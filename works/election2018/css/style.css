@@ -1,0 +1,879 @@
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+	display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#fff;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}/*******global.css**************************************************************/
+* { font-family: Meiryo, "Meiryo UI", "Microsoft JhengHei UI", "Microsoft JhengHei", sans-serif; box-sizing: border-box;}
+
+html{ height:100%;
+-webkit-text-size-adjust:none;/*修正旋轉後文字會變大*/
+-webkit-overflow-scrolling:touch;/*修正ios滾動順暢*/
+}
+
+body { font-size:16px; line-height:1.5; color: #666;}
+
+ul{list-style:none;}
+a{outline: none; /* for Firefox */}
+
+/*預設連結狀態*/
+a:link, a:visited { color: #000; text-decoration:none;}
+a:hover, a:active { color: #C30;}
+
+/*圖片無框*/
+a img { border:none;}
+/*去除圖片底下空白*/
+img{ vertical-align: bottom;} 
+
+/*h標題設定*/
+h1{ font-weight:normal;}
+h2{ font-weight:normal;}
+h3{ font-weight:normal;}
+h4{ font-weight:normal;}
+
+/*清除 clearfix*/
+.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden;}
+
+
+/*MORE 元件============*/
+a.more{ display:block; width:60px; height:20px; line-height:20px; text-align:center; background:#ff3300; border-radius:3px; font-size:12px;}
+/*字色*/
+a.more:link, 
+a.more:visited { color:#fff;}
+a.more:hover, 
+a.more:active { color:#FC0;}
+/*more box*/
+.more_box{ clear: both; height:20px;}
+.more_box a.more{ float:right;}
+
+
+/* .gototop 滾回網頁最上面 ============*/
+.gototop{ width:55px; height:55px; opacity:0.6; text-indent:100%; white-space:nowrap; overflow:hidden; position:fixed; bottom:100px; right:10px; cursor: pointer; z-index:100; display:none;}
+.gototop::after{ content: ""; display: block; width: 40px; height: 40px; background:url(../images/gototop.jpg) center center no-repeat; background-size:100% auto; border-radius:50%; position:absolute; top:0; right:0; bottom:0; left:0; margin:auto;}
+
+@media only screen and (min-width:768px){
+	.gototop{ position:fixed; right:50%; margin-right:-450px; bottom:50px;}
+	.gototop::after{ width: 55px; height: 55px;}
+}
+
+@charset "utf-8";
+
+/* CSS Document */
+body{ }
+
+/*layout=====================*/
+.wrapper{ clear:both; max-width:768px; padding-top:45px; margin:0px auto;}
+
+.header{ clear:both; height:160px; margin-bottom:20px; background:url(../images/logo_election_m.svg) center top no-repeat; background-size:auto 54px; position:relative;}
+
+@media only screen and (min-width: 768px){
+	.header{ height:275px; background-image:url(../images/logo_election_pc.svg); background-size:100% auto;}
+}
+
+.container{ clear:both;}
+.container .r1{ }
+.container .r1 .c1{ }
+.footer{ clear:both; height:160px; padding:20px; text-align:center; font-size:13px; background:#e3e3e3;}
+.footer .menu_1{ margin-bottom:20px;}
+.footer .menu_1 a{ display:inline-block; margin-right:5px;}
+.footer .menu_1 a:link, .footer .menu_1 a:visited { color:#333;}
+.footer .menu_1 a:hover, .footer .menu_1 a:active {}
+.footer address{ font-style:normal;}
+
+
+/*topbar==============*/
+.topbar{ width:100%; height:45px; background:#e3e3e3; position:fixed; left:0px; top:0px; z-index:5;}
+
+@media only screen and (min-width: 768px){
+	.wrapper{ padding-top:0px;}
+	.topbar{ position:relative;}
+}
+
+/*回新聞雲 menu_1*/
+.topbar .menu_1{ position:absolute; left:10px; top:10px;}
+.topbar .menu_1 a{ margin-right:10px; font-size:14px;}
+.topbar .menu_1 a:link, .topbar .menu_1 a:visited { color:#333;}
+.topbar .menu_1 a:hover, .topbar .menu_1 a:active {}
+
+/*社群按鈕 menu_2*/
+.topbar .menu_2{ position:absolute; right:10px; top:10px;}
+.topbar .menu_2 a{ display:block; width:28px; height:28px; border-radius:50%; float:left; margin-right:10px; background: #777; text-align: center; font-size:16px; line-height: 30px; color:#fff; }
+.topbar .menu_2 a:last-of-type{ margin-right:0px;}
+.topbar .menu_2 a i{ /*width:100%; height:100%;*/ /*background:url(../images/push_box@2x.jpg) no-repeat; background-size:25px auto;*/  opacity:0.8; transition: all 0.5s; } 
+
+.topbar .menu_2 a:nth-of-type(1):hover{ background: #4267B2;}
+.topbar .menu_2 a:nth-of-type(2):hover{ background: #EB5E4C;}
+.topbar .menu_2 a:nth-of-type(3):hover{ background: #4ECD00;}
+.topbar .menu_2 a:nth-of-type(4):hover{ background: #E43737;}	
+	
+	
+	
+/*背景定位*/
+/*
+.topbar .menu_2 a.fb{ background-position:0px 0px;}
+.topbar .menu_2 a.g_plus{ background-position:0px -25px;}
+.topbar .menu_2 a.line{ background-position:0px -50px;}
+.topbar .menu_2 a.sina{ background-position:0px -75px;}
+*/
+
+
+/*header==================*/
+/*大選logo*/
+.header .logo_election{ width:240px; height:40px; position:absolute; top:5px; left:50%; margin-left:-120px;}
+.header .logo_election a{ display:block; width:100%; height:100%; text-indent:100%; white-space:nowrap; overflow:hidden;}
+@media only screen and (min-width: 768px){
+	.header .logo_election{ width:100%; height:100px; position:absolute; top:20px; left:0px; margin-left:0px; cursor:pointer;}
+}
+
+/*nav導航*/
+
+.nav_1{ width:100%; height:70px; background:#ddd; position:absolute; left:0px; bottom:0px;}
+.nav_1 a{ float:left; width:calc(100%/4); height:35px; line-height:35px; text-align:center; font-size:14px; border-right:1px solid #fff2f2; border-bottom:1px solid #fff2f2;}
+.nav_1 a.current{ border:2px solid #da401b; border-radius:3px;}
+.nav_1 a:link, .nav_1 a:visited { color:#000;}
+.nav_1 a:hover, .nav_1 a:active { border:2px solid #da401b; border-radius:3px; }
+
+
+
+@media only screen and (min-width: 768px){
+	.nav_1{ clear:both; width:768px; height:90px; margin:0px auto;}
+	.nav_1 a{ display:block; width:calc(100%/4); height:90px; line-height:90px; font-size:15px; background: /*url(../images/btn_1.png) no-repeat*/; background-size:90px auto;}
+	/*圖片定位*/
+/*
+	.nav_1 a.btn_1{ background-position:center 0px;}
+	.nav_1 a.btn_2{ background-position:center -90px;}
+	.nav_1 a.btn_3{ background-position:center -180px;}
+	.nav_1 a.btn_4{ background-position:center -270px;}
+	.nav_1 a.btn_5{ background-position:center -360px;}
+	.nav_1 a.btn_6{ background-position:center -450px;}
+	.nav_1 a.btn_7{ background-position:center -540px;}
+	.nav_1 a.btn_8{ background-position:center -630px;}
+*/
+
+}
+
+	@charset "utf-8";
+/******************************區塊 block*********************************/
+/*block 歸零*/
+.block{ clear:both; margin-bottom:25px; padding:0px 10px;}
+.block .block_title{ clear:both;}
+.block .block_content{ clear:both;}
+
+/*block_1*/
+.block_1{}
+.block_1 .block_title{ margin-bottom:15px; padding:5px 0px 0px 20px; /*background:url(../images/block_title_line.jpg) no-repeat;*/ border-left:8px solid #000;}
+.block_1 .block_title h3{ font-size:18px; color:#000;}
+.block_1 .block_content{}
+
+@media only screen and (min-width: 768px){
+	.block_1 .block_title h3{ font-size:20px;}
+}
+
+
+
+/******************************元件模組 part*********************************/
+/*part_list_txt_1*/
+.part_list_txt_1{ clear:both;}
+.part_list_txt_1 h2{ padding:10px 10px;}
+.part_list_txt_1 h2:nth-child(even) { background:#eee;}
+.part_list_txt_1 h2 a{ display:inline-block; font-size:15px; font-weight:bold;}
+.part_list_txt_1 h2 a:before{ content:"."; margin-right: 5px; position:relative; top:-5px;}
+.part_list_txt_1 h2 a:link, .part_list_txt_1 h2 a:visited { color:#0474c5;}
+
+
+
+@media only screen and (min-width: 768px){
+	.part_list_txt_1 h2 a{ font-size:17px;}
+	.part_list_txt_1 h2 a:hover, .part_list_txt_1 h2 a:active { color:#da401b;}
+}
+
+/*part_list_txt_2 九合一總覽 newslist.htm*/
+.part_list_txt_2{ clear:both; margin-bottom:25px;}
+.part_list_txt_2 h2{ margin-bottom:10px; padding:10px 10px;}
+.part_list_txt_2 h2:nth-of-type(even){ background:#eee;}
+.part_list_txt_2 h2 span{ margin-right:10px;}
+.part_list_txt_2 h2 a{ font-size:15px;}
+.part_list_txt_2 h2 a:link, .part_list_txt_2 h2 a:visited { color:#0474c5;}
+
+
+@media only screen and (min-width: 768px){
+	.part_list_txt_2 h2 a{ font-size:17px;}
+	.part_list_txt_2 h2 a:hover, .part_list_txt_2 h2 a:active { color:#da401b;}
+}
+
+
+
+/*part_pic_txt_1 影音新聞列表*/
+.part_pic_txt_1{ clear:both;}
+.part_pic_txt_1 a.piece{ display:block; margin-bottom:25px;}
+.part_pic_txt_1 a.piece:last-of-type{ margin-bottom:0px;}
+.part_pic_txt_1 a.piece .pic{ display:block; float:left; width:130px; height:73px;/*16:9*/ background:#eee; box-shadow: 0px 0px 1px rgba(30,25,20,0.5);}
+.part_pic_txt_1 a.piece .pic img{ width:100%; height:auto;}
+.part_pic_txt_1 a.piece h3{ display:flex; float:right; width:calc(100% - 130px); height:73px; padding:5px 0px 5px 10px; align-items:center; font-size:15px;}
+.part_pic_txt_1 a:link, .part_pic_txt_1 a:visited { color:#000;}
+
+@media only screen and (min-width: 768px){
+	.part_pic_txt_1 a.piece .pic{ width:220px; height:124px;}
+	.part_pic_txt_1 a.piece h3{ width:calc(100% - 220px); height:124px; font-size:18px;}
+	.part_pic_txt_1 a:hover, .part_pic_txt_1 a:active { color:#da401b;}
+}
+
+
+/*part_pic_txt_2 圖文列表*/
+.part_pic_txt_2{ clear:both; margin-bottom:30px;}
+.part_pic_txt_2 .piece{ margin-bottom:15px;}
+.part_pic_txt_2 .piece:last-of-type{ margin-bottom:0px;}
+.part_pic_txt_2 .piece a.pic{ display:block; float:left; width:100px; height:75px; margin-right:10px; overflow:hidden; box-shadow:0px 0px 1px rgba(30,25,20,0.5);}
+.part_pic_txt_2 .piece a.pic img{ width:auto; height:100%;}
+.part_pic_txt_2 .piece h3{ font-size:17px; cursor:pointer;}
+.part_pic_txt_2 .piece h3 a:link, .part_pic_txt_2 .piece h3 a:visited{ color:#333;}
+.part_pic_txt_2 .piece p{ display:none;}
+
+@media only screen and (min-width: 768px){
+	.part_pic_txt_2 > :nth-of-type(1) a.pic{ width:300px; height:225px;}
+	.part_pic_txt_2 > :nth-of-type(1) h3{ margin-bottom:5px; font-size:20px;}
+	.part_pic_txt_2 > :nth-of-type(n+2){ float:left; width:179px; margin-right:10px;}
+	.part_pic_txt_2 > :last-of-type{ margin-right:0px;}
+	.part_pic_txt_2 > :nth-of-type(n+2) a.pic{ float:none; width:179px; height:134px; margin-bottom:10px;}
+	.part_pic_txt_2 .piece h3 a:hover, .part_pic_txt_2 .piece h3:active { color:#da401b;}
+	.part_pic_txt_2 .piece p{ display:block; font-size:15px; color:#777;}
+}
+
+/*part_pic_txt_3 總覽新聞圖文列表*/
+.part_pic_txt_3{ clear:both; margin-bottom:30px;}
+.part_pic_txt_3 .piece{ margin-bottom:15px; padding:0px 10px;}
+.part_pic_txt_3 .piece:last-of-type{ margin-bottom:0px;}
+.part_pic_txt_3 .piece a.pic{ display:block; float:left; width:100px; height:75px; margin-right:10px; overflow:hidden; box-shadow:0px 0px 1px rgba(30,25,20,0.5);}
+.part_pic_txt_3 .piece a.pic img{ width:auto; height:100%;}
+.part_pic_txt_3 .piece h3{ display:table-cell; font-size:17px; cursor:pointer;}
+.part_pic_txt_3 .piece h3 a:link, .part_pic_txt_3 .piece h3 a:visited{ color:#333;}
+.part_pic_txt_3 .piece span{ font-size:13px; color:#9a9a9a;}
+
+@media only screen and (min-width: 768px){
+	.part_pic_txt_3 .piece{ display:inline-block; width:49%; vertical-align:top;}
+	.part_pic_txt_3 .piece h3 a:hover, .part_pic_txt_3 .piece h3:active { color:#da401b;}
+}
+
+
+/*part_list_thumb_1 圖表列表*/
+.part_thumb_1{ clear:both;}
+.part_thumb_1 a.piece{ display:block; margin-bottom:30px; position:relative; cursor:pointer;}
+.part_thumb_1 a.piece:last-of-type{ margin-bottom:0px;}
+.part_thumb_1 a.piece:link, .part_thumb_1 a.piece:visited{ color:#333;}
+.part_thumb_1 a.piece .pic{ height:0px; margin-bottom:10px; padding-bottom:75%; overflow:hidden; background:#e3e3e3; box-shadow: 0px 0px 1px rgba(30,25,20,0.5); position:relative;}
+.part_thumb_1 a.piece .pic img{ display:block; width:auto; height:100%; position:absolute; top:0px; right:0px; bottom:0px; left:0px; margin:auto;/*置中*/}
+.part_thumb_1 a.piece h2{ margin-bottom:5px; font-size:15px;}
+.part_thumb_1 a.piece span{ display:block; text-align:right; font-size:13px; color:#9a9a9a;}
+
+@media only screen and (min-width: 768px){
+	.part_thumb_1 a.piece{ float:left; width:49%;}
+	.part_thumb_1 a.piece:nth-of-type(odd){ margin-right:2%;}
+	.part_thumb_1 a.piece:nth-last-of-type(1), .part_thumb_1 a.piece:nth-last-of-type(2){ margin-bottom:0px;}
+	.part_thumb_1 a.piece h2{ margin-bottom:5px; font-size:17px;}
+	.part_thumb_1 a.piece:hover, .part_thumb_1 a.piece:active { color:#da401b;}
+}
+
+
+
+/*part_title_1 影音新聞列表title*/
+.part_title_1{ margin-bottom:25px; font-size:16px; color:#000;}
+@media only screen and (min-width: 768px){
+	.part_title_1{ font-size:20px;}
+}
+
+
+/*part_btn_1 多顆 按鈕*/
+.part_btn_1{ clear:both; margin-bottom:25px; text-align:center;}
+.part_btn_1 a{ display:inline-block; margin-right:10px; padding:10px 20px; border-radius:70px; font-size:14px; text-align:center; transition: all 0.5s; }
+.part_btn_1 a:last-of-type{ margin-right:0px;}
+.part_btn_1 a:link, .part_btn_1 a:visited { color:#000; background:#e3e3e3;}
+.part_btn_1 a:hover{ color:#fff; background:#da401b;}
+
+@media only screen and (min-width: 768px){
+	.part_btn_1 a{ padding:10px 30px; font-size:16px;}
+}
+
+/*part_btn_2 六都按鈕*/
+.part_btn_2{ clear:both; margin-bottom:10px; background:#e3e3e3;}
+.part_btn_2 a{ display:block; float:left; width:calc(100%/6); height:50px; line-height:50px; font-size:14px; text-align:center;}
+.part_btn_2 a.current{ border:2px solid #da401b; border-radius:3px;}
+.part_btn_2 a:link, .part_btn_2 a:visited { color:#000;}
+.part_btn_2 a:hover, .part_btn_2 a:active { border:2px solid #da401b; border-radius:3px;}
+
+@media only screen and (min-width: 768px){
+	.part_btn_2{ margin-bottom:15px;}
+	.part_btn_2 a{ font-size:18px;}
+}
+
+/*part_btn_3 全部縣市按鈕*/
+.part_btn_3{ margin-bottom:25px; background:#e3e3e3;}
+.part_btn_3 ul{ }
+.part_btn_3 ul li{ float:left; width:20%; height:50px; background:#ccc;}
+.part_btn_3 ul li:nth-child(n+8){ background:#e3e3e3;}
+.part_btn_3 ul li.current{ border:2px solid #393d3e; border-radius:5px;}
+.part_btn_3 ul li:hover{ border:2px solid #393d3e; border-radius:5px;}
+.part_btn_3 ul li a{ display:block; line-height:50px; font-size:14px; text-align:center;}
+.part_btn_3 ul li a:link, .part_btn_3 ul li a:visited { color:#000;}
+
+/*2018九合一*/
+.part_btn_3 ul li:first-child{ width:40%; background:#000;}
+.part_btn_3 ul li:first-child a:link, .part_btn_3 ul li:first-child a:visited { color:#fff;}
+
+
+@media only screen and (min-width: 768px){
+.part_btn_3 ul li{ width:12.5%;}
+.part_btn_3 ul li:first-child{ width:25%;}
+.part_btn_3 ul li a{ font-size:18px;}
+}
+
+
+/*part_btn_5 候選票選按鈕*/
+.part_btn_5{ clear:both; margin-bottom:10px; text-align:center;}
+.part_btn_5 a{ display:inline-block; padding:10px 5px ; font-size:12px; background:#777;}
+.part_btn_5 a.current{ border:2px solid #da401b; border-radius:3px;}
+.part_btn_5 a:link, .part_btn_5 a:visited { color:#fff;}
+.part_btn_5 a:hover, .part_btn_5 a:active { border:2px solid #da401b; border-radius:3px;}
+
+@media only screen and (min-width: 768px){
+	.part_btn_5{ margin-bottom:15px;}
+	.part_btn_5 a{ padding:10px 20px; font-size:16px;}
+}
+
+
+/*part_btn_6 其他縣市按鈕*/
+.part_btn_6{ clear:both; margin-bottom:10px; background:#f0c71b;}
+.part_btn_6 a{ display:block; float:left; width:calc(100%/5); height:50px; line-height:50px; font-size:14px; text-align:center;}
+.part_btn_6 a.current{ border:2px solid #da401b; border-radius:3px;}
+.part_btn_6 a:link, .part_btn_6 a:visited { color:#000;}
+.part_btn_6 a:hover, .part_btn_6 a:active { border:2px solid #da401b; border-radius:3px;}
+
+@media only screen and (min-width: 768px){
+	.part_btn_6{ margin-bottom:15px;}
+	.part_btn_6 a{ width:calc(100%/8); font-size:18px;}
+}
+
+
+/*table 歸零*/
+.table{ width:100%; max-width:768px; margin-bottom:25px; border-collapse:collapse;}
+
+/*RWD table_1*/
+.table_1{ background:#f6f7f8;}
+.table_1 tr{ border-top:1px solid #ddd; border-bottom:1px solid #ddd;}
+.table_1 th, .table_1 td{ padding:10px; font-weight:normal;}
+.table_1 th{ display:none;}
+.table_1 td{ display:block; font-size:15px; color:#000;}
+.table_1 td a{ margin-right:5px;}
+.table_1 td a:link, .table_1 td a:visited { color:#000;}
+.table_1 td span{ display:inline-block; width:30%; font-size:14px; color:#52acdd;}
+.table_1 td img.elected{ width:18px; height:18px; margin-left:5px; position:relative; top:-3px;}
+.table_1 td img.party{ width:18px; height:18px; margin-right:5px; position:relative; top:-3px;}
+
+/*大於等於768*/
+@media only screen and (min-width:768px){
+	.table_1 th{ display:table-cell; text-align:left;}
+	.table_1 tr:nth-of-type(1) th{ color:#52acdd; background:#3a3a3a;}
+	.table_1 td{ display:table-cell; font-size:16px;}
+	.table_1 td span{ display:none; font-size:17px;}
+	.table_1 td img.elected{ width:20px; height:20px;}
+	.table_1 td img.party{ width:20px; height:20px;}
+}
+
+
+/*RWD table_2*/
+.table_2{ background:#f6f7f8;}
+.table_2 tr{ border-top:1px solid #ddd; border-bottom:1px solid #ddd;}
+.table_2 th, .table_2 td{ padding:10px; font-weight:normal;}
+.table_2 th{ display:none;}
+.table_2 td{ display:block; font-size:15px; color:#000;}
+.table_2 td a{ margin-right:5px;}
+.table_2 td a:link, .table_2 td a:visited { color:#000;}
+.table_2 td span{ display:inline-block; width:30%; font-size:14px; color:#52acdd;}
+.table_2 td a img.fb_icon{ width:25px; height:25px;}
+.table_2 td img.elected{ width:18px; height:18px; position:relative; top:-3px;}
+.table_2 td img.party{ width:18px; height:18px; margin-right:5px; position:relative; top:-3px;}
+/*號次項目暫時隱藏*/
+.table_2 th:first-of-type{ display:none;}
+.table_2 td:first-of-type{ display:none;}
+
+
+/*大於等於768*/
+@media only screen and (min-width:768px){
+	.table_2 th{ display:table-cell; text-align:left;}
+	.table_2 tr:nth-of-type(1) th{ color:#52acdd; background:#3a3a3a;}
+	.table_2 td{ display:table-cell; font-size:16px;}
+	.table_2 td a img.fb_icon{ margin-left:18px;/*fb連結 pc需要置中*/}
+	.table_2 td span{ display:none; font-size:17px;}
+	.table_2 td img.elected{ width:20px; height:20px;}
+	.table_2 td img.party{ width:20px; height:20px;}
+	.table_2 td a:hover, .table_2 td a:active { color:#da401b;}
+}
+
+
+/*tab_x*/
+.tab_x{ clear:both;}
+.tab_x .tab_title{ clear:both; margin-bottom:10px; background:#f0c71b;}
+.tab_x .tab_title a{ display:block; float:left; width:16.66%; height:50px; line-height:50px; font-weight:normal; font-size:13px; text-align:center;}
+.tab_x .tab_title a.current{ border:2px solid #da401b; border-radius:3px;}
+.tab_x .tab_title a:link, .tab_title a:visited { color:#000;}
+.tab_x .tab_title a:hover, .tab_title a:active { border:2px solid #da401b; border-radius:3px;}
+.tab_x .tab_content{}
+.tab_x .tab_content .piece + .piece{ display:none;}
+
+@media only screen and (min-width:768px){
+	.tab_x .tab_title a{ font-size:18px;}
+}
+
+
+/*subject_article*/
+.subject_article{ clear:both;}
+.subject_article .pic{ height:0px; margin-bottom:10px; padding-bottom:75%; overflow:hidden; background:#e3e3e3; box-shadow: 0px 0px 1px rgba(30,25,20,0.5); position:relative;}
+.subject_article .pic img{ width:auto; height:100%; position:absolute; top:0px; right:0px; bottom:0px; left:0px; margin:auto;/*置中*/}
+.subject_article .story{ }
+.subject_article .story h2{ margin-bottom:10px; font-size:18px;}
+.subject_article .story h5{ font-weight:normal;}
+.subject_article .story p{ font-size:15px;}
+
+@media only screen and (min-width:768px){
+	.subject_article .pic{ width:400px; height:300px; padding-bottom:0%;}
+}
+
+/*election_map 政黨執政版圖*/
+.election_map{ clear:both; height: 0px; padding-bottom:157%; background:url(../images/election_taiwan_m.svg) no-repeat; position: relative;}
+.election_map_2{ clear:both; height: 0px; padding-bottom:157%; background:url(../images/election_taiwan_m2018.svg) no-repeat; position: relative;}
+@media only screen and (min-width:767px){
+.election_map { background:url(../images/election_taiwan_pc.svg) no-repeat;}
+.election_map_2{ clear:both; height: 0px; padding-bottom:157%; background:url(../images/election_taiwan_pc2018.svg); position: relative;}
+}
+
+
+/*分頁組件*/
+.menu_page { clear:both; margin-bottom:25px; text-align:center; font-size:16px; color:#000;}
+.menu_page a:link, .menu_page a:visited { display:inline-block; width:30px; height:30px; line-height:30px; border-radius:50%; color:#777;}
+.menu_page a:hover, .menu_page a:active { color:#fff; background-color:#f0c71b;}
+.menu_page span.current { display:inline-block; width:30px; height:30px; line-height:30px; border-radius:50%; color:#fff; background-color:#f0c71b;}
+.menu_page span.disabled{ display:inline-block; width:30px; height:30px; line-height:30px; border-radius:50%; color:#dbdbdb;} 
+.menu_page_info{ text-align:center; font-size:15px;}
+
+
+/*倒數計時*/
+.counter_box{ width:100%; height:40px; line-height:40px; text-align:center; background:#777; position:absolute; right:0px; bottom:70px;}
+.counter_box .no_word{ font-size:14px; color:#fff;}
+.counter_box div{ display:inline-block; margin-right:0px;}
+.counter_box div em{ margin-right:3px; font-style:normal; font-weight:bold; font-size:24px; color:#fff;}
+.counter_box div strong { font-size:14px; color:#fff; font-weight:normal;}
+
+@media only screen and (min-width: 768px){
+	.counter_box{ position:absolute; right:0px; bottom:90px;}
+}
+/*倒數狀態1 天數*/
+.counter_box .no_day{}
+.counter_box .no_hour, .counter_box .no_minute, .counter_box .no_second{ display: none;}
+
+/*倒數狀態2 時分秒*/
+.counter_box.style_1 .no_day{ display: none;}
+.counter_box.style_1 .no_hour, .counter_box.style_1 .no_minute, .counter_box.style_1 .no_second{ display: inline-block;}
+
+/*video_player*/
+.video_player{ height:0px; margin-bottom:8px; padding-bottom:56.25%; overflow:hidden; position:relative;}
+.video_player iframe,
+.video_player object,
+.video_player embed { width:100%; height:100%; padding-bottom:56.25%; position:absolute; left:0px; top:0px; -webkit-box-sizing:content-box; box-sizing:content-box;}
+
+
+@charset "utf-8";
+/*page.css*/
+
+/* 模組 新聞內頁 分享按鈕====*/
+#et_sticky_pc{ display:none; width:50px; height:0px;/*彈性高度*/ position:fixed; left:50%; top: 5px; margin-left:-440px; z-index: 10; overflow: hidden; transition: height 0.6s ease-in-out;}
+#et_sticky_pc a.btn{ display:block; width:40px; height:40px; background: url(../images/et_sticky_pc.png) no-repeat; background-size: auto 40px; text-indent: 100%; white-space: nowrap; overflow: hidden; border-radius: 50%; margin-bottom: 5px; box-shadow:0px 1px 3px 0px rgba(0, 0, 0, 0.1);}
+#et_sticky_pc a.btn.logo{ background-position: 0px 0px;}
+#et_sticky_pc a.btn.fb{ background-position: -40px 0px;}
+#et_sticky_pc a.btn.weibo{ background-position: -80px 0px;}
+#et_sticky_pc a.btn.twitter{ background-position: -120px 0px;}
+#et_sticky_pc a.btn.gplus{ background-position: -160px 0px;}
+#et_sticky_pc a.btn.link{ background-position: -200px 0px;}
+
+@media only screen and (min-width: 768px){
+	#et_sticky_pc{ display:block;}
+}
+
+
+/*目標物預留上方空間*/
+#a1:before, #a2:before { 
+	display: block; 
+ 	content: " "; 
+  	height: 50px; 
+	margin-top: -50px;
+	visibility: hidden; 
+}
+
+@media only screen and (min-width: 768px){
+	#a1:before, #a2:before { 
+		display: block; 
+		content: " "; 
+		height: 20px; 
+		margin-top: -20px;
+		visibility: hidden; 
+	}
+}
+
+/*STELLA================================================*/
+.block_content .memo{ color: #ff0000;}
+
+/*首頁 index.htm===========================================*/
+/*大圖輪播*/
+.gallery_1 .bx-wrapper .bx-caption{ clear:both; /*width:100%; height:70px;*/ color:#fff; font-size:35px; z-index:9; position:absolute; left:0px; bottom:0px; padding: 8px 20px;
+	background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.6) 20%, rgba(0,0,0,0.9) 100%); cursor: pointer;}
+/*piece*/
+.gallery_1 .piece{ max-width:768px;  }
+.gallery_1 .piece a{ display: block; width: 100%; max-width:768px; height: auto; padding-bottom: 65%; background: #f1f1f1; overflow: hidden; position:relative; }
+.gallery_1 .piece a img{ width:100%; height:100%; position: absolute; left: 0; top: 0; right: 0; bottom: 0; margin: auto;}
+
+
+/*即時開票 ballotReport.htm=================================*/
+/*六都市長開票*/
+.part_txt_1{ width: 768px; }
+.part_txt_1 .piece{ display: block; width:46%/*48%非瀑布流*/; float: left; margin-bottom: 20px; margin-right: 29px;}
+.part_txt_1 .piece:nth-of-type(2n){ margin-right: 0px;}
+.part_txt_1 .piece table.ballot_table{ width: 100%; text-align: center;}
+.part_txt_1 .piece table.ballot_table tbody{ width: 100%; }
+.part_txt_1 .piece table.ballot_table th{ }
+.part_txt_1 .piece table.ballot_table tr{ width: 100%; }
+.part_txt_1 .piece table.ballot_table tr td{ width: 33%; padding: 10px 0px; border-bottom: 1px solid #000;}
+.part_txt_1 .piece table.ballot_table tr td img.party{ width:30px; height: 30px;}
+
+/*city*/
+.part_txt_1 .piece table.ballot_table tr.city{ background:#e3e3e3; text-align: center; }
+.part_txt_1 .piece table.ballot_table tr.city td{ border: none; position: relative;}
+.part_txt_1 .piece table.ballot_table tr.city td a.txt{ display: block; width: 85%; height: 100%;}
+.part_txt_1 .piece table.ballot_table tr.city td i{ position:absolute; right:8px; top:15px;}
+
+
+/*more*/
+.part_txt_1 .piece a.btn{ display: block; width: 100%; height: 100%; background: #ccc; text-align: center; padding: 10px; margin-top: 8px;}
+
+
+/*縣市議員當選席次總覽*/
+/*table_3*/
+.table_3{ width:100%; background: #fff; text-align: center; display: block;}
+.table_3 table{ width:100%;}
+.table_3 table tr{}
+.table_3 table tr td{ border:1px solid #000;} 
+.table_3 table tr td.color_a{ background:#FFFF99; } /*黃底*/
+.table_3 table tr td.color_b{ color:#ff0000; } /*紅字*/
+.table_3 table tr td.txt_1{ text-align: left; } /*文字至中*/
+.table_3 table tr td.txt_2{ font-weight: bold; } /*粗體*/
+
+/*party_logo*/
+.party_logo{ display: none; }
+.party_logo .item{ display: inline-block; width:49%; padding: 5px;}
+.party_logo .item img.party{ width:30px; height: 30px;}
+.party_logo .item span{ margin-left: 5px;}
+
+/*table_4*/
+.table_4{ width: 48%; float: left; text-align: center; background: #e3e3e3; margin: 15px 10px; /*display: none;*/}
+.table_4:nth-of-type(2n){ margin-right: 0px;}
+.table_4 tbody{ width: 100%; }
+.table_4 tr{ width: 100%;}
+.table_4 tr td{ width:40%; padding: 5px;}
+.table_4 tr td:nth-of-type(1){ width:10%; }
+.table_4 tr td img.party{ width:30px; height: 30px;}
+.table_4 tr:first-of-type{ background: #ccc; padding: 10px;}
+.table_4 tr:last-of-type{ border-bottom:2px solid #000;}
+.table_4 tr a{ display: block; padding: 5px; }
+.table_4 tr:first-of-type td{ padding: 0px; }
+
+
+/*全台縣市長執政版圖變化*/
+/*part_thumb_2*/
+.part_thumb_2{ display: block;}
+.part_thumb_2 .piece{ float: left; width:48%; margin-right: 10px; }
+.part_thumb_2 .piece h4{ background:#e3e3e3; padding: 10px; }
+
+/*part_thumb_3*/
+.part_thumb_3{ display: none;}
+/*tab頁籤*/
+.part_thumb_3 h4{ width: 48%; display: inline-block; margin-left: 5px; margin-bottom: 10px; font-size: 14px; text-align: center; background: #e3e3e3;}
+.part_thumb_3 h4:last-of-type{ margin-left: 0px;}
+.part_thumb_3 h4 a.topic{ display: block; width: 100%; padding: 8px 5px; border: 2px solid #e3e3e3; }
+.part_thumb_3 h4 a.topic:hover{ color: #da401b; border: 2px solid #da401b; }
+.part_thumb_3 #t1{ color: #da401b; border: 2px solid #da401b; }	
+.part_thumb_3 .inner{ display: none;  }
+.part_thumb_3 .inner:first-of-type{ display:block }
+
+
+/*縣市長開票頁 mayor.htm=================================*/
+/*開票結果*/
+.part_txt_3{ width:100%; }
+.part_txt_3 table.ballot_table{ width: 100%; margin-bottom: 10px;}
+.part_txt_3 table.ballot_table tbody{ width: 100%; }
+.part_txt_3 table.ballot_table th{ border: 1px solid #000; }
+.part_txt_3 table.ballot_table tr{ width: 100%; }
+.part_txt_3 table.ballot_table tr td{ padding: 10px 0px; border: 1px solid #000;}
+.part_txt_3 table.ballot_table tr td:nth-of-type(1){ width: 8%;  text-align: center;}
+.part_txt_3 table.ballot_table tr td:nth-of-type(2){ width: 20%;  text-align: left;}
+.part_txt_3 table.ballot_table tr td:nth-of-type(3){ width: 15%; text-align: left; padding-left: 5px;}
+.part_txt_3 table.ballot_table tr td:last-of-type{ width: 50%;  text-align: left; }
+.part_txt_3 table.ballot_table tr td img.party{ width:30px; height: 30px; margin: 0px 10px;}
+.part_txt_3 table.ballot_table td img.elected{ width:30px; height:30px; margin-left: 5px;/*position:relative; top:-3px;*/}
+.part_txt_3 table.ballot_table tr td .score_line{ display:inline-block; width:0px; height: 25px; color:#000; overflow: hidden; text-align: right; padding-right: 5px; }
+.part_txt_3 p img{ width: 28px; height: 28px; margin: 0px 5px;}
+.part_txt_3 table.ballot_table tr td span{ display: none; } 	
+.part_txt_3 table.ballot_table tr td span.percent{ display: inline-block;}
+.part_txt_3 table.ballot_table tr td span.name{ display: inline-block; } 
+
+/*各選區開票結果*/
+.part_txt_2{ }
+.part_txt_2 .piece{ display: block; width:48%; float: left; margin:10px 29px 20px 0px; }
+.part_txt_2 .piece:nth-of-type(2n){ margin-right: 0px;}
+.part_txt_2 .piece table.ballot_table{ width: 100%; text-align: center;}
+.part_txt_2 .piece table.ballot_table tbody{ width: 100%; }
+.part_txt_2 .piece table.ballot_table th{ border: 1px solid #000; }
+.part_txt_2 .piece table.ballot_table tr{ width: 100%; }
+.part_txt_2 .piece table.ballot_table tr td{ /*width: 25%; */ padding: 10px 0px; border: 1px solid #000;}
+.part_txt_2 .piece table.ballot_table tr td img.party{ width:30px; height: 30px; margin: 0px 10px;}
+.part_txt_2 .piece table.ballot_table tr td:nth-of-type(2){ text-align: left;}
+.part_txt_2 .piece p{ color:orange; }
+
+/*選情消長*/
+/*左黨徽*/
+.chart_party{ float: left; width:5%;  margin-top: 39px;}
+.chart_party .item{  padding: 5px 0px;}
+.chart_party .item img.party{ width:30px; height: 30px;}
+/*右圖表*/
+#chart_div{float: right; width:95%; }
+
+/*縣市議員頁 alderman.htm=================================*/
+/*議員開票-當選席次表*/
+.part_txt_4{ width:100%; text-align: center;}
+.part_txt_4 table.ballot_table{ width: 100%; margin-bottom: 10px;}
+.part_txt_4 table.ballot_table tbody{ width: 100%;  display: block; }
+.part_txt_4 table.ballot_table th{ border: 1px solid #000; }
+.part_txt_4 table.ballot_table tr{ width: 100%;}
+.part_txt_4 table.ballot_table tr td{ padding: 10px; width: 10%; border: 1px solid #000;}
+.part_txt_4 table.ballot_table tr td img.party{ width:30px; height: 30px; margin: 0px 10px;}
+.part_txt_4 p img{ width: 28px; height: 28px; margin: 0px 5px;}
+.part_txt_4 table.ballot_table tr td span{ display: none; } 	
+.part_txt_4 table.ballot_table tr td span.percent{ display: inline-block;}
+.part_txt_4 table.ballot_table tr td span.name{ display: inline-block; } 
+
+.part_txt_4 table.m{ width: 100%; margin-bottom: 10px; display: none; }
+
+
+/*議員開票-各選區當選席次明細*/
+.part_chart{}
+.part_chart p{ background: #e3e3e3; padding: 8px; }
+.part_chart p span.place{ display: none;}
+.part_chart p #p1{ display: inline;}
+
+/*chart*/
+.part_chart .chart{}
+/*右right*/
+.part_chart .chart .right{ width: 45%; float:right;}
+.part_chart .chart .right h2{ text-align: center; padding: 3px; background:#E26B0A; color: #fff; }
+/*tab*/
+.part_chart .chart .right .tab{ display: flex; justify-content:flex-start; flex-wrap:wrap;}
+.part_chart .chart .right .tab h3{ width: calc(100%/4); /*float: left;*/ background: #FCD5B4;}
+.part_chart .chart .right .tab h3:nth-of-type(2n){ background: #FABF8F;}
+.part_chart .chart .right .tab h3 a.constituency{ display: block; padding: 8px; border:2px solid #fff;}
+/*pie_chart*/
+.part_chart .chart .right .pie_chart{ clear:both; width: 100%; }
+.part_chart .chart .right .pie_chart .pie{ display: none;  width: 330px; height: 330px;}
+.part_chart .chart .right .pie_chart #piechart1{ display: block;}
+/*左list*/
+.part_chart .chart .list{ width: 55%; float: left; display: none;}
+.part_chart .chart #list1{ display:block }
+.part_chart .chart .list table.constituency_table{ }
+.part_chart .chart .list table.constituency_table tr{ }
+.part_chart .chart .list table.constituency_table tr:first-of-type{ text-align: center;}
+.part_chart .chart .list table.constituency_table tr td{ border:1px solid #000; padding:10px 15px; }
+.part_chart .chart .list table.constituency_table tr td img.party{ width:25px; height: 25px; margin-right: 5px;}
+.part_chart .chart .list table.constituency_table tr td img.elected{ width:20px; height:20px; margin-left: 5px;}
+
+
+/*議員選情變化*/
+#chart_div2{ float: right; width:95%; }
+
+
+/*小於767*/
+@media only screen and ( max-width:767px){
+/*即時開票 ballotReport.htm=================================*/
+/*六都市長開票*/
+.part_txt_1{ width: 100%; }
+.part_txt_1 .piece { width: 100%; float: none;}
+.part_txt_1 .piece table.ballot_table tr.city td a.txt{ width: 90%;}
+	
+/*縣市議員當選席次總覽*/	
+.party_logo{ display: block; }
+/*.table_3{ display: none; }*/
+/*.table_4{ display: block;}*/
+	
+/*table_4*/
+.table_4{ width: 100%; float: none; margin: 10px 0px;}
+.table_4:nth-of-type(2n){ margin-right: 0px;}
+	
+	
+	
+/*全台縣市長執政版圖變化*/
+.part_thumb_2{ display: none;}
+.part_thumb_3{ display: block;}	
+
+	
+/*縣市長開票頁 mayor.htm=================================*/
+/*開票結果*/
+.part_txt_3 table.ballot_table tr td:nth-of-type(2){ width: 10%; text-align: center;}
+.part_txt_3 table.ballot_table tr td:nth-of-type(3){ width: 25%;}
+.part_txt_3 table.ballot_table tr td:last-of-type{ width: 57%; }
+.part_txt_3 table.ballot_table td img.elected{ width:22px; height:22px; margin-left: 3px;}
+.part_txt_3 table.ballot_table tr td span.name{ display: none; } 
+	
+
+
+/*各選區開票結果*/
+.part_txt_2 .piece{ display: block; width:100%; float: none; }
+.part_txt_2 .piece table.ballot_table tr td span{ display: none}/*黨別不顯示*/	
+.part_txt_2 .piece table.ballot_table tr td:nth-of-type(2){ text-align: center;}	
+	
+/*選情消長*/
+/*左黨徽*/
+.chart_party{ float: left; width:8%;  margin-top: 39px; }
+.chart_party .item{  padding: 9px 0px;}
+.chart_party .item img.party{ width:25px; height: 25px;}
+/*右圖表*/
+#chart_div{float: right; width:91%; }	
+	
+	
+/*縣市議員頁 alderman.htm=================================*/
+/*議員開票-當選席次表*/
+.part_txt_4 table.ballot_table{ display: none;}
+.part_txt_4 table.m{ display: block; }	
+	
+/*議員開票-各選區當選席次明細*/
+.part_chart{}
+.part_chart p{ font-size:14px;  }
+
+/*chart*/
+.part_chart .chart{}
+/*右right*/
+.part_chart .chart .right{ width: 100%; float:none;}
+/*tab*/
+.part_chart .chart .right .tab h3{ width: calc(100%/3); text-align: center;}
+/*pie_chart*/
+.part_chart .chart .right .pie_chart{ clear:both; width: 100%; }
+.part_chart .chart .right .pie_chart .pie{ display: none;  width: 100%;  height: auto;}
+/*左list*/
+.part_chart .chart .list{ width: 100%; float: none;}
+.part_chart .chart .list table.constituency_table{ width: 100%; margin: 0 auto;}
+.part_chart .chart .list table.constituency_table tr td{ padding: 10px;}
+.part_chart .chart .list table.constituency_table tr td:first-of-type{ text-align: center;}
+.part_chart .chart .list table.constituency_table tr td img.party{ margin-right: 0px;}
+.part_chart .chart .list table.constituency_table tr td span{display: none;}
+
+
+/*議員選情變化*/	
+#chart_div2{ float: right; width:91%; }	
+#chart_div3{ display: none;}
+
+
+
+
+	
+}
+ 
+
+

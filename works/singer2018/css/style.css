@@ -1,0 +1,322 @@
+@charset "utf-8";
+
+/*前綴*/
+*{ margin:0px; padding:0px; font-family: "微軟正黑體";}
+*{ 
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+/*清除 clearfix*/
+.clearfix:after { content: "."; display:block; height:0; clear:both; visibility:hidden;}
+.clearfix { *zoom: 1; _zoom: 1;}
+
+/*控制pre*/
+pre { border:2px solid pink; padding:5px; font-size:12px; background:#fff; clear:both; font-size:12px; font-family:Verdana;}
+pre strong { color:#CC0000;}
+pre em { font-style:normal; font-weight:bold; color:#006600;}
+
+/*預設連結狀態*/
+a:link, a:visited{ color:#000; text-decoration:none; }
+a:hover, a:active { color:#000; text-decoration:none; }
+
+/*body*/
+body { font-family:"微軟正黑體", Arial, Helve tica, sans-serif; font-size:15px; line-height:1.5; font-weight:normal; color:#000;}
+
+/*h標題設定*/
+h1 { font-size:15px;}
+h2 { font-size:15px;}
+h3 { font-size:13px;}
+h4 { font-size:13px;}
+
+
+
+/*共用======================================*/
+/*wrapper*/
+.wrapper_box{ position: relative; }
+.wrapper{width:768px; margin: 0 auto;}
+.main{ clear:both; width:100%; background:#fff; /*padding-top: 200px; */ }
+.c1 { clear:both; margin:0 auto 20px; max-width:768px; width:100%; padding:10px 10px; overflow: hidden; /*min-height: 500px; border:1px solid #676767;*/ }
+
+/*主視覺-圖片*/
+.visual{ clear:both;}
+.visual img{ display:block; width:100%; height:auto;}
+
+/*主選單*/
+.main_nav{ clear:both; width:768px; margin: 0 auto; height:45px; display:flex; justify-content:center; overflow:hidden; position:relative; background:#000; text-align:center; z-index:100; }
+.main_nav .inner{ list-style-type:none; white-space:nowrap; overflow-x:auto; overflow-y:hidden; margin:0 auto; font-size:0px;}
+.main_nav .inner li{ display:inline-block; font-size:16px; line-height:45px;  text-align:center;  position:relative; bottom:0px; border-right:1px solid #FFF; padding: 0 13px;}
+.main_nav .inner li:nth-of-type(9){ border-right:none;}
+.main_nav .inner li a{ display:block; width:100%; height:45px; margin:0px; color:#fff;}
+.main_nav.nav_clone{ position:fixed; /*left:0px;*/ top:0px; display:none;}
+
+/*sponsor_box*/
+.sponsor_box{ max-width: 750px; margin:0 auto; color: #646464; padding:0px 10px;}
+.sponsor_box .box_0{ margin-bottom: 10px;}
+.sponsor_box .box_0 span{ display: block; }
+.sponsor_box .box_0 i{ display: inline-block;}
+.sponsor_box .box_1{ width:50%; float:left; }
+.sponsor_box .box_1 span{ display:inline-block; vertical-align:15px; margin-right:10px;}
+.sponsor_box i{ margin-right:5px; vertical-align: middle; margin-bottom:10px;}
+.sponsor_box i a { display:block;}
+.sponsor_box img {width:100%; height:auto; max-width:110px; max-height:100px; height:auto;}
+
+
+/*footer*/
+.footer { max-width:768px; margin: 0 auto; text-align:center; background-color:#DFDFDF; padding:10px 0px; color:#000; font-size: 13px;}
+
+
+/*區塊*/
+/* block_y 頁面區塊*/
+.block_y{ clear:both; padding:10px; margin-bottom: 20px; border-radius:3px; background:#fff; }
+.block_y .block_title{margin-bottom:10px; border-bottom: 0px; border-bottom:3px solid #000;}
+.block_y .block_title h3{font-size:22px; color:#000;}
+.block_y .block_content{margin-bottom:5px;}
+
+/*part_pictxt_3*/
+.part_pictxt_3{}
+.part_pictxt_3 .box{ padding: 10px 0px;}
+.part_pictxt_3 .box .pic{ margin-right:10px; float: left; width:150px; height:113px; overflow: hidden;}
+.part_pictxt_3 .box .pic img {width: 100%; height: auto;}
+.part_pictxt_3 .box h3 { font-size: 17px; line-height: 1.3; margin-bottom: 15px; color: #000; font-weight: normal;}
+.part_pictxt_3 .box p{ color: #717071; font-size: 16px; }
+.part_pictxt_3 .box .date{ color: #717071; font-size: 13px; text-align: right; margin-top: 10px;}
+
+
+
+/*introduction頁============================================*/
+.pic_list{ width:calc(100%/4); float: left; text-align: center; margin-bottom: 25px;} 
+.pic_list .pic{ margin-bottom: 5px; }
+.pic_list .pic img{ width:100%; height: auto; border-radius: 50%; border: 4px solid #FFFFFF;}
+
+
+
+
+/*player-list頁============================================*/
+.block_y .go_vote{ display:block; width: 150px; height:30px; line-height: 30px; text-align: center; margin: 10px auto; color:#FFFFFF;   background:#000; }
+
+/*月冠軍*/
+.block_title .one{ width:50%; margin: 0 auto 15px; }
+.block_title .pic img{ /*width:100%; height: auto; border-radius: 50%; border: 4px solid #FFFFFF;*/border-radius: 0px 200px 200px 200px;
+-moz-border-radius: 0px 200px 200px 200px;
+-webkit-border-radius: 0px 200px 200px 200px;
+border: 0px solid #000000;}
+.winner{position: absolute; top:10px; left:10px; color:#fff; font-weight:bolder; font-size: 26px;}
+
+/*item*/
+.item{ position: relative; margin-bottom: 20px; /*border-bottom:1px dotted #000;*/}
+.item .week{ background: #000; color:#fff; padding: 10px;}
+/*.item .box-left{ float: left; width:15%; height: 350px; text-align: center; position: relative;}*/
+.item .box-right{/*float: right; */width: 100%;  }
+.item .pic_list{ width:100%; /*border: 1px solid red;*/ } 
+
+.item .group{ width:calc(95%/4); float: left; margin: 10px 5px; text-align: center; margin-bottom: 25px;}
+/*.item .group .pic{ margin-bottom: 10px;} */
+.item .group:nth-child(4n){ margin-right:0px;}
+.group .pic_inner{border-radius: 0px 200px 200px 200px;
+-moz-border-radius: 0px 200px 200px 200px;
+-webkit-border-radius: 0px 200px 200px 200px;
+border: 1px solid #000; z-index: 100; background: #000;}
+
+.group .pic_inner{ width: 100%}
+.pic_inner .no{position: absolute; top:4px; left:4px; color:#fff; font-weight:bolder; font-size: 20px;}
+.group .pic_inner img{ width:100%; height: auto; border-radius: 50%; border: 4px solid #000;}
+
+.group .pic .cover:after{display:block; content:"";/*漸層蓋*/ width:100%; height:80px; position:absolute; left:0px; bottom:0px; z-index:10; background:gray;  opacity: 0.5; border-radius: 0px 0px 100px 100px;
+-moz-border-radius: 0px 0px 100px 100px;
+-webkit-border-radius: 0px 0px 100px 100px;
+border: 0px solid #000000;}
+
+.group .month{position: absolute; top:110px; left:60px; z-index: 999; font-size: 26px; font-weight: bolder; color: #fff;}
+
+
+/*player頁============================================*/
+/*psubject_intro介紹模組*/
+.psubject_intro{ background: #fff; margin-bottom: 20px; padding: 10px 0px;}
+.box_left{ width:40%; float: left; /*padding: 5px;*/}
+.box_right{ width:58%; float: right; /*padding: 5px;*/ }
+
+.box_left .pic{ margin-bottom: 10px; }
+.box_left .pic img{ width:100%; height: auto; border-radius: 50%; border: 4px solid #FFFFFF;}
+
+/*投票*/
+.box_vote{ }
+.box_vote p{ text-align: center; }
+.box_vote span{ color: red;}
+.box_vote .go_vote{ display:block; width: 150px; height:30px; line-height: 30px; text-align: center; margin: 10px auto; color: #fff;   background:#000; }
+.box_right .go_msg{ display:block; width: 150px; height:30px; line-height: 30px; text-align: center; float:right; color: #fff;   background:#000; }
+
+/* video的iframe影片自適應 */
+.video{ position: relative; padding-top: 30px; height: 0; overflow: hidden; margin-bottom:15px;}
+.video{ padding-bottom: 56.25%; }
+.video iframe,
+.video object,
+.video embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
+.instagram-media{ margin-bottom:15px!important;}
+
+
+
+
+
+/*situation頁 ============================================*/
+.count_outer{clear:both; margin-bottom:20px; padding:10px; position: relative; }
+.count_outer h4{float:left; font-size:22px; color:#333; margin:0px 15px 15px 0px;}
+.count_outer .part_operate_1{}
+.count_outer .count_area{clear:both;}
+.count_outer .count_area .table{clear:both; width:100%;}
+.count_outer .count_area .table th, .table td{padding:3px 0px; font-size:13px;}
+.count_outer .count_area .score_line{display:inline-block; width:0px; height:12px; margin-right:5px; background:#1987A9; border-radius:3px;}
+.count_outer .count_area strong{font-size:15px; color:#1987A9; font-weight:bold;}
+.count_outer .count_area .table em{ position: absolute; right:80px; }
+
+.count_outer .count_area_2{clear:both; display: none;}
+.count_outer .count_area_2 .table{clear:both; width:100%;}
+.count_outer .count_area_2 .table th, .table td{padding:3px 0px; font-size:13px;}
+.count_outer .count_area_2 .score_line{display:inline-block; width:0px; height:12px; margin-right:5px; background:#1987A9; border-radius:3px;}
+.count_outer .count_area_2 strong{font-size:15px; color:#1987A9; font-weight:bold;}
+.count_outer .count_area_2 .table em{ position: absolute; right:80px; }
+
+
+
+
+
+
+
+
+/*765************************************************************************************************************/
+@media screen and (max-width:765px){
+/*wrapper*/
+.wrapper{ width:100%;}
+.main{ padding-top: 50px;  }
+
+
+/*主選單*/
+.main_nav{ width:100%; }
+.main_nav .inner{ overflow-x:auto;}
+
+/*footer*/
+.footer{ font-size:13px; width:100%; }
+	
+	
+/*introduction頁============================================*/
+.pic_list{ width:calc(100%/2); float: left;} 	
+
+	
+/*player-list頁============================================*/
+/*月冠軍*/	
+.block_title .one{ width:60%; margin: 0 auto 15px; }
+.block_title .pic{ width:100%; text-align: center}
+	
+/*item*/
+.item .group{ width:calc(95%/2);}	
+
+	
+	
+/*situation頁============================================*/
+.count_outer .count_area{ display: none;}
+.count_outer .count_area_2{ clear:both; display: block;}
+.count_outer .count_area_2 .table em{ position: absolute; right:120px; }
+	
+
+
+}
+
+
+
+
+
+/*580************************************************************************************************************/
+@media screen and (max-width:580px){
+
+/*player-list頁============================================*/
+.pic_inner .no{font-size: 20px;}	
+.winner{ top:5px; left:5px; font-size: 20px;}	
+
+.group .pic .cover:after{display:block; content:"";/*漸層蓋*/ width:100%; height:80px; position:absolute; left:0px; bottom:0px; z-index:10; background:gray;  opacity: 0.5; border-radius: 0px 0px 200px 200px;
+-moz-border-radius: 0px 0px 200px 200px;
+-webkit-border-radius: 0px 0px 200px 200px;
+border: 0px solid #000000;}
+
+.group .month{/*position: absolute; left:70px; */ top:100px; display: flex; justify-content: center; z-index: 999; font-size: 16px;}	
+	
+	
+/*player頁============================================*/
+/*psubject_intro介紹模組*/
+.box_left{ width:100%; float: none; padding: 5px;}
+.box_right{ width:100%; float: none; padding: 5px; }
+.box_right .go_msg{ display:block;  float:none; margin: 10px auto 0px; }			
+
+	
+/*situation頁============================================*/
+.count_outer .count_area{ display: none;}
+.count_outer .count_area_2{ clear:both; display: block;}
+.count_outer .count_area_2 .table em{ position: absolute; right:50px; }	
+	
+
+}
+
+
+
+
+
+
+
+
+
+/*460************************************************************************************************************/
+@media screen and (max-width:460px){
+
+	
+/*introduction頁============================================*/		
+.item .pic_list{ width:100%; float: left; text-align: center; margin-bottom: 25px;}	
+
+	
+/*player-list頁============================================*/
+/*item*/
+.item .box-left{ float: none; width:100px; height: 60px; margin: 0 auto;}
+.item .box-right{float: none; width: 100%; }
+.item .pic_list{ width:100%;} 
+.item .group{ width:calc(85%/2); float: left; margin: 10px; text-align: center; margin-bottom: 25px;}
+.item .group:nth-child(2n){float: right}
+
+.pic_inner .no{font-size: 15px; top:3px; left:5px;}		
+	
+/*situation頁============================================*/
+.count_outer .count_area_2{ clear:both; display: block;}
+.count_outer .count_area_2 .table em{ position: absolute; right:30px; }	
+	
+	
+	
+}
+
+
+
+/*330************************************************************************************************************/
+@media screen and (max-width:330px){
+	
+/*player-list頁============================================*/
+/*月冠軍*/
+.block_title .pic{ width:100%; text-align: center}
+.pic_inner .no{font-size: 12px;}	
+.item .group p{font-size: 13px;}	
+
+.group .pic .cover:after{display:block; content:"";/*漸層蓋*/ width:100%; height:50px; position:absolute; left:0px; bottom:0px; z-index:10; background:gray;  opacity: 0.5; border-radius: 0px 0px 200px 200px;
+-moz-border-radius: 0px 0px 200px 200px;
+-webkit-border-radius: 0px 0px 200px 200px;
+border: 0px solid #000000;}
+
+.group .month{/*position: absolute; left:70px; */ top:80px; display: flex; justify-content: center; z-index: 999; font-size: 16px;}	
+	
+	
+/*situation頁============================================*/
+.count_outer .count_area_2{ clear:both; display: block;}
+.count_outer .count_area_2 .table em{ position: absolute; right:0px; }	
+	
+	
+}
+
+
+
+
+

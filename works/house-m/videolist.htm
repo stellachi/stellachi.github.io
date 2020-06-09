@@ -1,0 +1,294 @@
+<!doctype html>
+<html>
+<!-- InstanceBegin template="/Templates/module.dwt" codeOutsideHTMLIsLocked="false" -->
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, minimal-ui" />
+	<!-- InstanceBeginEditable name="doctitle" -->
+	<title>建案資訊內頁</title>
+	<!-- InstanceEndEditable -->
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<link rel="stylesheet" href="css/font-awesome.css" type="text/css">
+	<!--<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>-->
+	<script src="js/jquery-1.9.1.min.js"></script>
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.bxslider/jquery.bxslider.js"></script>
+	<link href="js/jquery.bxslider/jquery.bxslider.css" rel="stylesheet" type="text/css" />
+	<script src="js/common.js"></script>
+	<!-- InstanceBeginEditable name="head" -->
+
+	<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript">
+		$(function () {
+			$(".box_0").click(function () {
+				var sVideoRel = $(this).attr("data-src");
+				$(".video .inner iframe").attr({
+					"src": sVideoRel
+				});
+				$('html,body').animate({
+					scrollTop: $('.video').offset().top
+				}, 100);
+			});
+		});
+	</script>
+
+
+
+	<!-- InstanceEndEditable -->
+</head>
+
+<body>
+	<!--FB plugins 共用元素 開始 -->
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v2.7&appId=146858218737386";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+	<!--FB plugins 共用元素 結束 -->
+
+	<div class="wrapper_box">
+
+		<!--wrapper 開始 -->
+		<div class="wrapper">
+			<!--header 開始-->
+			<div class="header clearfix">
+				<!--inner 開始-->
+				<div class="inner">
+
+					<h2><a class="main_logo" href="index.htm" title="回首頁">房產雲</a></h2>
+					<!--選單 開始
+                <div class="nav_2">
+                    <a href="http://fashion.ettoday.net/video/"><em class="icon_1"></em>影音</a>
+                    <a href="https://www.facebook.com/ETFashion.tw/" target="_blank"><em class="icon_2"></em></a>
+                    <a href="https://www.instagram.com/fashion.ettoday/" target="_blank"><em class="icon_3"></em></a>
+                </div>
+                <!--選單 結束-->
+
+					<!-- search 搜尋 開始 -->
+					<div class="search">
+
+						<!-- 搜尋按鈕 開始 -->
+						<div class="icon_open">
+							<!---->
+						</div>
+						<div class="icon_close">
+							<!---->
+						</div>
+						<!-- 搜尋按鈕 結束 -->
+
+						<!-- google搜尋 開始 -->
+						<div class="gsbox">
+							<form id="cse-search-box" method="get" action="search.htm">
+								<input class="keyword" type="text" name="keywords" size="26" />
+								<input class="send" type="image" name="sa" src="images/search.png" />
+							</form>
+						</div>
+						<!-- google搜尋 結束 -->
+
+					</div>
+					<!-- search 搜尋 結束 -->
+
+				</div>
+				<!--inner 結束-->
+			</div>
+			<!--header 結束-->
+
+			<!--menu 側欄選單 開始-->
+			<div class="side_menu">
+				<!--btn_switch 選單開關 開始-->
+				<input id="btn_switch" type="checkbox"></input>
+				<label for="btn_switch"></label>
+				<!--btn_switch 選單開關 結束-->
+
+				<!--nav 選單內容 開始-->
+				<div class="nav">
+					<!--ul 開始-->
+					<ul class="inner">
+						<li><a href="focus.htm">房產焦點</a></li>
+						<li><a href="newslist.htm">房產新聞</a></li>
+						<li><a href="newslist.htm">建案新聞</a></li>
+						<li><a href="focus.htm">生活美學</a></li>
+						<li><a href="build_info.htm">建案資訊</a></li>
+						<li><a href="videolist.htm">影音專區</a></li>
+						<a></a>
+					</ul>
+					<!--ul 結束-->
+					<!--footer 版權宣告 開始-->
+					<div class="footer">
+						<a href="javascript:;" onclick="location.replace('#');">電腦版</a>
+						<span>|</span>
+						<a href="mailto:service@ettoday.net">聯絡我們</a>
+						<p>東森新聞雲股份有限公司 版權所有<br>
+							非經授權，不許轉載本網站內容<br>
+							© ETtoday.net All Rights Reserved.</p>
+					</div>
+					<!--footer 版權宣告 結束-->
+
+				</div>
+				<!--nav 選單內容 結束-->
+			</div>
+			<!--side_menu 側欄選單 結束-->
+
+			<!--house_menu 開始-->
+			<div class="house_menu">
+				<ul class="inner">
+					<li><a href="focus.htm">房產焦點</a></li>
+					<li><a href="newslist.htm">房產新聞</a></li>
+					<li><a href="newslist.htm">建案新聞</a></li>
+					<li><a href="focus.htm">生活美學</a></li>
+					<li><a href="build_info.htm">建案資訊</a></li>
+					<li><a href="videolist.htm">影音專區</a></li>
+				</ul>
+			</div>
+			<!--house_menu 結束-->
+
+			<!--container 開始-->
+			<div class="container">
+				<!-- InstanceBeginEditable name="EditRegion1" -->
+
+
+
+
+
+
+
+
+
+				<!-- InstanceEndEditable -->
+
+				<!--r1 開始-->
+				<div class="r1">
+					<!-- InstanceBeginEditable name="EditRegion4" -->
+
+
+
+					<!-- InstanceEndEditable -->
+
+					<!--c1 開始-->
+					<div class="c1">
+						<!-- InstanceBeginEditable name="EditRegion5" -->
+						<!--subject_block 開始-->
+						<div class="subject_block clearfix">
+
+
+							<h2 style="font-weight: normal; padding-bottom: 10px;  color:#000;">我是標題五六七八九十我是標題五六七八貳十我是標題五</h2>
+
+							<!--影音 video_box 開始-->
+							<div class="video">
+
+								<div class="inner">
+									<!-- <iframe src="http://www.ettoday.net/tools/player/72095-39700?title=%E8%B6%85%E9%AB%98%E6%AA%94%E6%B5%B7%E7%A5%9E%EF%BC%9ASUV+Maserati+Levante+S+Sport%E9%9C%87%E6%92%BC%E7%8F%BE%E8%BA%AB&bid=boba_preroll_web&show_ad=1&action=next" width="780" height="439" frameborder="0" scrolling="no" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>		 -->
+
+									<iframe width="650" height="315" src="https://www.youtube.com/embed/Q_5lPraHaTY?autoplay=1" frameborder="0"
+									 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+								</div>
+
+							</div>
+							<!--影音 video_box 結束-->
+
+							<!--sharebox_1 分享組件 開始-->
+							<div class="sharebox_1 clearfix">
+
+								<!--menu_1 開始-->
+								<div class="menu_1 clearfix">
+									<a class="fb" href="javascript:;" onClick="window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent('★★★網址★★★'),'facebook-share-dialog','width=626,height=436');return false;"></a>
+									<a class="line" href="http://line.naver.jp/R/msg/text/?★★★網頁標題★★★%0D%0A★★網址★★★"></a>
+									<a class="gplus" href="javascript:;" onClick="window.open('https://plus.google.com/share?url='+encodeURIComponent('★★★網址★★★'),'g+','width=626,height=436')"></a>
+									<a class="weibo" href="javascript:void((function(s,d,e,r,l,p,t,z,c){var%20f='http://v.t.sina.com.cn/share/share.php?appkey=1263254066',u=z||d.location,p=['&url=',e(u),'&title=',e(t||d.title),'&source=',e(r),'&sourceUrl=',e(l),'&content=',c||'gb2312','&pic=',e(p||'')].join('');function%20a(){if(!window.open([f,p].join(''),'mb',['toolbar=0,status=0,resizable=1,width=440,height=430,left=',(s.width-440)/2,',top=',(s.height-430)/2].join('')))u.href=[f,p].join('');};if(/Firefox/.test(navigator.userAgent))setTimeout(a,0);else%20a();})(screen,document,encodeURIComponent,'','','★★★推圖連結★★★','★★★網頁標題★★★','★★★網址★★★','utf-8'));"></a>
+								</div>
+								<!--menu_1 結束-->
+
+							</div>
+							<!-- sharebox_1 分享組件 結束-->
+
+
+
+							<!--block_1 開始-->
+							<div class="block_1">
+								<h3 class="block_title">國內房市<a class="more" href=javascript:alert("連至播吧"); target="_blank">看更多</a></h3>
+
+								<!--part_2 開始-->
+								<div class="part_2 clearfix">
+									<!--組-->
+									<div class="box_0" data-src="https://www.youtube.com/embed/Q_5lPraHaTY?autoplay=1">
+										<div class="pic"><img src="//cdn2.ettoday.net/film/images/39/c39700.jpg"></div>
+										<p class="time">01:10</p>
+										<h4><a href="#">我是標題五六七八九十我是標題五</a></h4>
+									</div>
+									<!--組-->
+									<!--組-->
+									<div class="box_0" data-src="https://www.youtube.com/embed/PjeAyhW1cFc?autoplay=1">
+										<div class="pic"><img src="//cdn2.ettoday.net/film/images/38/c38562.jpg"></div>
+										<p class="time">16:44</p>
+										<h4><a href="#">我是標題五六七八九十我是標題五</a></h4>
+									</div>
+									<!--組-->
+									<!--組-->
+									<div class="box_0" data-src="https://www.youtube.com/embed/hFpUf5Yzk0A?autoplay=1">
+										<div class="pic"><img src="//cdn2.ettoday.net/film/images/38/c38558.jpg"></div>
+										<p class="time">01:10</p>
+										<h4><a href="#">我是標題五六七八九十我是標題五</a></h4>
+									</div>
+									<!--組-->
+									<!--組-->
+									<div class="box_0" data-src="https://www.youtube.com/embed/Q_5lPraHaTY?autoplay=1">
+										<div class="pic"><img src="//cdn2.ettoday.net/film/images/39/c39596.jpg"></div>
+										<p class="time">12:26</p>
+										<h4><a href="#">我是標題五六七八九十我是標題五</a></h4>
+									</div>
+									<!--組-->
+
+
+								</div>
+								<!--part_2 結束-->
+
+
+
+							</div>
+							<!--影音 block_1 結束-->
+
+						</div>
+						<!--subject_block 結束-->
+
+
+
+						<!-- InstanceEndEditable -->
+
+					</div>
+					<!--c1 結束-->
+
+				</div>
+				<!--r1 結束-->
+
+			</div>
+			<!--container 結束-->
+		</div>
+		<!--wrapper 結束 -->
+
+	</div>
+	<!--wrapper_box 結束 -->
+	<!--footer_box 開始-->
+	<div class="footer_box">
+
+		<!--footer 開始-->
+		<div class="footer">
+			<!--footer_menu 開始-->
+			<div class="footer_menu"> <a href="#">電腦版</a> |<a href="http://www.ettoday.net/about-ettoday.htm" target="_blank">關於我們</a>
+				|<a href="mailto:editor@ettoday.net">聯絡信箱</a> </div>
+			<!--footer_menu 結束-->
+			<address>
+				東森新聞雲股份有限公司 版權所有 &copy; <a href="http://www.ettoday.net/" target="_top">ETtoday.net</a> All Rights Reserved.
+			</address>
+		</div>
+		<!--footer 結束-->
+	</div>
+	<!--footer_box 開始-->
+
+</body>
+<!-- InstanceEnd -->
+
+</html>

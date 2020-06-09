@@ -1,0 +1,1538 @@
+<!doctype html>
+<html lang="zh-Hant" prefix="og:http://ogp.me/ns#" itemscope itemtype="https://schema.org/WebSite">
+
+<head>
+	<meta charset="utf-8">
+	<title>即時開票</title>
+	<link rel="canonical" itemprop="mainEntityOfPage" href="https://events.ettoday.net/election2018/index.phtml" />
+
+	<!-- ★基本meta 開始★ -->
+	<meta name="robots" content="index,follow,noarchive" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+	<!-- ★基本meta 結束★ -->
+
+	<!--css js 共用 開始-->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+	 crossorigin="anonymous">
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.cookie.js"></script>
+	<script src="js/jquery.countdown/jquery.plugin.js"></script>
+	<script src="js/jquery.countdown/jquery.countdown.js"></script>
+	<script src="js/jquery.masonry.min.js"></script>
+	<script src="js/common.js"></script>
+	<!--css js 共用 結束-->
+
+
+
+</head>
+
+
+<body>
+	<!-- FB外掛組件 開始-->
+	<div id="fb-root"></div>
+	<script>
+		(function (d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			js = d.createElement(s);
+			js.id = id;
+			js.src = "//connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v3.0&appId=146858218737386";
+			fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+	</script>
+	<!-- FB外掛組件 結束-->
+
+	<!-- FB Quote 選取文字分享 開始-->
+	<div class="fb-quote"></div>
+	<!-- FB Quote 選取文字分享 結束-->
+
+	<!--wrapper 開始-->
+	<div class="wrapper">
+		<!-- 模組 新聞內頁 分享按鈕 開始 -->
+		<div id="et_sticky_pc">
+			<ul>
+				<li><a class="btn logo" href="https://events.ettoday.net/election2018/index.phtml" title="回首頁">回首頁</a></li>
+				<li><a class="btn fb" href="javascript:;" onclick="window.open('//www.facebook.com/sharer/sharer.php?u='+encodeURIComponent('https://events.ettoday.net/election2018/index.phtml'),'facebook-share-dialog','width=626,height=436');"
+					 title="facebook分享">facebook分享</a></li>
+				<li><a class="btn weibo" href="javascript:void((function(s,d,e,r,l,p,t,z,c){var%20f='http://v.t.sina.com.cn/share/share.php?appkey=1263254066',u=z||d.location,p=['&url=',e(u),'&title=',e(t||d.title),'&source=',e(r),'&sourceUrl=',e(l),'&content=',c||'gb2312','&pic=',e(p||'')].join('');function%20a(){if(!window.open([f,p].join(''),'mb',['toolbar=0,status=0,resizable=1,width=440,height=430,left=',(s.width-440)/2,',top=',(s.height-430)/2].join('')))u.href=[f,p].join('');};if(/Firefox/.test(navigator.userAgent))setTimeout(a,0);else%20a();})(screen,document,encodeURIComponent,'','','https://events.ettoday.net/election2018/images/push.jpg','2018九合一大選專區｜ETtoday新聞雲','https://events.ettoday.net/election2018/index.phtml','utf-8'));"
+					 title="weibo分享">weibo分享</a></li>
+				<li><a class="btn twitter" href="javascript: void(window.open('https://twitter.com/home/?status=' .concat(encodeURIComponent('2018九合一大選專區｜ETtoday新聞雲')) .concat('2018九合一大選即將於11月24日舉行投票，各黨派積極爭取選票，《ETtoday新聞雲》整理各地選戰戰況，提供即時的選舉報導，讓您迅速掌握最新選舉相關議題。') .concat(encodeURIComponent('https://events.ettoday.net/election2018/index.phtml'))));"
+					 title="twitter分享">twitter分享</a></li>
+				<li><a class="btn gplus" href="javascript:;" onclick="window.open('//plus.google.com/share?url='+encodeURIComponent('https://events.ettoday.net/election2018/index.phtml'))"
+					 target="_blank" title="gplus分享">gplus分享</a></li>
+				<li><a class="btn link" href="javascript:;" title="複製本頁連結">複製本頁連結</a></li>
+			</ul>
+		</div>
+
+
+		<!-- 模組 新聞內頁 分享按鈕 結束 -->
+		<!--topbar 開始-->
+		<div class="topbar">
+			<!--menu_1 開始-->
+			<div class="menu_1">
+				<a href="index.phtml">回首頁</a>
+				<a href="https://www.ettoday.net" target="_blank">ETtoday新聞雲</a>
+			</div>
+			<!--menu_1 結束-->
+			<!--menu_2 開始-->
+			<div class="menu_2 clearfix">
+				<a href="javascript:;" onClick="window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent('https://events.ettoday.net/election2018/index.phtml'),'facebook-share-dialog','width=626,height=436');return false;"
+				 title="分享到 Facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
+				<a href="javascript:;" onClick="window.open('https://plus.google.com/share?url='+encodeURIComponent('https://events.ettoday.net/election2018/index.phtml'),'g+','width=626,height=436')"
+				 title="分享到 Google+" target="_blank"><i class="fab fa-google-plus-g"></i></a>
+				<a href="https://line.naver.jp/R/msg/text/?【2018九合一大選專區】%0D%0Ahttps://events.ettoday.net/election2018/index.phtml"
+				 rel="nofollow" title="分享到 LINE"><i class="fab fa-line"></i></a>
+				<a href="javascript:void((function(s,d,e,r,l,p,t,z,c){var%20f='http://v.t.sina.com.cn/share/share.php?appkey=1263254066',u=z||d.location,p=['&url=',e(u),'&title=',e(t||d.title),'&source=',e(r),'&sourceUrl=',e(l),'&content=',c||'gb2312','&pic=',e(p||'')].join('');function%20a(){if(!window.open([f,p].join(''),'mb',['toolbar=0,status=0,resizable=1,width=440,height=430,left=',(s.width-440)/2,',top=',(s.height-430)/2].join('')))u.href=[f,p].join('');};if(/Firefox/.test(navigator.userAgent))setTimeout(a,0);else%20a();})(screen,document,encodeURIComponent,'','','https://events.ettoday.net/election2018/images/push.jpg','2018九合一大選專區 | ETtoday新聞雲','https://events.ettoday.net/election2018/index.phtml','utf-8'));"
+				 title="分享到 微博"><i class="fab fa-weibo"></i></a>
+			</div>
+			<!--menu_2 結束-->
+		</div>
+		<!--topbar 結束-->
+
+		<!--header 開始-->
+		<div class="header">
+
+			<!--大選 logo 開始-->
+			<div class="logo_election"><a href="index.phtml" title="回首頁">2018 九合一大選專區</a></div>
+			<!--大選 logo 結束-->
+
+			<!--計時器 counter_box 開始-->
+			<div id="counter_1" class="counter_box">
+				<div class="no_word">距離大選還有</div>
+				<div class="no_day"><em>{dn}</em><strong>天</strong></div>
+				<div class="no_hour"><em>{hn}</em><strong>時</strong></div>
+				<div class="no_minute"><em>{mn}</em><strong>分</strong></div>
+				<div class="no_second"><em>{sn}</em><strong>秒</strong></div>
+			</div>
+			<!--計時器 counter_box 結束-->
+
+			<!--nav_1 選單 開始-->
+			<div class="nav_1">
+				<a class="btn_1 current" href="ballotReport.htm">即時開票</a>
+				<a class="btn_2" href="index.htm">即時新聞</a>
+				<a class="btn_2" href="news-pc.htm" target="_black">PC開框</a>
+				<a class="btn_2" href="news-m.htm" target="_black">mWeb開框</a>
+				<!-- <a class="btn_3 " href="javascript:alert('外連')">六都選情</a>
+				<a class="btn_4 " href="javascript:alert('外連')">縣市選情</a>
+				<a class="btn_5" href="javascript:alert('外連')" target="_blank">影音專區</a>
+				<a class="btn_6 " href="javascript:alert('連至大比拼App推廣頁')">人氣大比拼</a>
+				<a class="btn_7" href="javascript:alert('外連')" target="_blank">選民溫度計</a>
+				<a class="btn_8 " href="javascript:alert('外連')">選戰紀錄</a> -->
+			</div>
+			<!--nav_1 選單 結束-->
+		</div>
+		<!--header 結束-->
+
+		<!--container 開始-->
+		<div class="container">
+			<!--r1 橫欄 開始-->
+			<div class="r1">
+				<div class="c1">
+
+					<!--開票按鈕 part_btn_5 開始-->
+					<div class="part_btn_5"><a href="mayor.htm">22縣市首長詳細看</a><a href="alderman.htm">22縣市議員詳細看</a></div>
+					<!--開票按鈕 part_btn_5 結束-->
+
+
+					<!--六都市長開票 block_1 開始-->
+					<div class="block block_1" id="">
+						<!--block_title 開始-->
+						<div class="block_title">
+							<h3>六都市長開票</h3>
+						</div>
+						<!--block_title 結束-->
+						<!--block_content 開始-->
+						<div class="block_content">
+							<p class="memo">（※實際開票結果以中選會公告為準）</p>
+							<p class="memo">（若要查詢其他公職開票資訊，可透過各縣市詳細內頁查詢）</p>
+
+
+							<!--part_txt_1 列表 開始-->
+							<div class="part_txt_1">
+								<!--組-->
+								<div class="piece">
+									<table class="ballot_table">
+										<tbody>
+											<tr class="city">
+												<td colspan="3" class="clearfix">
+													<a class="txt" href="mayor.htm#a1">台北市</a>
+													<a href="javascript:;"><i class="fas fa-sync-alt"></i></a>
+												</td>
+											</tr>
+											<tr>
+												<th>黨別</th>
+												<th>候選人</th>
+												<th>票數</th>
+											</tr>
+											<tr>
+												<td data-th="黨別"><img class="party" src="images/p05.png"></td>
+												<td data-th="候選人">xxx</td>
+												<td data-th="票數">123,456,789</td>
+											</tr>
+											<tr>
+												<td data-th="黨別"><img class="party" src="images/p01.png"></td>
+												<td data-th="候選人">xxx</td>
+												<td data-th="票數">123,456,789</td>
+											</tr>
+											<tr>
+												<td data-th="黨別"><img class="party" src="images/p02.png"></td>
+												<td data-th="候選人">xxx</td>
+												<td data-th="票數">123,456,789</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<!--組-->
+								<!--組-->
+								<div class="piece">
+									<table class="ballot_table">
+										<tbody>
+											<tr class="city">
+												<td colspan="3" class="clearfix">
+													<a class="txt" href="mayor.htm#a1">新北市</a>
+													<a href="javascript:;"><i class="fas fa-sync-alt"></i></a>
+												</td>
+											</tr>
+											<tr>
+												<th>黨別</th>
+												<th>候選人</th>
+												<th>票數</th>
+											</tr>
+											<tr>
+												<td data-th="黨別"><img class="party" src="images/p05.png"></td>
+												<td data-th="候選人">xxx</td>
+												<td data-th="票數">123,456,789</td>
+											</tr>
+											<tr>
+												<td data-th="黨別"><img class="party" src="images/p01.png"></td>
+												<td data-th="候選人">xxx</td>
+												<td data-th="票數">123,456,789</td>
+											</tr>
+											<tr>
+												<td data-th="黨別"><img class="party" src="images/p02.png"></td>
+												<td data-th="候選人">xxx</td>
+												<td data-th="票數">12,345,678</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<!--組-->
+								<!--組-->
+								<div class="piece">
+									<table class="ballot_table">
+										<tbody>
+											<tr class="city">
+												<td colspan="3" class="clearfix">
+													<a class="txt" href="mayor.htm#a1">桃園市</a>
+													<a href="javascript:;"><i class="fas fa-sync-alt"></i></a>
+												</td>
+											</tr>
+											<tr>
+												<th>黨別</th>
+												<th>候選人</th>
+												<th>票數</th>
+											</tr>
+											<tr>
+												<td data-th="黨別"><img class="party" src="images/p05.png"></td>
+												<td data-th="候選人">xxx</td>
+												<td data-th="票數">123,456,789</td>
+											</tr>
+											<tr>
+												<td data-th="黨別"><img class="party" src="images/p01.png"></td>
+												<td data-th="候選人">xxx</td>
+												<td data-th="票數">123,456,789</td>
+											</tr>
+											<tr>
+												<td data-th="黨別"><img class="party" src="images/p02.png"></td>
+												<td data-th="候選人">xxx</td>
+												<td data-th="票數">12,345,678</td>
+											</tr>
+										</tbody>
+									</table>
+									<a class="btn btn_more" href="javascript:;">展開+</a>
+								</div>
+								<!--組-->
+								<!--組-->
+								<div class="piece">
+									<table class="ballot_table">
+										<tbody>
+											<tr class="city">
+												<td colspan="3" class="clearfix">
+													<a class="txt" href="mayor.htm#a1">台中市</a>
+													<a href="javascript:;"><i class="fas fa-sync-alt"></i></a>
+												</td>
+											</tr>
+											<tr>
+												<th>黨別</th>
+												<th>候選人</th>
+												<th>票數</th>
+											</tr>
+											<tr>
+												<td data-th="黨別"><img class="party" src="images/p05.png"></td>
+												<td data-th="候選人">xxx</td>
+												<td data-th="票數">123,456,789</td>
+											</tr>
+											<tr>
+												<td data-th="黨別"><img class="party" src="images/p01.png"></td>
+												<td data-th="候選人">xxx</td>
+												<td data-th="票數">123,456,789</td>
+											</tr>
+											<tr>
+												<td data-th="黨別"><img class="party" src="images/p02.png"></td>
+												<td data-th="候選人">xxx</td>
+												<td data-th="票數">12,345,678</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<!--組-->
+								<!--組-->
+								<div class="piece">
+									<table class="ballot_table">
+										<tbody>
+											<tr class="city">
+												<td colspan="3" class="clearfix">
+													<a class="txt" href="mayor.htm#a1">台南市</a>
+													<a href="javascript:;"><i class="fas fa-sync-alt"></i></a>
+												</td>
+											</tr>
+											<tr>
+												<th>黨別</th>
+												<th>候選人</th>
+												<th>票數</th>
+											</tr>
+											<tr>
+												<td data-th="黨別"><img class="party" src="images/p05.png"></td>
+												<td data-th="候選人">xxx</td>
+												<td data-th="票數">123,456,789</td>
+											</tr>
+											<tr>
+												<td data-th="黨別"><img class="party" src="images/p01.png"></td>
+												<td data-th="候選人">xxx</td>
+												<td data-th="票數">123,456,789</td>
+											</tr>
+											<tr>
+												<td data-th="黨別"><img class="party" src="images/p02.png"></td>
+												<td data-th="候選人">xxx</td>
+												<td data-th="票數">12,345,678</td>
+											</tr>
+										</tbody>
+									</table>
+									<a class="btn btn_more" href="javascript:;">展開+</a>
+								</div>
+								<!--組-->
+
+
+
+
+							</div>
+							<!--part_txt_1 列表 結束-->
+						</div>
+						<!--block_content 結束-->
+					</div>
+					<!--六都市長開票 block_1 結束-->
+
+					<!--縣市長開票 block_1 開始-->
+					<div class="block block_1" id="">
+						<!--block_title 開始-->
+						<div class="block_title">
+							<h3>縣市長開票</h3>
+						</div>
+						<!--block_title 結束-->
+						<!--block_content 開始-->
+						<div class="block_content">
+							<p class="memo">（※實際開票結果以中選會公告為準）</p>
+							<!--part_txt_1 列表 開始-->
+							<div class="part_txt_1 clearfix">
+								<!--組-->
+								<div class="piece">
+									<table class="ballot_table">
+										<tbody>
+											<tr class="city">
+												<td colspan="3" class="clearfix">
+													<a class="txt" href="mayor.htm#a1">基隆市</a>
+													<a href="javascript:;"><i class="fas fa-sync-alt"></i></a>
+												</td>
+											</tr>
+											<tr>
+												<th>黨別</th>
+												<th>候選人</th>
+												<th>票數</th>
+											</tr>
+											<tr>
+												<td data-th="黨別"><img class="party" src="images/p05.png"></td>
+												<td data-th="候選人">xxx</td>
+												<td data-th="票數">123,456,789</td>
+											</tr>
+											<tr>
+												<td data-th="黨別"><img class="party" src="images/p01.png"></td>
+												<td data-th="候選人">xxx</td>
+												<td data-th="票數">123,456,789</td>
+											</tr>
+											<tr>
+												<td data-th="黨別"><img class="party" src="images/p02.png"></td>
+												<td data-th="候選人">xxx</td>
+												<td data-th="票數">123,456,789</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<!--組-->
+								<!--組-->
+								<div class="piece">
+									<table class="ballot_table">
+										<tbody>
+											<tr class="city">
+												<td colspan="3" class="clearfix">
+													<a class="txt" href="mayor.htm#a1">新竹市</a>
+													<a href="javascript:;"><i class="fas fa-sync-alt"></i></a>
+												</td>
+											</tr>
+											<tr>
+												<th>黨別</th>
+												<th>候選人</th>
+												<th>票數</th>
+											</tr>
+											<tr>
+												<td data-th="黨別"><img class="party" src="images/p05.png"></td>
+												<td data-th="候選人">xxx</td>
+												<td data-th="票數">123,456,789</td>
+											</tr>
+											<tr>
+												<td data-th="黨別"><img class="party" src="images/p01.png"></td>
+												<td data-th="候選人">xxx</td>
+												<td data-th="票數">123,456,789</td>
+											</tr>
+											<tr>
+												<td data-th="黨別"><img class="party" src="images/p02.png"></td>
+												<td data-th="候選人">xxx</td>
+												<td data-th="票數">12,345,678</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<!--組-->
+								<!--組-->
+								<div class="piece">
+									<table class="ballot_table">
+										<tbody>
+											<tr class="city">
+												<td colspan="3" class="clearfix">
+													<a class="txt" href="mayor.htm#a1">新竹縣</a>
+													<a href="javascript:;"><i class="fas fa-sync-alt"></i></a>
+												</td>
+											</tr>
+											<tr>
+												<th>黨別</th>
+												<th>候選人</th>
+												<th>票數</th>
+											</tr>
+											<tr>
+												<td data-th="黨別"><img class="party" src="images/p05.png"></td>
+												<td data-th="候選人">xxx</td>
+												<td data-th="票數">123,456,789</td>
+											</tr>
+											<tr>
+												<td data-th="黨別"><img class="party" src="images/p01.png"></td>
+												<td data-th="候選人">xxx</td>
+												<td data-th="票數">123,456,789</td>
+											</tr>
+											<tr>
+												<td data-th="黨別"><img class="party" src="images/p02.png"></td>
+												<td data-th="候選人">xxx</td>
+												<td data-th="票數">12,345,678</td>
+											</tr>
+										</tbody>
+									</table>
+									<a class="btn btn_more" href="javascript:;">展開+</a>
+								</div>
+								<!--組-->
+								<!--組-->
+								<div class="piece">
+									<table class="ballot_table">
+										<tbody>
+											<tr class="city">
+												<td colspan="3" class="clearfix">
+													<a class="txt" href="mayor.htm#a1">苗栗縣</a>
+													<a href="javascript:;"><i class="fas fa-sync-alt"></i></a>
+												</td>
+											</tr>
+											<tr>
+												<th>黨別</th>
+												<th>候選人</th>
+												<th>票數</th>
+											</tr>
+											<tr>
+												<td data-th="黨別"><img class="party" src="images/p05.png"></td>
+												<td data-th="候選人">xxx</td>
+												<td data-th="票數">123,456,789</td>
+											</tr>
+											<tr>
+												<td data-th="黨別"><img class="party" src="images/p01.png"></td>
+												<td data-th="候選人">xxx</td>
+												<td data-th="票數">123,456,789</td>
+											</tr>
+											<tr>
+												<td data-th="黨別"><img class="party" src="images/p02.png"></td>
+												<td data-th="候選人">xxx</td>
+												<td data-th="票數">12,345,678</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<!--組-->
+								<!--組-->
+								<div class="piece">
+									<table class="ballot_table">
+										<tbody>
+											<tr class="city">
+												<td colspan="3" class="clearfix">
+													<a class="txt" href="mayor.htm#a1">彰化縣</a>
+													<a href="javascript:;"><i class="fas fa-sync-alt"></i></a>
+												</td>
+											</tr>
+											<tr>
+												<th>黨別</th>
+												<th>候選人</th>
+												<th>票數</th>
+											</tr>
+											<tr>
+												<td data-th="黨別"><img class="party" src="images/p05.png"></td>
+												<td data-th="候選人">xxx</td>
+												<td data-th="票數">123,456,789</td>
+											</tr>
+											<tr>
+												<td data-th="黨別"><img class="party" src="images/p01.png"></td>
+												<td data-th="候選人">xxx</td>
+												<td data-th="票數">123,456,789</td>
+											</tr>
+											<tr>
+												<td data-th="黨別"><img class="party" src="images/p02.png"></td>
+												<td data-th="候選人">xxx</td>
+												<td data-th="票數">12,345,678</td>
+											</tr>
+										</tbody>
+									</table>
+									<a class="btn btn_more" href="javascript:;">展開+</a>
+								</div>
+								<!--組-->
+
+							</div>
+							<!--part_txt_1 列表 結束-->
+						</div>
+						<!--block_content 結束-->
+					</div>
+					<!--縣市長開票 block_1 結束-->
+
+					<!--縣市議員當選席次總覽 block_1 開始-->
+					<div class="block block_1" id="">
+						<!--block_title 開始-->
+						<div class="block_title">
+							<h3>縣市議員當選席次總覽</h3>
+						</div>
+						<!--block_title 結束-->
+						<!--block_content 開始-->
+						<div class="block_content">
+							<p class="memo">（※各政黨宣佈當選政黨席次數，實際開票結果以中選會公告為準）</p>
+							<!--table_3 開始-->
+							<div class="table_3" style="display: none;">
+								<table>
+									<tr>
+										<td rowspan="2"></td>
+										<td colspan="2">中國國民黨</td>
+										<td colspan="2">民主進步黨</td>
+										<td colspan="2">無黨籍與其他政黨</td>
+										<td rowspan="2" class="color_a color_b txt_2" style="vertical-align:middle;">總席次</td>
+									</tr>
+									<tr>
+										<td>當選席次</td>
+										<td>佔比</td>
+										<td>當選席次</td>
+										<td>佔比</td>
+										<td>當選席次</td>
+										<td>佔比</td>
+									</tr>
+									<tr>
+										<td colspan="8" class="color_a txt_1 txt_2">市議員</td>
+									</tr>
+									<tr>
+										<td width="20%">台北市</td>
+										<td width="15%"></td>
+										<td width="8%"></td>
+										<td width="15%"></td>
+										<td width="8%"></td>
+										<td width="15%"></td>
+										<td width="8%"></td>
+										<td width="15%" class="color_a color_b"></td>
+									</tr>
+									<tr>
+										<td width="20%">新北市</td>
+										<td width="15%"></td>
+										<td width="8%"></td>
+										<td width="15%"></td>
+										<td width="8%"></td>
+										<td width="15%"></td>
+										<td width="8%"></td>
+										<td width="15%" class="color_a color_b"></td>
+									</tr>
+									<tr>
+										<td width="20%">桃園市</td>
+										<td width="15%"></td>
+										<td width="8%"></td>
+										<td width="15%"></td>
+										<td width="8%"></td>
+										<td width="15%"></td>
+										<td width="8%"></td>
+										<td width="15%" class="color_a color_b"></td>
+									</tr>
+									<tr>
+										<td width="20%">台中市</td>
+										<td width="15%"></td>
+										<td width="8%"></td>
+										<td width="15%"></td>
+										<td width="8%"></td>
+										<td width="15%"></td>
+										<td width="8%"></td>
+										<td width="15%" class="color_a color_b"></td>
+									</tr>
+									<tr>
+										<td width="20%">台南市</td>
+										<td width="15%"></td>
+										<td width="8%"></td>
+										<td width="15%"></td>
+										<td width="8%"></td>
+										<td width="15%"></td>
+										<td width="8%"></td>
+										<td width="15%" class="color_a color_b"></td>
+									</tr>
+									<tr>
+										<td width="20%">高雄市</td>
+										<td width="15%"></td>
+										<td width="8%"></td>
+										<td width="15%"></td>
+										<td width="8%"></td>
+										<td width="15%"></td>
+										<td width="8%"></td>
+										<td width="15%" class="color_a color_b"></td>
+									</tr>
+									<tr>
+										<td width="20%" class="txt_2">市議員小計</td>
+										<td width="15%"></td>
+										<td width="8%"></td>
+										<td width="15%"></td>
+										<td width="8%"></td>
+										<td width="15%"></td>
+										<td width="8%"></td>
+										<td width="15%" class="color_a color_b"></td>
+									</tr>
+									<tr>
+										<td colspan="8" class="color_a txt_1 txt_2">縣市議員</td>
+									</tr>
+									<tr>
+										<td width="20%">基隆市</td>
+										<td width="15%"></td>
+										<td width="8%"></td>
+										<td width="15%"></td>
+										<td width="8%"></td>
+										<td width="15%"></td>
+										<td width="8%"></td>
+										<td width="15%" class="color_a color_b"></td>
+									</tr>
+									<tr>
+										<td width="20%">新竹市</td>
+										<td width="15%"></td>
+										<td width="8%"></td>
+										<td width="15%"></td>
+										<td width="8%"></td>
+										<td width="15%"></td>
+										<td width="8%"></td>
+										<td width="15%" class="color_a color_b"></td>
+									</tr>
+									<tr>
+										<td width="20%">新竹縣</td>
+										<td width="15%"></td>
+										<td width="8%"></td>
+										<td width="15%"></td>
+										<td width="8%"></td>
+										<td width="15%"></td>
+										<td width="8%"></td>
+										<td width="15%" class="color_a color_b"></td>
+									</tr>
+									<tr>
+										<td width="20%">苗栗縣</td>
+										<td width="15%"></td>
+										<td width="8%"></td>
+										<td width="15%"></td>
+										<td width="8%"></td>
+										<td width="15%"></td>
+										<td width="8%"></td>
+										<td width="15%" class="color_a color_b"></td>
+									</tr>
+									<tr>
+										<td width="20%">彰化縣</td>
+										<td width="15%"></td>
+										<td width="8%"></td>
+										<td width="15%"></td>
+										<td width="8%"></td>
+										<td width="15%"></td>
+										<td width="8%"></td>
+										<td width="15%" class="color_a color_b"></td>
+									</tr>
+									<tr>
+										<td width="20%">南投縣</td>
+										<td width="15%"></td>
+										<td width="8%"></td>
+										<td width="15%"></td>
+										<td width="8%"></td>
+										<td width="15%"></td>
+										<td width="8%"></td>
+										<td width="15%" class="color_a color_b"></td>
+									</tr>
+									<tr>
+										<td width="20%">雲林縣</td>
+										<td width="15%"></td>
+										<td width="8%"></td>
+										<td width="15%"></td>
+										<td width="8%"></td>
+										<td width="15%"></td>
+										<td width="8%"></td>
+										<td width="15%" class="color_a color_b"></td>
+									</tr>
+									<tr>
+										<td width="20%">嘉義市</td>
+										<td width="15%"></td>
+										<td width="8%"></td>
+										<td width="15%"></td>
+										<td width="8%"></td>
+										<td width="15%"></td>
+										<td width="8%"></td>
+										<td width="15%" class="color_a color_b"></td>
+									</tr>
+									<tr>
+										<td width="20%">嘉義縣</td>
+										<td width="15%"></td>
+										<td width="8%"></td>
+										<td width="15%"></td>
+										<td width="8%"></td>
+										<td width="15%"></td>
+										<td width="8%"></td>
+										<td width="15%" class="color_a color_b"></td>
+									</tr>
+									<tr>
+										<td width="20%">屏東縣</td>
+										<td width="15%"></td>
+										<td width="8%"></td>
+										<td width="15%"></td>
+										<td width="8%"></td>
+										<td width="15%"></td>
+										<td width="8%"></td>
+										<td width="15%" class="color_a color_b"></td>
+									</tr>
+									<tr>
+										<td width="20%">宜蘭縣</td>
+										<td width="15%"></td>
+										<td width="8%"></td>
+										<td width="15%"></td>
+										<td width="8%"></td>
+										<td width="15%"></td>
+										<td width="8%"></td>
+										<td width="15%" class="color_a color_b"></td>
+									</tr>
+									<tr>
+										<td width="20%">花蓮縣</td>
+										<td width="15%"></td>
+										<td width="8%"></td>
+										<td width="15%"></td>
+										<td width="8%"></td>
+										<td width="15%"></td>
+										<td width="8%"></td>
+										<td width="15%" class="color_a color_b"></td>
+									</tr>
+									<tr>
+										<td width="20%">台東縣</td>
+										<td width="15%"></td>
+										<td width="8%"></td>
+										<td width="15%"></td>
+										<td width="8%"></td>
+										<td width="15%"></td>
+										<td width="8%"></td>
+										<td width="15%" class="color_a color_b"></td>
+									</tr>
+									<tr>
+										<td width="20%">澎湖縣</td>
+										<td width="15%"></td>
+										<td width="8%"></td>
+										<td width="15%"></td>
+										<td width="8%"></td>
+										<td width="15%"></td>
+										<td width="8%"></td>
+										<td width="15%" class="color_a color_b"></td>
+									</tr>
+									<tr>
+										<td width="20%">金門縣</td>
+										<td width="15%"></td>
+										<td width="8%"></td>
+										<td width="15%"></td>
+										<td width="8%"></td>
+										<td width="15%"></td>
+										<td width="8%"></td>
+										<td width="15%" class="color_a color_b"></td>
+									</tr>
+									<tr>
+										<td width="20%">連江縣</td>
+										<td width="15%"></td>
+										<td width="8%"></td>
+										<td width="15%"></td>
+										<td width="8%"></td>
+										<td width="15%"></td>
+										<td width="8%"></td>
+										<td width="15%" class="color_a color_b"></td>
+									</tr>
+									<tr>
+										<td width="20%" class="txt_2">縣市議員小計</td>
+										<td width="15%"></td>
+										<td width="8%"></td>
+										<td width="15%"></td>
+										<td width="8%"></td>
+										<td width="15%"></td>
+										<td width="8%"></td>
+										<td width="15%" class="color_a color_b"></td>
+									</tr>
+									<tr>
+										<td width="20%" class="color_a color_b txt_2">總席次</td>
+										<td width="15%" class="color_a color_b"></td>
+										<td width="8%" class="color_a color_b"></td>
+										<td width="15%" class="color_a color_b"></td>
+										<td width="8%" class="color_a color_b"></td>
+										<td width="15%" class="color_a color_b"></td>
+										<td width="8%" class="color_a color_b"></td>
+										<td width="15%" class="color_a color_b"></td>
+									</tr>
+
+								</table>
+							</div>
+							<!--table_3 結束-->
+
+							<!--part_list_1 開始-->
+							<div class="part_list_1">
+
+								<!--party_logo 開始-->
+								<div class="party_logo" style="display: none;">
+									<div class="item"><img class="party" src="images/p01.png"><span>中國國民黨</span></div>
+									<div class="item"><img class="party" src="images/p02.png"><span>民主進步黨</span></div>
+									<div class="item"><img class="party" src="images/p11.png"><span>時代力量</span></div>
+									<div class="item"><img class="party" src="images/p05.png"><span>無黨籍與其他政黨</span></div>
+								</div>
+								<!--party_logo 結束-->
+
+								<!--table_4 開始-->
+								<table class="table_4">
+									<tr>
+										<td><a href="alderman.htm#a1">台北市</a></td>
+										<td><a href="alderman.htm#a1">議員當選席次 / 佔比</a></td>
+									</tr>
+									<tr>
+										<td><img class="party" src="images/p01.png"></td>
+										<td>XX 席次 / XX% </td>
+									</tr>
+									<tr>
+										<td><img class="party" src="images/p02.png"></td>
+										<td>XX 席次 / XX% </td>
+									</tr>
+									<tr>
+										<td><img class="party" src="images/p11.png"></td>
+										<td>XX 席次 / XX% </td>
+									</tr>
+									<tr>
+										<td><img class="party" src="images/p05.png"></td>
+										<td>XX 席次 / XX% </td>
+									</tr>
+								</table>
+								<!--table_4 結束-->
+
+								<!--table_4 開始-->
+								<table class="table_4">
+									<tr>
+										<td><a href="alderman.htm#a1">新北市</a></td>
+										<td><a href="alderman.htm#a1">議員當選席次 / 佔比</a></td>
+									</tr>
+									<tr>
+										<td><img class="party" src="images/p01.png"></td>
+										<td>XX 席次 / XX% </td>
+									</tr>
+									<tr>
+										<td><img class="party" src="images/p02.png"></td>
+										<td>XX 席次 / XX% </td>
+									</tr>
+									<tr>
+										<td><img class="party" src="images/p11.png"></td>
+										<td>XX 席次 / XX% </td>
+									</tr>
+									<tr>
+										<td><img class="party" src="images/p05.png"></td>
+										<td>XX 席次 / XX% </td>
+									</tr>
+								</table>
+								<!--table_4 結束-->
+
+								<!--table_4 開始-->
+								<table class="table_4">
+									<tr>
+										<td><a href="alderman.htm#a1">桃園市</a></td>
+										<td><a href="alderman.htm#a1">議員當選席次 / 佔比</a></td>
+									</tr>
+									<tr>
+										<td><img class="party" src="images/p01.png"></td>
+										<td>XX 席次 / XX% </td>
+									</tr>
+									<tr>
+										<td><img class="party" src="images/p02.png"></td>
+										<td>XX 席次 / XX% </td>
+									</tr>
+									<tr>
+										<td><img class="party" src="images/p11.png"></td>
+										<td>XX 席次 / XX% </td>
+									</tr>
+									<tr>
+										<td><img class="party" src="images/p05.png"></td>
+										<td>XX 席次 / XX% </td>
+									</tr>
+								</table>
+								<!--table_4 結束-->
+
+								<!--table_4 開始-->
+								<table class="table_4">
+									<tr>
+										<td><a href="alderman.htm#a1">台中市</a></td>
+										<td><a href="alderman.htm#a1">議員當選席次 / 佔比</a></td>
+									</tr>
+									<tr>
+										<td><img class="party" src="images/p01.png"></td>
+										<td>XX 席次 / XX% </td>
+									</tr>
+									<tr>
+										<td><img class="party" src="images/p02.png"></td>
+										<td>XX 席次 / XX% </td>
+									</tr>
+									<tr>
+										<td><img class="party" src="images/p11.png"></td>
+										<td>XX 席次 / XX% </td>
+									</tr>
+									<tr>
+										<td><img class="party" src="images/p05.png"></td>
+										<td>XX 席次 / XX% </td>
+									</tr>
+								</table>
+								<!--table_4 結束-->
+
+								<!--table_4 開始-->
+								<table class="table_4">
+									<tr>
+										<td><a href="alderman.htm#a1">台南市</a></td>
+										<td><a href="alderman.htm#a1">議員當選席次 / 佔比</a></td>
+									</tr>
+									<tr>
+										<td><img class="party" src="images/p01.png"></td>
+										<td>XX 席次 / XX% </td>
+									</tr>
+									<tr>
+										<td><img class="party" src="images/p02.png"></td>
+										<td>XX 席次 / XX% </td>
+									</tr>
+									<tr>
+										<td><img class="party" src="images/p11.png"></td>
+										<td>XX 席次 / XX% </td>
+									</tr>
+									<tr>
+										<td><img class="party" src="images/p05.png"></td>
+										<td>XX 席次 / XX% </td>
+									</tr>
+								</table>
+								<!--table_4 結束-->
+
+								<!--table_4 開始-->
+								<table class="table_4">
+									<tr>
+										<td><a href="alderman.htm#a1">高雄市</a></td>
+										<td><a href="alderman.htm#a1">議員當選席次 / 佔比</a></td>
+									</tr>
+									<tr>
+										<td><img class="party" src="images/p01.png"></td>
+										<td>XX 席次 / XX% </td>
+									</tr>
+									<tr>
+										<td><img class="party" src="images/p02.png"></td>
+										<td>XX 席次 / XX% </td>
+									</tr>
+									<tr>
+										<td><img class="party" src="images/p11.png"></td>
+										<td>XX 席次 / XX% </td>
+									</tr>
+									<tr>
+										<td><img class="party" src="images/p05.png"></td>
+										<td>XX 席次 / XX% </td>
+									</tr>
+								</table>
+								<!--table_4 結束-->
+
+								<!--table_4 開始-->
+								<table class="table_4">
+									<tr>
+										<td><a href="alderman.htm#a1">基隆市</a></td>
+										<td><a href="alderman.htm#a1">議員當選席次 / 佔比</a></td>
+									</tr>
+									<tr>
+										<td><img class="party" src="images/p01.png"></td>
+										<td>XX 席次 / XX% </td>
+									</tr>
+									<tr>
+										<td><img class="party" src="images/p02.png"></td>
+										<td>XX 席次 / XX% </td>
+									</tr>
+									<tr>
+										<td><img class="party" src="images/p11.png"></td>
+										<td>XX 席次 / XX% </td>
+									</tr>
+									<tr>
+										<td><img class="party" src="images/p05.png"></td>
+										<td>XX 席次 / XX% </td>
+									</tr>
+								</table>
+								<!--table_4 結束-->
+
+								<!--table_4 開始-->
+								<table class="table_4">
+									<tr>
+										<td><a href="alderman.htm#a1">新竹市</a></td>
+										<td><a href="alderman.htm#a1">議員當選席次 / 佔比</a></td>
+									</tr>
+									<tr>
+										<td><img class="party" src="images/p01.png"></td>
+										<td>XX 席次 / XX% </td>
+									</tr>
+									<tr>
+										<td><img class="party" src="images/p02.png"></td>
+										<td>XX 席次 / XX% </td>
+									</tr>
+									<tr>
+										<td><img class="party" src="images/p11.png"></td>
+										<td>XX 席次 / XX% </td>
+									</tr>
+									<tr>
+										<td><img class="party" src="images/p05.png"></td>
+										<td>XX 席次 / XX% </td>
+									</tr>
+								</table>
+								<!--table_4 結束-->
+
+								<!--table_4 開始-->
+								<table class="table_4">
+									<tr>
+										<td><a href="alderman.htm#a1">新竹縣</a></td>
+										<td><a href="alderman.htm#a1">議員當選席次 / 佔比</a></td>
+									</tr>
+									<tr>
+										<td><img class="party" src="images/p01.png"></td>
+										<td>XX 席次 / XX% </td>
+									</tr>
+									<tr>
+										<td><img class="party" src="images/p02.png"></td>
+										<td>XX 席次 / XX% </td>
+									</tr>
+									<tr>
+										<td><img class="party" src="images/p11.png"></td>
+										<td>XX 席次 / XX% </td>
+									</tr>
+									<tr>
+										<td><img class="party" src="images/p05.png"></td>
+										<td>XX 席次 / XX% </td>
+									</tr>
+								</table>
+								<!--table_4 結束-->
+
+								<!--table_4 開始-->
+								<table class="table_4">
+									<tr>
+										<td><a href="alderman.htm#a1">苗栗縣</a></td>
+										<td><a href="alderman.htm#a1">議員當選席次 / 佔比</a></td>
+									</tr>
+									<tr>
+										<td><img class="party" src="images/p01.png"></td>
+										<td>XX 席次 / XX% </td>
+									</tr>
+									<tr>
+										<td><img class="party" src="images/p02.png"></td>
+										<td>XX 席次 / XX% </td>
+									</tr>
+									<tr>
+										<td><img class="party" src="images/p11.png"></td>
+										<td>XX 席次 / XX% </td>
+									</tr>
+									<tr>
+										<td><img class="party" src="images/p05.png"></td>
+										<td>XX 席次 / XX% </td>
+									</tr>
+								</table>
+								<!--table_4 結束-->
+
+								<!--table_4 開始-->
+								<table class="table_4">
+									<tr>
+										<td><a href="alderman.htm#a1">彰化縣</a></td>
+										<td><a href="alderman.htm#a1">議員當選席次 / 佔比</a></td>
+									</tr>
+									<tr>
+										<td><img class="party" src="images/p01.png"></td>
+										<td>XX 席次 / XX% </td>
+									</tr>
+									<tr>
+										<td><img class="party" src="images/p02.png"></td>
+										<td>XX 席次 / XX% </td>
+									</tr>
+									<tr>
+										<td><img class="party" src="images/p11.png"></td>
+										<td>XX 席次 / XX% </td>
+									</tr>
+									<tr>
+										<td><img class="party" src="images/p05.png"></td>
+										<td>XX 席次 / XX% </td>
+									</tr>
+								</table>
+								<!--table_4 結束-->
+
+								<!--table_4 開始-->
+								<table class="table_4">
+									<tr>
+										<td><a href="alderman.htm#a1">南投縣</a></td>
+										<td><a href="alderman.htm#a1">議員當選席次 / 佔比</a></td>
+									</tr>
+									<tr>
+										<td><img class="party" src="images/p01.png"></td>
+										<td>XX 席次 / XX% </td>
+									</tr>
+									<tr>
+										<td><img class="party" src="images/p02.png"></td>
+										<td>XX 席次 / XX% </td>
+									</tr>
+									<tr>
+										<td><img class="party" src="images/p11.png"></td>
+										<td>XX 席次 / XX% </td>
+									</tr>
+									<tr>
+										<td><img class="party" src="images/p05.png"></td>
+										<td>XX 席次 / XX% </td>
+									</tr>
+								</table>
+								<!--table_4 結束-->
+
+								<!--table_4 開始-->
+								<table class="table_4">
+									<tr>
+										<td><a href="alderman.htm#a1">嘉義市</a></td>
+										<td><a href="alderman.htm#a1">議員當選席次 / 佔比</a></td>
+									</tr>
+									<tr>
+										<td><img class="party" src="images/p01.png"></td>
+										<td>XX 席次 / XX% </td>
+									</tr>
+									<tr>
+										<td><img class="party" src="images/p02.png"></td>
+										<td>XX 席次 / XX% </td>
+									</tr>
+									<tr>
+										<td><img class="party" src="images/p11.png"></td>
+										<td>XX 席次 / XX% </td>
+									</tr>
+									<tr>
+										<td><img class="party" src="images/p05.png"></td>
+										<td>XX 席次 / XX% </td>
+									</tr>
+								</table>
+								<!--table_4 結束-->
+
+								<!--table_4 開始-->
+								<table class="table_4">
+									<tr>
+										<td><a href="alderman.htm#a1">嘉義縣</a></td>
+										<td><a href="alderman.htm#a1">議員當選席次 / 佔比</a></td>
+									</tr>
+									<tr>
+										<td><img class="party" src="images/p01.png"></td>
+										<td>XX 席次 / XX% </td>
+									</tr>
+									<tr>
+										<td><img class="party" src="images/p02.png"></td>
+										<td>XX 席次 / XX% </td>
+									</tr>
+									<tr>
+										<td><img class="party" src="images/p11.png"></td>
+										<td>XX 席次 / XX% </td>
+									</tr>
+									<tr>
+										<td><img class="party" src="images/p05.png"></td>
+										<td>XX 席次 / XX% </td>
+									</tr>
+								</table>
+								<!--table_4 結束-->
+
+								<!--table_4 開始-->
+								<table class="table_4">
+									<tr>
+										<td><a href="alderman.htm#a1">雲林縣</a></td>
+										<td><a href="alderman.htm#a1">議員當選席次 / 佔比</a></td>
+									</tr>
+									<tr>
+										<td><img class="party" src="images/p01.png"></td>
+										<td>XX 席次 / XX% </td>
+									</tr>
+									<tr>
+										<td><img class="party" src="images/p02.png"></td>
+										<td>XX 席次 / XX% </td>
+									</tr>
+									<tr>
+										<td><img class="party" src="images/p11.png"></td>
+										<td>XX 席次 / XX% </td>
+									</tr>
+									<tr>
+										<td><img class="party" src="images/p05.png"></td>
+										<td>XX 席次 / XX% </td>
+									</tr>
+								</table>
+								<!--table_4 結束-->
+
+								<!--table_4 開始-->
+								<table class="table_4">
+									<tr>
+										<td><a href="alderman.htm#a1">屏東縣</a></td>
+										<td><a href="alderman.htm#a1">議員當選席次 / 佔比</a></td>
+									</tr>
+									<tr>
+										<td><img class="party" src="images/p01.png"></td>
+										<td>XX 席次 / XX% </td>
+									</tr>
+									<tr>
+										<td><img class="party" src="images/p02.png"></td>
+										<td>XX 席次 / XX% </td>
+									</tr>
+									<tr>
+										<td><img class="party" src="images/p11.png"></td>
+										<td>XX 席次 / XX% </td>
+									</tr>
+									<tr>
+										<td><img class="party" src="images/p05.png"></td>
+										<td>XX 席次 / XX% </td>
+									</tr>
+								</table>
+								<!--table_4 結束-->
+
+								<!--table_4 開始-->
+								<table class="table_4">
+									<tr>
+										<td><a href="alderman.htm#a1">宜蘭縣</a></td>
+										<td><a href="alderman.htm#a1">議員當選席次 / 佔比</a></td>
+									</tr>
+									<tr>
+										<td><img class="party" src="images/p01.png"></td>
+										<td>XX 席次 / XX% </td>
+									</tr>
+									<tr>
+										<td><img class="party" src="images/p02.png"></td>
+										<td>XX 席次 / XX% </td>
+									</tr>
+									<tr>
+										<td><img class="party" src="images/p11.png"></td>
+										<td>XX 席次 / XX% </td>
+									</tr>
+									<tr>
+										<td><img class="party" src="images/p05.png"></td>
+										<td>XX 席次 / XX% </td>
+									</tr>
+								</table>
+								<!--table_4 結束-->
+
+								<!--table_4 開始-->
+								<table class="table_4">
+									<tr>
+										<td><a href="alderman.htm#a1">花蓮縣</a></td>
+										<td><a href="alderman.htm#a1">議員當選席次 / 佔比</a></td>
+									</tr>
+									<tr>
+										<td><img class="party" src="images/p01.png"></td>
+										<td>XX 席次 / XX% </td>
+									</tr>
+									<tr>
+										<td><img class="party" src="images/p02.png"></td>
+										<td>XX 席次 / XX% </td>
+									</tr>
+									<tr>
+										<td><img class="party" src="images/p11.png"></td>
+										<td>XX 席次 / XX% </td>
+									</tr>
+									<tr>
+										<td><img class="party" src="images/p05.png"></td>
+										<td>XX 席次 / XX% </td>
+									</tr>
+								</table>
+								<!--table_4 結束-->
+
+								<!--table_4 開始-->
+								<table class="table_4">
+									<tr>
+										<td><a href="alderman.htm#a1">台東縣</a></td>
+										<td><a href="alderman.htm#a1">議員當選席次 / 佔比</a></td>
+									</tr>
+									<tr>
+										<td><img class="party" src="images/p01.png"></td>
+										<td>XX 席次 / XX% </td>
+									</tr>
+									<tr>
+										<td><img class="party" src="images/p02.png"></td>
+										<td>XX 席次 / XX% </td>
+									</tr>
+									<tr>
+										<td><img class="party" src="images/p11.png"></td>
+										<td>XX 席次 / XX% </td>
+									</tr>
+									<tr>
+										<td><img class="party" src="images/p05.png"></td>
+										<td>XX 席次 / XX% </td>
+									</tr>
+								</table>
+								<!--table_4 結束-->
+
+								<!--table_4 開始-->
+								<table class="table_4">
+									<tr>
+										<td><a href="alderman.htm#a1">澎湖縣</a></td>
+										<td><a href="alderman.htm#a1">議員當選席次 / 佔比</a></td>
+									</tr>
+									<tr>
+										<td><img class="party" src="images/p01.png"></td>
+										<td>XX 席次 / XX% </td>
+									</tr>
+									<tr>
+										<td><img class="party" src="images/p02.png"></td>
+										<td>XX 席次 / XX% </td>
+									</tr>
+									<tr>
+										<td><img class="party" src="images/p11.png"></td>
+										<td>XX 席次 / XX% </td>
+									</tr>
+									<tr>
+										<td><img class="party" src="images/p05.png"></td>
+										<td>XX 席次 / XX% </td>
+									</tr>
+								</table>
+								<!--table_4 結束-->
+
+								<!--table_4 開始-->
+								<table class="table_4">
+									<tr>
+										<td><a href="alderman.htm#a1">金門縣</a></td>
+										<td><a href="alderman.htm#a1">議員當選席次 / 佔比</a></td>
+									</tr>
+									<tr>
+										<td><img class="party" src="images/p01.png"></td>
+										<td>XX 席次 / XX% </td>
+									</tr>
+									<tr>
+										<td><img class="party" src="images/p02.png"></td>
+										<td>XX 席次 / XX% </td>
+									</tr>
+									<tr>
+										<td><img class="party" src="images/p11.png"></td>
+										<td>XX 席次 / XX% </td>
+									</tr>
+									<tr>
+										<td><img class="party" src="images/p05.png"></td>
+										<td>XX 席次 / XX% </td>
+									</tr>
+								</table>
+								<!--table_4 結束-->
+
+								<!--table_4 開始-->
+								<table class="table_4">
+									<tr>
+										<td><a href="alderman.htm#a1">連江縣</a></td>
+										<td><a href="alderman.htm#a1">議員當選席次 / 佔比</a></td>
+									</tr>
+									<tr>
+										<td><img class="party" src="images/p01.png"></td>
+										<td>XX 席次 / XX% </td>
+									</tr>
+									<tr>
+										<td><img class="party" src="images/p02.png"></td>
+										<td>XX 席次 / XX% </td>
+									</tr>
+									<tr>
+										<td><img class="party" src="images/p11.png"></td>
+										<td>XX 席次 / XX% </td>
+									</tr>
+									<tr>
+										<td><img class="party" src="images/p05.png"></td>
+										<td>XX 席次 / XX% </td>
+									</tr>
+								</table>
+								<!--table_4 結束-->
+
+							</div>
+							<!--part_list_1 結束-->
+
+
+
+						</div>
+						<!--block_content 結束-->
+					</div>
+					<!--縣市議員當選席次總覽 block_1 結束-->
+
+
+
+					<!--即時新聞 block_1 開始-->
+					<div class="block block_1" id="a1">
+						<!--block_title 開始-->
+						<div class="block_title">
+							<h3>即時新聞</h3>
+						</div>
+						<!--block_title 結束-->
+						<!--block_content 開始-->
+						<div class="block_content">
+
+							<!--part_pic_txt_2 圖文列表 開始-->
+							<div class="part_pic_txt_2 clearfix">
+								<!--組-->
+								<div class="piece clearfix">
+									<a class="pic" href="#" target="_blank"><img src="images/b1.jpg" /></a>
+									<h3><a href="#" target="_blank">我是標題五六七八九十我是標題五六七八貳十我是標題五</a></h3>
+									<p>我是摘要五六七八九十我是摘要五六七八貳十我是摘要五六七八參十我是摘要五六七八肆十我是摘要五六七八伍十我是摘要五六七八陸十我是摘要五六七八柒十我是摘要五六七八捌十我是摘要五六七八玖十我是摘要五六七八拾十我是摘要五六七八拾壹我是摘要五六七八拾貳我是摘要五六七八拾參我是摘要五六七八拾肆</p>
+								</div>
+								<!--組-->
+								<!--組-->
+								<div class="piece clearfix">
+									<a class="pic" href="#" target="_blank"><img src="images/b1.jpg" /></a>
+									<h3><a href="#" target="_blank">我是標題五六七八九十我是標題五六七八貳十我是標題五</a></h3>
+								</div>
+								<!--組-->
+								<!--組-->
+								<div class="piece clearfix">
+									<a class="pic" href="#" target="_blank"><img src="images/b1.jpg" /></a>
+									<h3><a href="#" target="_blank">我是標題五六七八九十我是標題五六七八貳十我是標題五</a></h3>
+								</div>
+								<!--組-->
+								<!--組-->
+								<div class="piece clearfix">
+									<a class="pic" href="#" target="_blank"><img src="images/b1.jpg" /></a>
+									<h3><a href="#" target="_blank">我是標題五六七八九十我是標題五六七八貳十我是標題五</a></h3>
+								</div>
+								<!--組-->
+								<!--組-->
+								<div class="piece clearfix">
+									<a class="pic" href="#" target="_blank"><img src="images/b1.jpg" /></a>
+									<h3><a href="#" target="_blank">我是標題五六七八九十我是標題五六七八貳十我是標題五</a></h3>
+								</div>
+								<!--組-->
+							</div>
+							<!--part_pic_txt_2 圖文列表 結束-->
+						</div>
+						<!--block_content 結束-->
+					</div>
+					<!--即時新聞 block_1 結束-->
+
+					<!--part_btn_1 開始-->
+					<div class="part_btn_1"> <a href="newslist.phtml?id=122" target="_blank">看更多選舉新聞</a> </div>
+					<!--part_btn_1 結束-->
+
+
+
+					<!--全台縣市長執政版圖變化 block_1 開始-->
+					<div class="block block_1">
+						<!--block_title 開始-->
+						<div class="block_title">
+							<h3>全台縣市長執政版圖變化</h3>
+						</div>
+						<!--block_title 結束-->
+						<!--block_content 開始-->
+						<div class="block_content clearfix">
+
+							<!--part_thumb_2 開始-->
+							<div class="part_thumb_2">
+								<div class="piece">
+									<h4>2014各縣市長選舉結果</h4>
+									<!--執政黨分部圖 開始-->
+									<div class="election_map"></div>
+									<!--執政黨分部圖 結束-->
+								</div>
+
+								<div class="piece">
+									<h4>2018各縣市長選舉結果</h4>
+									<!--執政黨分部圖 開始-->
+									<div class="election_map_2"></div>
+									<!--執政黨分部圖 結束-->
+								</div>
+							</div>
+							<!--part_thumb_2 開始-->
+
+
+							<!--part_thumb_3 開始-->
+							<div class="part_thumb_3">
+								<h4><a class="topic" id="t1" href="javascript:;">2014各縣市長選舉結果</a></h2>
+									<h4><a class="topic" id="t2" href="javascript:;">2018各縣市長選舉結果</a></h2>
+
+										<!--NEWS tab1 開始-->
+										<div id="content1" class="inner">
+											<!--執政黨分部圖 開始-->
+											<div class="election_map"></div>
+											<!--執政黨分部圖 結束-->
+										</div>
+										<!--NEWS tab1 結束-->
+
+										<!--NEWS tab2 開始-->
+										<div id="content2" class="inner">
+											<!--執政黨分部圖 開始-->
+											<div class="election_map_2"></div>
+											<!--執政黨分部圖 結束-->
+										</div>
+										<!--NEWS tab2 結束-->
+
+							</div>
+							<!--part_thumb_3 結束-->
+
+						</div>
+						<!--block_content 結束-->
+
+					</div>
+					<!--全台縣市長執政版圖變化 block_1 結束-->
+
+
+
+				</div>
+			</div>
+			<!--r1 橫欄 結束-->
+		</div>
+		<!--container 結束-->
+
+		<!--footer 開始-->
+		<div class="footer">
+			<!--footer_menu 開始-->
+			<div class="menu_1">
+				<a href="https://www.ettoday.net/" target="_blank">ETtoday新聞雲</a>|
+				<a href="index.phtml">2018大選首頁</a>|
+				<a href="https://www.ettoday.net/member/clause_duty.php" target="_blank">免責聲明</a>
+			</div>
+			<!--footer_menu 結束-->
+			<address>
+				東森新聞雲股份有限公司 版權所有 <br>
+				非經授權，不許轉載本網站內容 <br>
+				&copy; ETtoday.net All Rights Reserved.
+			</address>
+		</div>
+		<!--footer 結束-->
+
+		<!--滾回上面 gototop 開始-->
+		<div class="gototop">回到頂部</div>
+		<!--滾回上面 gototop 開始-->
+	</div>
+	<!--wrapper 結束-->
+</body>
+
+</html>

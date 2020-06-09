@@ -1,0 +1,434 @@
+<!doctype html>
+<html><!-- InstanceBegin template="/Templates/module.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, minimal-ui" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>新聞內頁</title>
+<!-- InstanceEndEditable -->
+<link rel="stylesheet" href="css/style.css" type="text/css" >
+<link rel="stylesheet" href="css/font-awesome.css" type="text/css" >
+<!--<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>-->
+<script src="js/jquery-1.9.1.min.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/jquery.bxslider/jquery.bxslider.js"></script>
+<link href="js/jquery.bxslider/jquery.bxslider.css" rel="stylesheet" type="text/css" />
+<script src="js/common.js"></script>
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+</head>
+
+<body>
+<!--FB plugins 共用元素 開始 -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v2.7&appId=146858218737386";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<!--FB plugins 共用元素 結束 -->
+
+<div class="wrapper_box">
+        
+    <!--wrapper 開始 -->
+    <div class="wrapper">
+        <!--header 開始-->
+        <div class="header clearfix">
+            <!--inner 開始-->
+            <div class="inner">
+
+                <h2><a class="main_logo" href="index.htm" title="回首頁">房產雲</a></h2>
+                <!--選單 開始
+                <div class="nav_2">
+                    <a href="http://fashion.ettoday.net/video/"><em class="icon_1"></em>影音</a>
+                    <a href="https://www.facebook.com/ETFashion.tw/" target="_blank"><em class="icon_2"></em></a>
+                    <a href="https://www.instagram.com/fashion.ettoday/" target="_blank"><em class="icon_3"></em></a>
+                </div>
+                <!--選單 結束-->
+                
+                <!-- search 搜尋 開始 -->
+                <div class="search">
+
+                    <!-- 搜尋按鈕 開始 -->
+                    <div class="icon_open"><!----></div>
+                    <div class="icon_close"><!----></div>
+                    <!-- 搜尋按鈕 結束 -->
+    
+                    <!-- google搜尋 開始 -->
+                    <div class="gsbox">
+                        <form id="cse-search-box" method="get" action="search.htm">
+                          <input class="keyword" type="text" name="keywords" size="26"/>
+                          <input class="send" type="image" name="sa" src="images/search.png"/>
+                        </form>
+                    </div>
+                <!-- google搜尋 結束 -->
+
+            </div>
+            <!-- search 搜尋 結束 -->
+
+            </div>
+            <!--inner 結束-->
+        </div>
+        <!--header 結束-->
+    
+        <!--menu 側欄選單 開始-->
+        <div class="side_menu">
+            <!--btn_switch 選單開關 開始-->
+            <input id="btn_switch" type="checkbox"></input>
+            <label for="btn_switch"></label>
+            <!--btn_switch 選單開關 結束-->
+            
+            <!--nav 選單內容 開始-->
+            <div class="nav">
+                <!--ul 開始-->
+                <ul class="inner">
+                     <li><a href="focus.htm">房產焦點</a></li>
+					 <li><a href="newslist.htm">房產新聞</a></li>
+					 <li><a href="newslist.htm">建案新聞</a></li>
+					 <li><a href="focus.htm">生活美學</a></li>
+					 <li><a href="build_info.htm">建案資訊</a></li>
+				     <li><a href="videolist.htm">影音專區</a></li>
+					<a></a>
+                </ul>
+                <!--ul 結束-->
+                <!--footer 版權宣告 開始-->
+                <div class="footer">
+                  <a href="javascript:;" onclick="location.replace('#');">電腦版</a>
+                      <span>|</span>
+                      <a href="mailto:service@ettoday.net">聯絡我們</a>
+                      <p>東森新聞雲股份有限公司 版權所有<br>
+                      非經授權，不許轉載本網站內容<br>
+                      © ETtoday.net All Rights Reserved.</p>
+              </div>
+               <!--footer 版權宣告 結束-->
+               
+            </div>
+            <!--nav 選單內容 結束-->        
+        </div>
+        <!--side_menu 側欄選單 結束-->
+    
+        <!--house_menu 開始-->
+        <div class="house_menu">
+            <ul class="inner">
+                <li><a href="focus.htm">房產焦點</a></li>
+				<li><a href="newslist.htm">房產新聞</a></li>
+				<li><a href="newslist.htm">建案新聞</a></li>
+				<li><a href="focus.htm">生活美學</a></li>
+				<li><a href="build_info.htm">建案資訊</a></li>
+			  <li><a href="videolist.htm">影音專區</a></li>
+            </ul>
+        </div>
+        <!--house_menu 結束-->
+        
+        <!--container 開始-->
+        <div class="container">
+           <!-- InstanceBeginEditable name="EditRegion1" -->
+
+<!-- InstanceEndEditable -->
+            
+            <!--r1 開始-->
+			<div class="r1"><!-- InstanceBeginEditable name="EditRegion4" -->
+			
+			
+			
+			<!-- InstanceEndEditable -->
+			
+				<!--c1 開始-->
+				<div class="c1"><!-- InstanceBeginEditable name="EditRegion5" -->
+				
+				 <!--main 開始-->
+              <div class="main">
+              
+                  <!--新聞模組 開始-->
+                  <div class="subjcet_news">
+                      <h2 class="title">我是標題五六七八九十我是標題五六七八貳十我是標題五</h2>
+                        
+                      <p class="feel">點評 : 我是點評五六七八九十我是點評五六七八貳十我是點評五</p></br>
+                        
+                      <span class="date">2016年10月31日 12:24</span>
+                        
+                      <!--font_size_switch 改變文字大小 開始-->
+                      <div class="font_size_switch clearfix"> 
+                          <a href="#" class="size_s current">小</a> 
+                          <a href="#" class="size_m">中</a> 
+                          <a href="#" class="size_l">大</a> 
+                      </div>
+                      <!--font_size_switch 改變文字大小 結束-->
+                      
+                      
+                      <!--sharebox_1 分享組件 開始-->
+                      <div class="sharebox_1 clearfix"> 
+                          
+                          <!--menu_1 開始-->
+                          <div class="menu_1 clearfix">
+                              <a class="fb" href="javascript:;" onClick="window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent('★★★網址★★★'),'facebook-share-dialog','width=626,height=436');return false;"></a>
+                              <a class="line" href="http://line.naver.jp/R/msg/text/?★★★網頁標題★★★%0D%0A★★網址★★★"></a>
+                              <a class="gplus" href="javascript:;" onClick="window.open('https://plus.google.com/share?url='+encodeURIComponent('★★★網址★★★'),'g+','width=626,height=436')"></a>
+                               <a class="weibo" href="javascript:void((function(s,d,e,r,l,p,t,z,c){var%20f='http://v.t.sina.com.cn/share/share.php?appkey=1263254066',u=z||d.location,p=['&url=',e(u),'&title=',e(t||d.title),'&source=',e(r),'&sourceUrl=',e(l),'&content=',c||'gb2312','&pic=',e(p||'')].join('');function%20a(){if(!window.open([f,p].join(''),'mb',['toolbar=0,status=0,resizable=1,width=440,height=430,left=',(s.width-440)/2,',top=',(s.height-430)/2].join('')))u.href=[f,p].join('');};if(/Firefox/.test(navigator.userAgent))setTimeout(a,0);else%20a();})(screen,document,encodeURIComponent,'','','★★★推圖連結★★★','★★★網頁標題★★★','★★★網址★★★','utf-8'));"></a>    
+                          </div>
+                          <!--menu_1 結束-->
+                          
+                          <!--限制級 開始-->
+							<div class="adult">
+							</div>
+							<script src="http://static.ettoday.net/style/adult/adult-alert.js"></script>
+							<!--限制級 結束-->
+                          
+                      </div>
+                      <!-- sharebox_1 分享組件 結束-->
+                        
+                          
+                     
+              
+                          
+                      <!--本文 開始-->
+                      <div class="story">
+                           <p><img src="images/d1.jpg" width="600" height="450" alt="" /><br />
+							<strong>▲台北市今年新成屋、預售屋建案量僅有123個，比起2003年SARS時期還有274個，足足腰斬了一半。（圖／記者葉佳華攝）</strong><br />
+							<br />
+							記者葉佳華／台北報導</p>
+							<p>受到房市買氣低迷，以及囤房重稅的雙重打擊之下，建商縮手推案，根據《住展》雜誌估算今（2016）年約僅有135個新建案量，相較於2003年SARS期間274個建案數量，還不及當時的一半，加上平均每個建案可售戶數僅約26戶，供給量可說是「低得可憐」。</p>
+							<p>觀察近年建商的推案狀況，台北市推案量高峰落在2013年，當時推案量逾2,700億元，而2014年推案量仍還有2,640億元，但到了2015、2016年則年減約千億元，分別為1,628億元及1,684億元。</p>
+							<p>《住展》雜誌企研室經理何世昌分析，台北市「空手看戲」的建商越來越多，除了跟房市景氣衰退有關之外，可能與北市府對新成屋建案課徵囤房稅，以及房屋稅大漲有密切關係，何世昌說，「照這個衰退趨勢延續下去，未來建案數跌剩下二位數並不是不可能的事。」</p>
+							<p>若觀察台北市12個行政區推案概況，其中，推案數量最少的是松山區，今（2016）年新建案僅有延壽國宅都更案「中工常翠」，而若「潤泰敦峰」沒有在年底前公開銷售的話，「中工常翠」將是松山區的唯一新建案。另外，大同、南港今年推案數也極少，都有只3個建案，至年底前已無新建案。<br />
+							
+							
+							
+                       </div>
+                      <!--本文 結束--> 
+                      <!--大影音 開始-->
+					  <div class="video">
+					    <iframe src="https://www.youtube.com/embed/HGeFX_zhG1g" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+					  </div>
+					  <!--大影音 結束-->
+                     
+                      
+                    <!--關鍵字  橫列關鍵字選單 開始-->
+                    <div class="keyword">關鍵字：
+                         <span><a href="news_tag.htm" target="_blank">新案</a></span>
+                         <span><a href="news_tag.htm" target="_blank">建案</a></span>
+                         <span><a href="news_tag.htm" target="_blank">建商</a></span>
+                         <span><a href="news_tag.htm" target="_blank">推案</a></span>
+                         <span><a href="news_tag.htm" target="_blank">房市</a></span>
+                         <span><a href="news_tag.htm" target="_blank">房產新聞</a></span>
+                    </div>
+                    <!--關鍵字  橫列關鍵字選單 結束-->
+                    
+              </div>  
+               <!--新聞模組 開始- 結束-->   
+          		</div>  
+               <!--main 結束-->  
+                            
+                             
+                   
+                    <!--fb讚粉絲 開始-->
+                    <div class="fb_like_fans xfb">
+                        <div class="fb-page" data-href="https://www.facebook.com/ETtoday" data-width="250" data-small-header="true" data-adapt-container-width="false" data-hide-cover="true" data-show-facepile="false" data-show-posts="false"></div>
+                   </div>
+                   <!--fb讚粉絲 結束--> 
+          
+                  
+                   <!--part_social_1 社群操作 開始-->
+                   <div class="part_social_1 clearfix"> 
+                      <a class="fb" href="https://www.facebook.com/ETtoday" target="_blank"></a>
+                      <a class="line" href="http://line.naver.jp/ti/p/%23today" target="_blank"></a>
+                  	  <a class="youtube" href="https://www.youtube.com/user/ettoday" target="_blank"></a>
+                      <a class="message scrollgo" href="#fb_message">留言</a>
+                    </div>
+                    <!--part_social_1 社群操作 結束--> 
+          
+                  
+                  <!--subject_block 開始-->
+                <div class="subject_block clearfix">
+              		<div class="block_title clearfix">
+                	<h2>推薦閱讀</h2>
+                        
+                        <!--<span class="more">看更多</span>-->
+                   
+                  	</div>
+                    
+                    
+                      <!-- 縮圖列表 開始 -->
+                    <div class="part_pictxt_2">
+                        <!-- 組 開始 -->
+                        <div class="box clearfix">
+							<div class="pic"><a href="news.htm"><img src="images/b2.jpg" alt="" /></a></div>
+            				<div class="info">
+								<h3 class="title"><a href="news.htm">我是標題五六七八九十我是標題五六七八貳十我是標題五</a></h3>
+                				<p class="date">2016-09-21 11:19</p>
+							</div>
+						</div>
+                        <!-- 組 結束-->
+                        
+                        <!-- 組 開始 -->
+                        <div class="box clearfix">
+            				<div class="pic"><a href="news.htm"><img src="images/b2.jpg" alt="" /></a></div>
+            				<div class="info">
+								<h3 class="title"><a href="news.htm">我是標題五六七八九十我是標題五六七八貳十我是標題五</a></h3>
+                				<p class="date">2016-09-21 11:19</p>
+							</div>
+						</div>
+                        <!-- 組 結束-->
+						
+						<!-- 組 開始 -->
+                        <div class="box clearfix">
+            				<div class="pic"><a href="news.htm"><img src="images/b3.jpg" alt="" /></a></div>
+            				<div class="info">
+								<h3 class="title"><a href="news.htm">我是標題五六七八九十我是標題五六七八貳十我是標題五</a></h3>
+                				<p class="date">2016-09-21 11:19</p>
+							</div>
+						</div>
+                        <!-- 組 結束-->
+                        
+                        <!-- 組 開始 -->
+                        <div class="box clearfix">
+							<div class="pic"><a href="news.htm"><img src="images/b2.jpg" alt="" /></a></div>
+            				<div class="info">
+								<h3 class="title"><a href="news.htm">我是標題五六七八九十我是標題五六七八貳十我是標題五</a></h3>
+                				<p class="date">2016-09-21 11:19</p>
+							</div>
+						</div>
+                        <!-- 組 結束-->
+                        
+                        <!-- 組 開始 -->
+                        <div class="box clearfix">
+            				<div class="pic"><a href="news.htm"><img src="images/b2.jpg" alt="" /></a></div>
+            				<div class="info">
+								<h3 class="title"><a href="news.htm">我是標題五六七八九十我是標題五六七八貳十我是標題五</a></h3>
+                				<p class="date">2016-09-21 11:19</p>
+							</div>
+						</div>
+                        <!-- 組 結束-->
+						
+						<!-- 組 開始 -->
+                        <div class="box clearfix">
+            				<div class="pic"><a href="news.htm"><img src="images/b3.jpg" alt="" /></a></div>
+            				<div class="info">
+								<h3 class="title"><a href="news.htm">我是標題五六七八九十我是標題五六七八貳十我是標題五</a></h3>
+                				<p class="date">2016-09-21 11:19</p>
+							</div>
+						</div>
+                        <!-- 組 結束-->
+                        
+                        <!-- 組 開始 -->
+                        <div class="box clearfix">
+							<div class="pic"><a href="news.htm"><img src="images/b2.jpg" alt="" /></a></div>
+            				<div class="info">
+								<h3 class="title"><a href="news.htm">我是標題五六七八九十我是標題五六七八貳十我是標題五</a></h3>
+                				<p class="date">2016-09-21 11:19</p>
+							</div>
+						</div>
+                        <!-- 組 結束-->
+                        
+                        <!-- 組 開始 -->
+                        <div class="box clearfix">
+            				<div class="pic"><a href="news.htm"><img src="images/b2.jpg" alt="" /></a></div>
+            				<div class="info">
+								<h3 class="title"><a href="news.htm">我是標題五六七八九十我是標題五六七八貳十我是標題五</a></h3>
+                				<p class="date">2016-09-21 11:19</p>
+							</div>
+						</div>
+                        <!-- 組 結束-->
+						
+						<!-- 組 開始 -->
+                        <div class="box clearfix">
+            				<div class="pic"><a href="news.htm"><img src="images/b3.jpg" alt="" /></a></div>
+            				<div class="info">
+								<h3 class="title"><a href="news.htm">我是標題五六七八九十我是標題五六七八貳十我是標題五</a></h3>
+                				<p class="date">2016-09-21 11:19</p>
+							</div>
+						</div>
+                        <!-- 組 結束-->
+                        
+                        <!-- 組 開始 -->
+                        <div class="box clearfix">
+            				<div class="pic"><a href="news.htm"><img src="images/b3.jpg" alt="" /></a></div>
+            				<div class="info">
+								<h3 class="title"><a href="news.htm">我是標題五六七八九十我是標題五六七八貳十我是標題五</a></h3>
+                				<p class="date">2016-09-21 11:19</p>
+							</div>
+						</div>
+                        <!-- 組 結束-->
+						
+                        
+					</div>
+					<!-- 縮圖列表 結束 -->
+				</div>
+                  <!--subject_block 結束-->
+                  
+                  
+                  <div class="block_1">
+					  <h2 class="title">熱門新聞</h2>
+					  <!--part_1 開始-->
+					  <div class="part_1">
+						<h3><a href="news.htm">我是標題五六七八九十我是標題五</a></h3>
+						<h3><a href="news.htm">我是標題五六七八九十我是標題五</a></h3>
+						<h3><a href="news.htm">我是標題五六七八九十我是標題五</a></h3>
+						<h3><a href="news.htm">我是標題五六七八九十我是標題五</a></h3>
+						<h3><a href="news.htm">我是標題五六七八九十我是標題五</a></h3>
+						<h3><a href="news.htm">我是標題五六七八九十我是標題五</a></h3>
+						<h3><a href="news.htm">我是標題五六七八九十我是標題五</a></h3>
+						<h3><a href="news.htm">我是標題五六七八九十我是標題五</a></h3>
+						<h3><a href="news.htm">我是標題五六七八九十我是標題五</a></h3>
+						<h3><a href="news.htm">我是標題五六七八九十我是標題五</a></h3>
+					  </div>
+					  <!--part_1 結束-->
+				  </div>
+                  
+                  
+                  
+                    <!--留言 開始-->
+                     <div class="fb_com">
+						 <!--page_title_2 頁面標題 開始-->
+						 <h2 class="page_title_2 fb_message" id="fb_message">讀者迴響</h2>
+						 <!--page_title_2 頁面標題 結束-->
+						 <!--FB留言 開始-->
+						 <div class="fb-comments" data-href="http://www.ettoday.net/news/20161028/801453.htm" data-width="100%" data-numposts="5" data-colorscheme="light"></div>
+						 <!--FB留言 結束-->
+           			</div>
+          			<!--留言 結束-->
+                  
+                  
+             
+              
+               
+
+				
+				
+				
+				<!-- InstanceEndEditable -->
+					
+				</div>
+				<!--c1 結束-->
+				
+		  </div>
+          <!--r1 結束-->  
+            
+      </div>
+        <!--container 結束-->
+    </div>
+    <!--wrapper 結束 -->
+   
+</div>
+<!--wrapper_box 結束 -->
+<!--footer_box 開始-->
+<div class="footer_box">
+
+	<!--footer 開始-->
+    <div class="footer">
+    	<!--footer_menu 開始-->
+        <div class="footer_menu"> <a href="#">電腦版</a> |<a href="http://www.ettoday.net/about-ettoday.htm" target="_blank">關於我們</a> |<a href="mailto:editor@ettoday.net">聯絡信箱</a>  </div>
+        <!--footer_menu 結束-->
+        <address>
+        東森新聞雲股份有限公司 版權所有 &copy; <a href="http://www.ettoday.net/" target="_top">ETtoday.net</a> All Rights Reserved.
+        </address>
+    </div>
+    <!--footer 結束-->
+</div>
+<!--footer_box 開始-->
+
+</body>
+<!-- InstanceEnd --></html>
+

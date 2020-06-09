@@ -1,0 +1,870 @@
+<!doctype html>
+<html><!-- InstanceBegin template="/Templates/m.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, minimal-ui" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>主筆列表頁</title>
+<!-- InstanceEndEditable -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+<link rel="stylesheet" href="css/style.css" type="text/css" >
+<script src="js/jquery.1.9.1.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/jquery.bxslider/jquery.bxslider.js"></script>
+<link href="js/jquery.bxslider/jquery.bxslider.css" rel="stylesheet" type="text/css" />
+<script src="js/common.js"></script>
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+</head>
+
+<body id="dalemon">
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v3.0';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>   
+
+
+
+<!--wrapper 開始-->
+<div class="wrapper">
+
+	<!--wrapper_inner 開始-->
+    <div class="wrapper_inner">
+    
+        <!--header 開始-->
+        
+        <!--topbar 開始-->
+        <div class="topbar">
+            <a href="http://www.ettoday.net/" target="_blank">ETtoday新聞雲</a> |
+            <a href="https://www.ettoday.net/events/app/ettoday_app.htm" target="_blank">ETtodayAPP</a> |
+            <a href="https://www.facebook.com/ETtoday88/" target="_blank">雲論粉絲團</a> |
+            <a href=javascript:alert("使用活動公版頁") target="_blank">我要投稿</a> |
+            <a href=javascript:alert("使用活動公版頁") target="_blank">我要伸冤</a> |
+            <a href="#" onclick="javascript:;">手機版</a> 
+            
+            <div class="right">
+				<!-- 社群按鈕 開始 -->
+				<div class="push_box clearfix"> 
+					<a class="fb" href="javascript:;" onClick="window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent('https://www.ettoday.net/feature/todaysforum'),'facebook-share-dialog','width=626,height=436');return false;" title="分享到 Facebook" target="_blank"></a> 
+					<a class="g_plus" href="javascript:;" onClick="window.open('https://plus.google.com/share?url='+encodeURIComponent('https://www.ettoday.net/feature/todaysforum'),'g+','width=626,height=436')" title="分享到 Google+" target="_blank"></a> 
+					<a class="line" href="http://line.naver.jp/R/msg/text/?雲論%0D%0Ahttps://www.ettoday.net/feature/todaysforum" rel="nofollow" target="_blank"></a>
+					<a class="weibo" href="javascript:void((function(s,d,e,r,l,p,t,z,c){var%20f='http://v.t.sina.com.cn/share/share.php?appkey=1263254066',u=z||d.location,p=['&url=',e(u),'&title=',e(t||d.title),'&source=',e(r),'&sourceUrl=',e(l),'&content=',c||'gb2312','&pic=',e(p||'')].join('');function%20a(){if(!window.open([f,p].join(''),'mb',['toolbar=0,status=0,resizable=1,width=440,height=430,left=',(s.width-440)/2,',top=',(s.height-430)/2].join('')))u.href=[f,p].join('');};if(/Firefox/.test(navigator.userAgent))setTimeout(a,0);else%20a();})(screen,document,encodeURIComponent,'','','//static.ettoday.net/images/businessTopic/0/172_og_image.jpg','雲論 | ETtoday新聞雲','https://www.ettoday.net/feature/todaysforum','utf-8'));"></a> 
+				</div>
+				<!-- 社群按鈕 結束 --> 
+				<!-- 搜尋 開始 -->
+				<div class="search_box">
+				  <form name="form_search" id="form_search" action="search.htm" method="get">
+					<input name="keywords" class="txt_area" type="text" placeholder="搜尋">
+					<button class="btn" type="button" onclick="location.href='javascript:document.form_search.submit();'">搜尋</button>
+				  </form>  
+				</div>
+				<!-- 搜尋 結束 -->
+            </div>
+        </div>
+        <!--topbar 結束-->
+        
+    
+        <!--header 開始-->
+        <div class="header clearfix">
+            
+<!--            <div class="main_logo"><a href="index.htm">ETtoday雲論</a></div>-->
+			<!--forum_menu 開始-->
+			<div class="forum_menu">
+				<div class="main_logo"><a href="index.htm">ETtoday雲論</a></div>
+				<ul class="inner">
+					<li><a href="index.htm">焦點評論</a></li>
+					<li><a href="newslist.htm">公民發聲</a></li>
+					<li><a href="newslist.htm">政治外交</a></li>
+					<li><a href="newslist.htm">財經科技</a></li>
+					<li><a href="newslist.htm">司法人權</a></li>
+					<li><a href="newslist.htm">行動法庭</a></li>
+					<li><a href="newslist.htm">教育生活</a></li>
+					<li><a href="newslist.htm">健康美妍</a></li>
+					<li><a href="newslist.htm">星光影評</a></li>
+					<li><a href="newslist.htm">圖文專區</a></li>
+					<li><a href="column-list.htm">雲論菁英</a></li>
+					<li><a href="#">自訂欄位1</a></li>
+					<li><a href="#">自訂欄位2</a></li>
+				</ul>
+			</div>
+			<!--forum_menu 結束-->
+       
+        </div>
+        <!--header 結束-->
+        
+        
+    	
+        
+        
+        <!--container 開始-->
+        <div class="container clearfix">
+           
+           <!--r2 開始-->
+			<div class="r2"><!-- InstanceBeginEditable name="EditRegion4" -->
+			<!-- breadcrumb_box 開始-->
+				  <div class="breadcrumb_box clearfix">
+
+						  <!--麵包屑 開始--> 
+						  <div class="part_breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+								  <!-- 第一層 開始-->
+								  <div itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement">
+										  <a itemscope itemtype="https://schema.org/Thing" itemprop="item" href="https://www.ettoday.net">
+												  <span itemprop="name">ETtoday新聞雲</span>
+										  </a>
+										  <meta itemprop="position" content="1" />
+								  </div>
+								  <!-- 第一層 結束-->
+								  &gt;
+								  <!-- 第二層 開始-->
+								  <div itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement">
+										  <a itemscope itemtype="https://schema.org/Thing" itemprop="item" href="index.htm">
+												  <span itemprop="name">雲論</span>
+										  </a>
+										  <meta itemprop="position" content="2" />
+								  </div>
+								  <!-- 第二層 結束-->
+								  &gt;
+								  <!-- 第三層 結束-->
+								  <div itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement">
+										  <a itemscope itemtype="https://schema.org/Thing" itemprop="item">
+												  <span itemprop="name">雲論菁英</span>
+										  </a>
+										  <meta itemprop="position" content="3" />
+								  </div>
+								  <!-- 第三層 結束-->
+						  </div>
+						  <!--麵包屑 結束-->
+				  </div>
+				  <!-- breadcrumb_box 結束-->
+			
+			
+			
+			<h3 class="titlebox">雲論菁英推薦</h3>
+			
+			<!--gallery_1 開始-->
+			<div class="gallery_1">
+				<!--滾動 開始-->
+			   <div class="run">
+					<!--inner 開始-->
+				   <div class="inner">
+						<!-- 組 開始 -->
+						<!-- part_pictxt_2 開始 -->
+						<div class="part_pictxt_2">
+							<div class="box clearfix">
+
+								<a class="pic-box" href="column-news.htm" target="_blank"><img src="images/pen-b1.jpg"></a>
+
+								<div class="more">
+									<h3 class="title"><a href="column-news.htm">主筆名稱</a></h3>
+<!--									<p><a href="column-news.htm" target="_blank">主筆名稱</a></p>-->
+									<p class="summary">我是介紹五六七八九十我是介紹五六七八貳十我是介紹五六七八參十我是介紹五六七八肆十我是介紹五六七八伍十我是介紹五六七八陸十我是介紹五六七八柒十我是介紹五六七八捌十我是介紹五六七八玖十我是介紹五六七八拾十我是介紹五六七八拾壹我是介紹五六七八拾貳..</p>
+
+									<!--list 開始-->
+									<div class="list">
+										<p><a href="news.htm" target="_blank">我是標題五六七八九十我是標題五六七八貳十我是標題五</a></p>
+										<p><a href="news.htm" target="_blank">我是標題五六七八九十我是標題五六七八貳十我是標題五</a></p>
+										<p><a href="news.htm" target="_blank">我是標題五六七八九十我是標題五六七八貳十我是標題五</a></p>
+									</div>
+									<!--list 結束-->
+								</div>
+										
+							</div>
+						</div>
+						<!-- part_pictxt_2 結束 -->
+						<!-- 組 結束-->
+			        
+				        <!-- 組 開始 -->
+						<!-- part_pictxt_2 開始 -->
+						<div class="part_pictxt_2">
+							<div class="box clearfix">
+
+								<a class="pic-box" href="column-news.htm" target="_blank"><img src="images/pen-b2.jpg"></a>
+
+								<div class="more">
+									<h3 class="title"><a href="column-news.htm">主筆名稱</a></h3>
+<!--									<p><a href="column-news.htm" target="_blank">主筆名稱</a></p>-->
+									<p class="summary">我是介紹五六七八九十我是介紹五六七八貳十我是介紹五六七八參十我是介紹五六七八肆十我是介紹五六七八伍十我是介紹五六七八陸十我是介紹五六七八柒十我是介紹五六七八捌十我是介紹五六七八玖十我是介紹五六七八拾十我是介紹五六七八拾壹我是介紹五六七八拾貳..</p>
+
+									<!--list 開始-->
+									<div class="list">
+										<p><a href="news.htm" target="_blank">我是標題五六七八九十我是標題五六七八貳十我是標題五</a></p>
+										<p><a href="news.htm" target="_blank">我是標題五六七八九十我是標題五六七八貳十我是標題五</a></p>
+										<p><a href="news.htm" target="_blank">我是標題五六七八九十我是標題五六七八貳十我是標題五</a></p>
+									</div>
+									<!--list 結束-->
+								</div>
+										
+							</div>
+						</div>
+						<!-- part_pictxt_2 結束 -->
+						<!-- 組 結束-->
+				                          
+				        <!-- 組 開始 -->
+						<!-- part_pictxt_2 開始 -->
+						<div class="part_pictxt_2">
+							<div class="box clearfix">
+
+								<a class="pic-box" href="column-news.htm" target="_blank"><img src="images/pen-b3.jpg"></a>
+
+								<div class="more">
+									<h3 class="title"><a href="column-news.htm">主筆名稱</a></h3>
+<!--									<p><a href="column-news.htm" target="_blank">主筆名稱</a></p>-->
+									<p class="summary">我是介紹五六七八九十我是介紹五六七八貳十我是介紹五六七八參十我是介紹五六七八肆十我是介紹五六七八伍十我是介紹五六七八陸十我是介紹五六七八柒十我是介紹五六七八捌十我是介紹五六七八玖十我是介紹五六七八拾十我是介紹五六七八拾壹我是介紹五六七八拾貳..</p>
+
+									<!--list 開始-->
+									<div class="list">
+										<p><a href="news.htm" target="_blank">我是標題五六七八九十我是標題五六七八貳十我是標題五</a></p>
+										<p><a href="news.htm" target="_blank">我是標題五六七八九十我是標題五六七八貳十我是標題五</a></p>
+										<p><a href="news.htm" target="_blank">我是標題五六七八九十我是標題五六七八貳十我是標題五</a></p>
+									</div>
+									<!--list 結束-->
+								</div>
+										
+							</div>
+						</div>
+						<!-- part_pictxt_2 結束 -->
+						<!-- 組 結束-->
+			            
+			            <!-- 組 開始 -->
+						<!-- part_pictxt_2 開始 -->
+						<div class="part_pictxt_2">
+							<div class="box clearfix">
+
+								<a class="pic-box" href="column-news.htm" target="_blank"><img src="images/pen-b4.jpg"></a>
+
+								<div class="more">
+									<h3 class="title"><a href="column-news.htm">主筆名稱</a></h3>
+<!--									<p><a href="column-news.htm" target="_blank">主筆名稱</a></p>-->
+									<p class="summary">我是介紹五六七八九十我是介紹五六七八貳十我是介紹五六七八參十我是介紹五六七八肆十我是介紹五六七八伍十我是介紹五六七八陸十我是介紹五六七八柒十我是介紹五六七八捌十我是介紹五六七八玖十我是介紹五六七八拾十我是介紹五六七八拾壹我是介紹五六七八拾貳..</p>
+
+									<!--list 開始-->
+									<div class="list">
+										<p><a href="news.htm" target="_blank">我是標題五六七八九十我是標題五六七八貳十我是標題五</a></p>
+										<p><a href="news.htm" target="_blank">我是標題五六七八九十我是標題五六七八貳十我是標題五</a></p>
+										<p><a href="news.htm" target="_blank">我是標題五六七八九十我是標題五六七八貳十我是標題五</a></p>
+									</div>
+									<!--list 結束-->
+								</div>
+										
+							</div>
+						</div>
+						<!-- part_pictxt_2 結束 -->
+						<!-- 組 結束-->
+			        
+				        <!-- 組 開始 -->
+						<!-- part_pictxt_2 開始 -->
+						<div class="part_pictxt_2">
+							<div class="box clearfix">
+
+								<a class="pic-box" href="column-news.htm" target="_blank"><img src="images/pen-b5.jpg"></a>
+
+								<div class="more">
+									<h3 class="title"><a href="column-news.htm">主筆名稱</a></h3>
+<!--									<p><a href="column-news.htm" target="_blank">主筆名稱</a></p>-->
+									<p class="summary">我是介紹五六七八九十我是介紹五六七八貳十我是介紹五六七八參十我是介紹五六七八肆十我是介紹五六七八伍十我是介紹五六七八陸十我是介紹五六七八柒十我是介紹五六七八捌十我是介紹五六七八玖十我是介紹五六七八拾十我是介紹五六七八拾壹我是介紹五六七八拾貳..</p>
+
+									<!--list 開始-->
+									<div class="list">
+										<p><a href="news.htm" target="_blank">我是標題五六七八九十我是標題五六七八貳十我是標題五</a></p>
+										<p><a href="news.htm" target="_blank">我是標題五六七八九十我是標題五六七八貳十我是標題五</a></p>
+										<p><a href="news.htm" target="_blank">我是標題五六七八九十我是標題五六七八貳十我是標題五</a></p>
+									</div>
+									<!--list 結束-->
+								</div>
+										
+							</div>
+						</div>
+						<!-- part_pictxt_2 結束 -->
+						<!-- 組 結束-->
+				                          
+				        <!-- 組 開始 -->
+						<!-- part_pictxt_2 開始 -->
+						<div class="part_pictxt_2">
+							<div class="box clearfix">
+
+								<a class="pic-box" href="column-news.htm" target="_blank"><img src="images/pen-b6.jpg"></a>
+
+								<div class="more">
+									<h3 class="title"><a href="column-news.htm">主筆名稱</a></h3>
+<!--									<p><a href="column-news.htm" target="_blank">主筆名稱</a></p>-->
+									<p class="summary">我是介紹五六七八九十我是介紹五六七八貳十我是介紹五六七八參十我是介紹五六七八肆十我是介紹五六七八伍十我是介紹五六七八陸十我是介紹五六七八柒十我是介紹五六七八捌十我是介紹五六七八玖十我是介紹五六七八拾十我是介紹五六七八拾壹我是介紹五六七八拾貳..</p>
+
+									<!--list 開始-->
+									<div class="list">
+										<p><a href="news.htm" target="_blank">我是標題五六七八九十我是標題五六七八貳十我是標題五</a></p>
+										<p><a href="news.htm" target="_blank">我是標題五六七八九十我是標題五六七八貳十我是標題五</a></p>
+										<p><a href="news.htm" target="_blank">我是標題五六七八九十我是標題五六七八貳十我是標題五</a></p>
+									</div>
+									<!--list 結束-->
+								</div>
+										
+							</div>
+						</div>
+						<!-- part_pictxt_2 結束 -->
+						<!-- 組 結束--> 
+					   
+					    <!-- 組 開始 -->
+						<!-- part_pictxt_2 開始 -->
+						<div class="part_pictxt_2">
+							<div class="box clearfix">
+
+								<a class="pic-box" href="column-news.htm" target="_blank"><img src="images/pen-b7.jpg"></a>
+
+								<div class="more">
+									<h3 class="title"><a href="column-news.htm">主筆名稱</a></h3>
+<!--									<p><a href="column-news.htm" target="_blank">主筆名稱</a></p>-->
+									<p class="summary">我是介紹五六七八九十我是介紹五六七八貳十我是介紹五六七八參十我是介紹五六七八肆十我是介紹五六七八伍十我是介紹五六七八陸十我是介紹五六七八柒十我是介紹五六七八捌十我是介紹五六七八玖十我是介紹五六七八拾十我是介紹五六七八拾壹我是介紹五六七八拾貳..</p>
+
+									<!--list 開始-->
+									<div class="list">
+										<p><a href="news.htm" target="_blank">我是標題五六七八九十我是標題五六七八貳十我是標題五</a></p>
+										<p><a href="news.htm" target="_blank">我是標題五六七八九十我是標題五六七八貳十我是標題五</a></p>
+										<p><a href="news.htm" target="_blank">我是標題五六七八九十我是標題五六七八貳十我是標題五</a></p>
+									</div>
+									<!--list 結束-->
+								</div>
+										
+							</div>
+						</div>
+						<!-- part_pictxt_2 結束 -->
+						<!-- 組 結束-->
+					   
+					   <!-- 組 開始 -->
+						<!-- part_pictxt_2 開始 -->
+						<div class="part_pictxt_2">
+							<div class="box clearfix">
+
+								<a class="pic-box" href="column-news.htm" target="_blank"><img src="images/pen-b8.jpg"></a>
+
+								<div class="more">
+									<h3 class="title"><a href="column-news.htm">主筆名稱</a></h3>
+<!--									<p><a href="column-news.htm" target="_blank">主筆名稱</a></p>-->
+									<p class="summary">我是介紹五六七八九十我是介紹五六七八貳十我是介紹五六七八參十我是介紹五六七八肆十我是介紹五六七八伍十我是介紹五六七八陸十我是介紹五六七八柒十我是介紹五六七八捌十我是介紹五六七八玖十我是介紹五六七八拾十我是介紹五六七八拾壹我是介紹五六七八拾貳..</p>
+
+									<!--list 開始-->
+									<div class="list">
+										<p><a href="news.htm" target="_blank">我是標題五六七八九十我是標題五六七八貳十我是標題五</a></p>
+										<p><a href="news.htm" target="_blank">我是標題五六七八九十我是標題五六七八貳十我是標題五</a></p>
+										<p><a href="news.htm" target="_blank">我是標題五六七八九十我是標題五六七八貳十我是標題五</a></p>
+									</div>
+									<!--list 結束-->
+								</div>
+										
+							</div>
+						</div>
+						<!-- part_pictxt_2 結束 -->
+						<!-- 組 結束-->
+					   
+					    <!-- 組 開始 -->
+						<!-- part_pictxt_2 開始 -->
+						<div class="part_pictxt_2">
+							<div class="box clearfix">
+
+								<a class="pic-box" href="column-news.htm" target="_blank"><img src="images/pen-b9.jpg"></a>
+
+								<div class="more">
+									<h3 class="title"><a href="column-news.htm">主筆名稱</a></h3>
+<!--									<p><a href="column-news.htm" target="_blank">主筆名稱</a></p>-->
+									<p class="summary">我是介紹五六七八九十我是介紹五六七八貳十我是介紹五六七八參十我是介紹五六七八肆十我是介紹五六七八伍十我是介紹五六七八陸十我是介紹五六七八柒十我是介紹五六七八捌十我是介紹五六七八玖十我是介紹五六七八拾十我是介紹五六七八拾壹我是介紹五六七八拾貳..</p>
+
+									<!--list 開始-->
+									<div class="list">
+										<p><a href="news.htm" target="_blank">我是標題五六七八九十我是標題五六七八貳十我是標題五</a></p>
+										<p><a href="news.htm" target="_blank">我是標題五六七八九十我是標題五六七八貳十我是標題五</a></p>
+										<p><a href="news.htm" target="_blank">我是標題五六七八九十我是標題五六七八貳十我是標題五</a></p>
+									</div>
+									<!--list 結束-->
+								</div>
+										
+							</div>
+						</div>
+						<!-- part_pictxt_2 結束 -->
+						<!-- 組 結束-->
+					   
+					    <!-- 組 開始 -->
+						<!-- part_pictxt_2 開始 -->
+						<div class="part_pictxt_2">
+							<div class="box clearfix">
+
+								<a class="pic-box" href="column-news.htm" target="_blank"><img src="images/pen-b10.jpg"></a>
+
+								<div class="more">
+									<h3 class="title"><a href="column-news.htm">主筆名稱</a></h3>
+<!--									<p><a href="column-news.htm" target="_blank">主筆名稱</a></p>-->
+									<p class="summary">我是介紹五六七八九十我是介紹五六七八貳十我是介紹五六七八參十我是介紹五六七八肆十我是介紹五六七八伍十我是介紹五六七八陸十我是介紹五六七八柒十我是介紹五六七八捌十我是介紹五六七八玖十我是介紹五六七八拾十我是介紹五六七八拾壹我是介紹五六七八拾貳..</p>
+
+									<!--list 開始-->
+									<div class="list">
+										<p><a href="news.htm" target="_blank">我是標題五六七八九十我是標題五六七八貳十我是標題五</a></p>
+										<p><a href="news.htm" target="_blank">我是標題五六七八九十我是標題五六七八貳十我是標題五</a></p>
+										<p><a href="news.htm" target="_blank">我是標題五六七八九十我是標題五六七八貳十我是標題五</a></p>
+									</div>
+									<!--list 結束-->
+								</div>
+										
+							</div>
+						</div>
+						<!-- part_pictxt_2 結束 -->
+						<!-- 組 結束-->
+				                          
+				                                                              
+					                          
+					                            
+						                          
+					</div>
+					<!--inner 結束-->
+			   </div>
+				<!--滾動 結束-->
+			</div>
+			<!--gallery_1 結束--> 
+			
+			
+			<!-- InstanceEndEditable -->
+				
+			</div>
+            <!--r2 結束-->
+            
+          <!--r1 開始-->
+            <div class="r1">
+                <!--c1 開始-->
+                <div class="c1"><!-- InstanceBeginEditable name="EditRegion3" -->
+
+                  <!-- part_pictxt_1 開始 -->
+                  <div class="part_pictxt_1">
+                    
+                    <!-- <span style="background: red; color:yellow;">★以下使用筆名系統★</span> -->
+                     
+                     <h3 class="titlebox">雲論菁英陣容</h3>
+                     
+                      <!-- 組 開始 -->
+                      <div class="box clearfix">
+                         
+						<a class="pic-box" href="column-news.htm" target="_blank"><img src="images/pen-b1.jpg"></a>
+                          
+                          <h3 class="title"><a href="column-news.htm">專欄名稱</a></h3>
+                          <p><a href="column-news.htm" target="_blank">主筆名稱</a></p>
+                          <p class="summary">我是介紹五六七八九十我是介紹五六七八貳十我是介紹五六七八參十我是介紹五六七八肆十我是介紹五六七八伍十我是介紹五六七八陸十我是介紹五六七八柒十我是介紹五六七八捌十我是介紹五六七八玖十我是介紹五六七八拾十我是介紹五六七八拾壹我是介紹五六七八拾貳..</p>
+							<div class="menu clearfix">
+								<a class="fb-like" data-href="#" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></a>
+								<a class="fans" href="#" target="_blank">我的粉絲團</a>
+								<a class="blog" href="#" target="_blank">Blog</a>
+								<a class="icon_instagram" href="#" target="_blank"></a>
+								<a class="btn_more" href="column-news.htm" target="_blank">所有文章</a>
+							</div>
+
+                      </div>
+                      <!-- 組 結束-->
+                      
+                      <!-- 組 開始 -->
+                      <div class="box clearfix">
+                         
+						<a class="pic-box" href="column-news.htm" target="_blank"><img src="images/pen-b2.jpg"></a>
+                          
+                          <h3 class="title"><a href="column-news.htm">專欄名稱</a></h3>
+                          <p><a href="column-news.htm" target="_blank">主筆名稱</a></p>
+                          <p class="summary">我是介紹五六七八九十我是介紹五六七八貳十我是介紹五六七八參十我是介紹五六七八肆十我是介紹五六七八伍十我是介紹五六七八陸十我是介紹五六七八柒十我是介紹五六七八捌十我是介紹五六七八玖十我是介紹五六七八拾十我是介紹五六七八拾壹我是介紹五六七八拾貳..</p>
+							<div class="menu clearfix">
+								<a class="fb-like" data-href="#" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></a>
+								<a class="fans" href="#" target="_blank">我的粉絲團</a>
+								<a class="blog" href="#" target="_blank">Blog</a>
+								<a class="icon_instagram" href="#" target="_blank"></a>
+								<a class="btn_more" href="column-news.htm" target="_blank">所有文章</a>
+							</div>
+
+                      </div>
+                      <!-- 組 結束-->
+                      
+                      <!-- 組 開始 -->
+                      <div class="box clearfix">
+                         
+						<a class="pic-box" href="column-news.htm" target="_blank"><img src="images/pen-b3.jpg"></a>
+                          
+                          <h3 class="title"><a href="column-news.htm">專欄名稱</a></h3>
+                          <p><a href="column-news.htm" target="_blank">主筆名稱</a></p>
+                          <p class="summary">我是介紹五六七八九十我是介紹五六七八貳十我是介紹五六七八參十我是介紹五六七八肆十我是介紹五六七八伍十我是介紹五六七八陸十我是介紹五六七八柒十我是介紹五六七八捌十我是介紹五六七八玖十我是介紹五六七八拾十我是介紹五六七八拾壹我是介紹五六七八拾貳..</p>
+							<div class="menu clearfix">
+								<a class="fb-like" data-href="#" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></a>
+								<a class="fans" href="#" target="_blank">我的粉絲團</a>
+								<a class="blog" href="#" target="_blank">Blog</a>
+								<a class="icon_instagram" href="#" target="_blank"></a>
+								<a class="btn_more" href="column-news.htm" target="_blank">所有文章</a>
+							</div>
+
+                      </div>
+                      <!-- 組 結束-->
+                      
+                      <!-- 組 開始 -->
+                      <div class="box clearfix">
+                         
+						<a class="pic-box" href="column-news.htm" target="_blank"><img src="images/pen-b4.jpg"></a>
+                          
+                          <h3 class="title"><a href="column-news.htm">專欄名稱</a></h3>
+                          <p><a href="column-news.htm" target="_blank">主筆名稱</a></p>
+                          <p class="summary">我是介紹五六七八九十我是介紹五六七八貳十我是介紹五六七八參十我是介紹五六七八肆十我是介紹五六七八伍十我是介紹五六七八陸十我是介紹五六七八柒十我是介紹五六七八捌十我是介紹五六七八玖十我是介紹五六七八拾十我是介紹五六七八拾壹我是介紹五六七八拾貳..</p>
+							<div class="menu clearfix">
+								<a class="fb-like" data-href="#" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></a>
+								<a class="fans" href="#" target="_blank">我的粉絲團</a>
+								<a class="blog" href="#" target="_blank">Blog</a>
+								<a class="icon_instagram" href="#" target="_blank"></a>
+								<a class="btn_more" href="column-news.htm" target="_blank">所有文章</a>
+							</div>
+
+                      </div>
+                      <!-- 組 結束-->
+                      
+                      <!-- 組 開始 -->
+                      <div class="box clearfix">
+                         
+						<a class="pic-box" href="column-news.htm" target="_blank"><img src="images/pen-b5.jpg"></a>
+                          
+                          <h3 class="title"><a href="column-news.htm">專欄名稱</a></h3>
+                          <p><a href="column-news.htm" target="_blank">主筆名稱</a></p>
+                          <p class="summary">我是介紹五六七八九十我是介紹五六七八貳十我是介紹五六七八參十我是介紹五六七八肆十我是介紹五六七八伍十我是介紹五六七八陸十我是介紹五六七八柒十我是介紹五六七八捌十我是介紹五六七八玖十我是介紹五六七八拾十我是介紹五六七八拾壹我是介紹五六七八拾貳..</p>
+							<div class="menu clearfix">
+								<a class="fb-like" data-href="#" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></a>
+								<a class="fans" href="#" target="_blank">我的粉絲團</a>
+								<a class="blog" href="#" target="_blank">Blog</a>
+								<a class="icon_instagram" href="#" target="_blank"></a>
+								<a class="btn_more" href="column-news.htm" target="_blank">所有文章</a>
+							</div>
+
+                      </div>
+                      <!-- 組 結束-->
+                      
+                      <!-- 組 開始 -->
+                      <div class="box clearfix">
+                         
+						<a class="pic-box" href="column-news.htm" target="_blank"><img src="images/pen-b6.jpg"></a>
+                          
+                          <h3 class="title"><a href="column-news.htm">專欄名稱</a></h3>
+                          <p><a href="column-news.htm" target="_blank">主筆名稱</a></p>
+                          <p class="summary">我是介紹五六七八九十我是介紹五六七八貳十我是介紹五六七八參十我是介紹五六七八肆十我是介紹五六七八伍十我是介紹五六七八陸十我是介紹五六七八柒十我是介紹五六七八捌十我是介紹五六七八玖十我是介紹五六七八拾十我是介紹五六七八拾壹我是介紹五六七八拾貳..</p>
+							<div class="menu clearfix">
+								<a class="fb-like" data-href="#" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></a>
+								<a class="fans" href="#" target="_blank">我的粉絲團</a>
+								<a class="blog" href="#" target="_blank">Blog</a>
+								<a class="icon_instagram" href="#" target="_blank"></a>
+								<a class="btn_more" href="column-news.htm" target="_blank">所有文章</a>
+							</div>
+
+                      </div>
+                      <!-- 組 結束-->
+                      
+                      <!-- 組 開始 -->
+                      <div class="box clearfix">
+                         
+						<a class="pic-box" href="column-news.htm" target="_blank"><img src="images/pen-b1.jpg"></a>
+                          
+                          <h3 class="title"><a href="column-news.htm">專欄名稱</a></h3>
+                          <p><a href="column-news.htm" target="_blank">主筆名稱</a></p>
+                          <p class="summary">我是介紹五六七八九十我是介紹五六七八貳十我是介紹五六七八參十我是介紹五六七八肆十我是介紹五六七八伍十我是介紹五六七八陸十我是介紹五六七八柒十我是介紹五六七八捌十我是介紹五六七八玖十我是介紹五六七八拾十我是介紹五六七八拾壹我是介紹五六七八拾貳..</p>
+							<div class="menu clearfix">
+								<a class="fb-like" data-href="#" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></a>
+								<a class="fans" href="#" target="_blank">我的粉絲團</a>
+								<a class="blog" href="#" target="_blank">Blog</a>
+								<a class="icon_instagram" href="#" target="_blank"></a>
+								<a class="btn_more" href="column-news.htm" target="_blank">所有文章</a>
+							</div>
+
+                      </div>
+                      <!-- 組 結束-->
+                      
+                      <!-- 組 開始 -->
+                      <div class="box clearfix">
+                         
+						<a class="pic-box" href="column-news.htm" target="_blank"><img src="images/pen-b1.jpg"></a>
+                          
+                          <h3 class="title"><a href="column-news.htm">專欄名稱</a></h3>
+                          <p><a href="column-news.htm" target="_blank">主筆名稱</a></p>
+                          <p class="summary">我是介紹五六七八九十我是介紹五六七八貳十我是介紹五六七八參十我是介紹五六七八肆十我是介紹五六七八伍十我是介紹五六七八陸十我是介紹五六七八柒十我是介紹五六七八捌十我是介紹五六七八玖十我是介紹五六七八拾十我是介紹五六七八拾壹我是介紹五六七八拾貳..</p>
+							<div class="menu clearfix">
+								<a class="fb-like" data-href="#" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></a>
+								<a class="fans" href="#" target="_blank">我的粉絲團</a>
+								<a class="blog" href="#" target="_blank">Blog</a>
+								<a class="icon_instagram" href="#" target="_blank"></a>
+								<a class="btn_more" href="column-news.htm" target="_blank">所有文章</a>
+							</div>
+
+                      </div>
+                      <!-- 組 結束-->
+                      
+                      <!-- 組 開始 -->
+                      <div class="box clearfix">
+                         
+						<a class="pic-box" href="column-news.htm" target="_blank"><img src="images/pen-b1.jpg"></a>
+                          
+                          <h3 class="title"><a href="column-news.htm">專欄名稱</a></h3>
+                          <p><a href="column-news.htm" target="_blank">主筆名稱</a></p>
+                          <p class="summary">我是介紹五六七八九十我是介紹五六七八貳十我是介紹五六七八參十我是介紹五六七八肆十我是介紹五六七八伍十我是介紹五六七八陸十我是介紹五六七八柒十我是介紹五六七八捌十我是介紹五六七八玖十我是介紹五六七八拾十我是介紹五六七八拾壹我是介紹五六七八拾貳..</p>
+							<div class="menu clearfix">
+								<a class="fb-like" data-href="#" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></a>
+								<a class="fans" href="#" target="_blank">我的粉絲團</a>
+								<a class="blog" href="#" target="_blank">Blog</a>
+								<a class="icon_instagram" href="#" target="_blank"></a>
+								<a class="btn_more" href="column-news.htm" target="_blank">所有文章</a>
+							</div>
+
+                      </div>
+                      <!-- 組 結束-->
+                      
+                      <!-- 組 開始 -->
+                      <div class="box clearfix">
+                         
+						<a class="pic-box" href="column-news.htm" target="_blank"><img src="images/pen-b1.jpg"></a>
+                          
+                          <h3 class="title"><a href="column-news.htm">專欄名稱</a></h3>
+                          <p><a href="column-news.htm" target="_blank">主筆名稱</a></p>
+                          <p class="summary">我是介紹五六七八九十我是介紹五六七八貳十我是介紹五六七八參十我是介紹五六七八肆十我是介紹五六七八伍十我是介紹五六七八陸十我是介紹五六七八柒十我是介紹五六七八捌十我是介紹五六七八玖十我是介紹五六七八拾十我是介紹五六七八拾壹我是介紹五六七八拾貳..</p>
+							<div class="menu clearfix">
+								<a class="fb-like" data-href="#" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></a>
+								<a class="fans" href="#" target="_blank">我的粉絲團</a>
+								<a class="blog" href="#" target="_blank">Blog</a>
+								<a class="icon_instagram" href="#" target="_blank"></a>
+								<a class="btn_more" href="column-news.htm" target="_blank">所有文章</a>
+							</div>
+
+                      </div>
+                      <!-- 組 結束-->
+                      
+                      
+                  </div>
+                  <!-- part_pictxt_1 結束 -->
+                  
+                  <!--分頁 開始-->
+                  <div class="menu_pager">
+                  	<div class="menu_page"> <span class="disabled"> &lt;&lt; </span><span class="disabled"> &lt; </span><span class="current">1</span><a href="#">2</a><a href="#">3</a><a href="#">4</a><a href="#">5</a><a href="#">6</a><a href="#">7</a><a> &gt; </a><a href="#"> &gt;&gt; </a><p class="info">第1頁 | 共7頁 (130則) </p></div>
+                  </div>
+                  <!--分頁 結束-->
+                                          
+                                                            
+                                                            
+                                                            
+                                                            
+                                                            
+                                                            
+                                                            
+                                                            
+                                                            
+                                                            
+               <!-- InstanceEndEditable --> 
+                                                             
+                   
+                                     
+                </div>
+                <!--c1 結束-->
+                <!--c2 開始-->
+                    <div class="c2">
+                    <!-- c2_inner 開始 -->
+<!--                    <div class="c2_inner">-->
+        
+        
+         
+         
+         				<!--行動法庭 開始-->
+                        <div class="block block_z">
+                            <div class="block_title">
+                                <h3>行動法庭</h3>
+                            </div>
+                            <div class="part_txt_1">
+                               	<div class="pic">
+									<a class="icon_type_video" href=javascript:alert("連至播吧內頁") target="_blank"><img src="images/c5.jpg"></a>
+									<p><a href=javascript:alert("連至播吧內頁") target="_blank">我是標題五六七八九十我是標題五</a></p>
+								</div>
+                               
+                               	<div class="btn">
+									<a href="newslist.htm" >行動法庭相關文章 看更多</a>
+									<a href=javascript:alert("連至播吧小類頁") target="_blank">行動法庭相關影音 看更多</a>
+                            	</div>
+
+                            </div>
+                        </div>
+                        <!--行動法庭 結束-->
+                        
+                    
+         				<!--我要投稿 開始-->
+                        <div class="block block_z" style="display: none;">
+                            <div class="block_title">
+                                <h3>我要投稿/伸冤</h3>
+                            </div>
+                            
+                            <!--gallery_1 開始-->
+							<div class="gallery_1">
+								<!--滾動 開始-->
+							   <div class="run">
+									<!--inner 開始-->
+								   <div class="inner">
+										<!--組 開始-->
+									   <div class="piece">
+										   <a href=javascript:alert("使用活動公版頁")><img src="https://fakeimg.pl/300x280/?text=Banner1" title="投稿無處去？來雲論給你一個暢所欲言的舞台！"></a>  
+										</div>
+										<!--組 結束--> 
+
+										<!--組 開始-->
+									   <div class="piece">
+											<a href=javascript:alert("使用活動公版頁")><img src="https://fakeimg.pl/300x280/?text=Banner2" title="面對司法不公　雲論替你解析討公道"></a>
+										</div>
+										<!--組 結束-->                     
+
+									</div>
+									<!--inner 結束-->
+							   </div>
+								<!--滾動 結束-->
+							</div>
+							<!--gallery_1 結束--> 
+                            
+                        </div>
+                        <!--我要投稿 結束-->
+						
+						<!--熱門文章 開始-->
+                        <div class="block block_z">
+                            <div class="block_title">
+                                <h3>熱門文章</h3>
+                            </div>
+                            <div class="part_txt_1">
+                               	<div class="pic">
+									<a href="news.htm"><img src="images/c1.jpg"></a>
+									<p><a href="news.htm">我是標題五六七八九十我是標題五</a></p>
+								</div>
+                               
+                                <!--inner 開始-->
+                                <div class="inner">
+										<a href="news.htm">我是標題五六七八九十我是標題五</a>
+										<a href="news.htm">我是標題五六七八九十我是標題五</a>
+										<a href="news.htm">我是標題五六七八九十我是標題五</a>
+										<a href="news.htm">我是標題五六七八九十我是標題五</a>
+								</div>
+                                <!--inner 結束-->
+                            </div>
+                        </div>
+                        <!--熱門文章 結束-->
+         				
+          
+          
+          				<!--關注我們 開始-->
+                        <div class="block block_z">
+                            <div class="block_title">
+                                <h3>關注我們</h3>
+                            </div>
+							<!--粉絲團  開始-->
+							<div class="fb-page" style="" data-href="https://www.facebook.com/ETtoday88/" data-tabs="timeline" data-width="300" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+							<blockquote cite="https://www.facebook.com/ETtoday88/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/ETtodayPETS/">ETtoday雲論</a></blockquote>
+							</div>
+							<!--粉絲團  結束-->
+                        </div>
+                        <!--關注我們 結束-->
+          
+
+                        
+                        <!--雲論菁英推薦 開始-->
+                        <div class="block block_z" style="display: none;">
+                            <div class="block_title">
+                                <h3>雲論菁英推薦</h3>
+                                <a class="more" href="column-list.htm">看更多</a>
+                            </div>
+                            <div class="part_txt_1">
+                               	<div class="pic">
+									<a href="column-news.htm"><img src="images/pen-b1.jpg"></a>
+									<a class="pen clearfix" href="column-news.htm"><span class="name">主筆姓名</span><span class="story" href="column-news.htm">看文章 <i class="fas fa-arrow-circle-right"></i></span></a>
+								</div>
+                               
+                                <!--inner 開始-->
+                                <div class="inner">
+									<a href="news.htm">我是標題五六七八九十我是標題五</a>
+									<a href="news.htm">我是標題五六七八九十我是標題五</a>
+									<a href="news.htm">我是標題五六七八九十我是標題五</a>
+									<a href="news.htm">我是標題五六七八九十我是標題五</a>
+									<a href="news.htm">我是標題五六七八九十我是標題五</a>
+								</div>
+                                <!--inner 結束-->
+                            </div>
+                        </div>
+                        <!--雲論菁英推薦 結束-->
+                        
+                        
+    
+                        
+
+
+                        <!--心情排行 開始-->
+                        <!--<div class="block block_z indexemotion">
+                            <div class="title_1">
+                                <h3>心情排行</h3>
+                            </div>
+                            <!--區-->
+                            <!--<div class="part_txt_1 underline">
+                                <h4><em class="icon_1"></em>今天最『驚』</h4>
+								<a href="news.htm">我是標題五六七八九十我是標題五六七八貳十我是標題五</a>
+								<a href="news.htm">我是標題五六七八九十我是標題五六七八貳十我是標題五</a>
+								<a href="news.htm">我是標題五六七八九十我是標題五六七八貳十我是標題五</a>
+							</div>-->
+                            <!--區-->
+                        <!--</div>-->
+                        <!--心情排行 結束-->
+
+                        
+
+                        
+                        
+                        
+                      <!--footer 開始-->
+						<div class="footer" itemscope itemprop="publisher" itemtype="https://schema.org/Organization">
+							<!--footer_menu 開始-->
+							<div class="footer_menu">
+								<a href="#">手機版</a>
+								<a href=javascript:alert('連至活動公版')>我要投稿</a>
+								<a href=javascript:alert('連至活動公版')>我要伸冤</a>
+								<a href="mailto: editor88@ettoday.net" content=" editor88@ettoday.net">投稿信箱</a>
+								
+								<a itemprop="email" href="mailto:service@ettoday.net" title="service@ettoday.net" content="service@ettoday.net">客服信箱</a>
+								
+								<a href="//events.ettoday.net/about-ettoday/index.htm" target="_blank">關於我們</a>
+								
+								<a href="mailto:service@ettoday.net" title="service@ettoday.net">廣告刊登/合作提案</a>
+								
+								<a href="//www.ettoday.net/member/clause_duty.php" target="_blank">免責聲明</a>
+								
+								<a href="//www.ettoday.net/member/clause_privacy.php" target="_blank">隱私權政策</a>
+								<a href="//www.ettoday.net/member/clause_copyright.php" target="_blank">著作權聲明</a>
+								
+								<p>電話：<span itemprop="telephone">+886-2-5555-6366</span></p>
+								<p><span itemprop="name">東森新聞雲股份有限公司</span> &nbsp;版權所有，非經授權，不許轉載本網站內容 &copy; ETtoday.net All Rights Reserved.</p>
+							</div>
+							<!--footer_menu 結束-->
+							<!--本區隱藏 開始-->
+							<span class="footer_logo" itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+								<link itemprop="url" href="images/push.jpg">
+							</span>
+							<!--本區隱藏 結束-->
+						</div>
+						<!--footer 結束-->
+
+
+                        
+<!--                    </div>-->
+                    <!-- c2_inner 結束 -->
+                </div> <!--c2 結束-->
+            </div>
+            <!--r1 結束-->
+    
+        </div>
+        <!--container 結束-->
+    
+
+    
+        <!--滾回上面 gototop 開始-->
+        <div class="gototop">回到最上面</div>
+        <!--滾回上面 gototop 結束-->
+
+    </div>
+    <!--wrapper_inner 結束-->
+
+    
+</div>
+<!--wrapper 結束-->
+</body>
+<!-- InstanceEnd --></html>
+

@@ -1,0 +1,237 @@
+/* layout.css */
+body{ background: #545454;}
+/*wrapper_box 包覆全部*/
+.wrapper_box{ min-height:100%; overflow: hidden; }
+.wrapper{ width: 100%; position: relative; top: 0;}
+.wrapper:before{ content: ""; position: fixed; left: 0; right: 0; z-index: -1; display: block; background: url(../images/bg.jpg) center; opacity: 0.8; background-size:cover; width: 100%; height: 100%; filter: blur(10px);}
+.main{ max-width: 1200px; width: 100%; margin: 0 auto;}
+.main .top_nav{ display: none;} 
+.banner{ width: 100%; height:250px;}
+.c2{ width: 100%;}
+.c2 .head_title{ text-align: center; padding: 30px 0; font-size: 23px; color:#fff; display: none;}
+.c2 .title{ text-align: center; padding: 30px 0; font-size: 23px;}
+.c2 .content{ padding: 20px; background-color: #FFFFFF; opacity: 0.8;}
+footer{ max-width: 1200px; width: 100%; margin: 0 auto; text-align: center;}
+footer p{ font-size: 12px; padding: 10px 0;}
+
+/* 贊助 ============================= */
+.sponser{ width: 100%; margin-top: 100px; background: #FFFFFF;}
+.sponser .sponsor_box{ max-width: 1200px; width: 100%; margin: 0 auto; padding: 20px ;}
+.box0{ margin-bottom: 10px;}
+.box01{float: left; width:50%;}
+.box0 span{ margin-right: 3px; vertical-align: 10px; color: #B0B0B0;}
+.box0 a{ display: inline-block; vertical-align: middle; margin-right: 5px;}
+.box0 a img{ width: 100%; max-width: 100px; height: auto;}
+
+/* 主選單 ============================= */
+.main_nav{ background: #262626; z-index: 200;}
+.main_nav ul{ max-width: 1200px; margin: 0 auto;}
+.main_nav ul li{ margin: 5px 0; display: inline-block;}
+.main_nav ul li a{ display: block; padding: 5px 20px; color: #FFFFFF;}
+.main_nav ul li a:hover{ background: #313131;}
+.main_nav ul li a.current{ color: #C9C9C9; background: #313131;}
+#fix_menu.fixed-position {
+        position:fixed;
+        top:0;
+        width: 100%;
+        bottom:initial;
+        transition: all 0.15s;
+    }
+
+/*漢堡及關閉按鈕*/
+header{ display: none;}
+.hamburger{ background: none; position:absolute; top:20px; right:10px; line-height:36px; padding:5px 10px 0px 10px; color:#fff; border: 1px solid #E4E4E4; font-size:1.4em; font-weight:bold; cursor:pointer; outline:none; z-index:1000;}
+.cross{ background:none; position:absolute; top:10px; right:10px; padding:10px 10px 0px 10px; color:#fff; border:0; font-size:3em; line-height:36px; font-weight:bold; cursor:pointer; outline:none; z-index:10000; display: none;}
+ /*漢堡及關閉按鈕*/
+ /*slide-menu 側欄選單*/
+.menu{z-index:100; width:100%; background:#232323; position:absolute; text-align:center; top: 0px; right: 0; display: none;}
+.menu ul { margin: 0; padding: 0;}
+.menu li { padding:10px 0 10px 0; border-bottom:#474747 1px solid;}
+.menu li:hover{display: block;  background:#4D4D4D;}
+.menu ul li a { display: block; margin: 0px; color:#B3B3B3;}
+.menu ul li a:hover { color: #fff; }
+
+.overlay{ width: 100%; height: 100%; background: #2E2E2E; z-index: 10; position: absolute; top: 0px; left: 0px; opacity: 0.8; display: none;}
+
+/*banner*/
+/*.banner_box {  width:100%; position: fixed; top:0; z-index:100;}*/
+.banner{ width:100%; max-width:1200px; margin:0 auto; position:relative; clear:both;  position:relative; }
+.top_nav{ width:100%; max-width:768px; height:50px; }
+.social{ position:absolute; width:90px; height:40px; left:5px; top:8px;}
+.social .btn{ width:38px; height:38px; display:inline-block; background-repeat:no-repeat; background-image: url(../images/icon_social.png); background-size:132px auto; border-radius: 15px; border: 2px solid #fff;}
+.social .btn span { display:block; text-indent:100%; white-space:nowrap; overflow:hidden;}
+.social .fb {background-position: 2px 3px;}
+.banner p.logo{ text-align: center; font-size: 72px; color: #fff; font-weight: bolder;}
+
+
+/* index ==============================*/
+.c1{ width: 100%; padding: 60px 40px 0;}
+.c1 .item{ float: left; width: calc(91%/4); margin-top: 20px; margin-right: 3%; text-align: center;}
+.c1 .item:nth-child(4n){ margin-right: 0px;}
+.c1 .item img{ width: 100%; height: auto; border-radius: 50%; border: 4px solid #FFFFFF;}
+.c1 .item a p{ color: #FFFFFF;}
+
+.video_area{ width: 100%; margin-top: 100px; padding: 50px; background: rgba(255, 255, 255, 0.8);}
+.video_area .part_video{ width: 60%;}
+.video_box{ height:0px; padding-bottom: 56.25%; overflow: hidden; position: relative;}
+.video_box iframe{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/*banner_index_b*/
+.banner_index_b{ width:100%; max-width:1200px; margin:0 auto; position:relative; clear:both;  position:relative; }
+.top_nav{ width:100%; max-width:768px; height:50px; }
+.social{ position:absolute; width:90px; height:40px; left:5px; top:8px;}
+.social .btn{ width:38px; height:38px; display:inline-block; background-repeat:no-repeat; background-image: url(../images/icon_social.png); background-size:132px auto; border-radius: 15px; border: 2px solid #fff;}
+.social .btn span { display:block; text-indent:100%; white-space:nowrap; overflow:hidden;}
+.social .fb {background-position: 2px 3px;}
+.banner_index_b p.logo{ text-align: center; font-size: 72px; color: #fff; font-weight: bolder;}
+
+.main_index_m .top_nav { display: none;}
+
+
+
+/* about ==============================*/
+.content .info{ padding: 20px 0; font-size: 18px; color: #4A4A4A;}
+
+/* news ==============================*/
+.content .box02{ width: 100%;}
+.content .box02 .pictxt{ padding: 10px;}
+.pictxt .pic{ width: 40%; float: left; overflow: hidden; margin-right: 10px;}
+.pictxt .pic img{ max-width: 100%; height: auto;}
+.pictxt .date{ color: #636363; font-size: 14px;}
+.pictxt h4{ font-size: 20px;}
+
+/* buy ==============================*/
+.content .box03{ width: 100%;}
+.content .box03 .box{ width: 90%; margin: 20px auto; padding-bottom: 20px; border-bottom: 1px dashed #838383;}
+.content .box03 .box:last-child{ border-bottom: none;}
+.box:nth-of-type(odd) .pic{ float: left; width: 40%; overflow: hidden; margin-right: 15px; text-align: center;}
+.box:nth-of-type(even) .pic{ float: right; width: 40%; overflow: hidden; margin-right: 15px; margin-left: 15px; text-align: center;}
+.box:nth-of-type(even) .info01{ text-align: right;}
+.box .pic img{ max-width: 100%; height: auto;}
+.box .info01 .btn{display: inline-block; margin-top: 20px; padding: 5px 10px; border: 1px solid #606060;}
+
+/* liveband ==============================*/
+.liveband .box .pic{ width: 30%;}
+.liveband .box .pic img{ border-radius: 50%; border: 5px solid #9A9A9A;}
+
+/* market ==============================*/
+.market{ margin-bottom: 40px;}
+.box02 .box_title{ font-size: 22px; padding: 10px 0;}
+.box02 .item{ width: calc(96%/3); float: left; margin-right: 2%; margin-bottom: 10px;}
+.box02 .item:last-child{ margin-right: 0;}
+.box02 .item h4{ position: relative; top: -25px; text-align: center; width: 80%; padding: 5px; margin: 0 auto; background: #FFFFFF; border:1px solid #343434;}
+.box02 .item p{ position: relative; top: -10px;}
+.item .pic{ width: 100%; overflow: hidden;}
+.item .pic img{ width: 100%; height: auto;}
+
+
+
+/* hashtag ==============================*/
+.btn_group{ text-align: right; margin: 10px; }
+.btn_group a{ display: inline-block; background: #EFEFEF; padding: 5px 8px; margin-right: 20px; border: 2px solid #4C4C4C;}
+
+/* newslist ==============================*/
+.newslist{ padding-top: 10px;}
+.table_box{ display: table; border-collapse:separate; border-spacing: 6px 20px;/*讓table有間距*/}
+.row{ display: table-row; overflow: hidden;}
+.cell{ display: block; float: left; width: 33%; padding: 8px; border: 1px solid #AEAEAE;}
+.pictxt02 .pic{ width: 100%; overflow: hidden;}
+.pictxt02 .pic img{ width: 100%; height: auto;}
+/* tab 切換*/
+input { display: none;}
+.box02 [id^="tab"]:checked + label { background: #fff; border: 3px solid #575757;}/*--選中tab時--*/
+.box02 label{ padding: 5px 15px; margin-left: 10px;}
+.table_box { display: none; margin-top: 10px;}
+#tab1:checked ~ #content1, #tab2:checked ~ #content2{ display: block;}
+
+
+/* prize ==============================*/
+.content .box04{ width: 100%;}
+.content .box04 .pictxt{ padding: 10px;}
+.content .box04 .pictxt p{ width:58%; float: right;}
+.content .box04 strong { color: blue;}
+
+
+/*1000************************************************************************************************************/
+@media screen and (max-width:1000px){
+	nav{ display: none;}
+	.banner{ display: none;}
+	.main .top_nav{ display: block; width:20%; position: absolute; top:10px;}
+	header{ display: block;}
+	.c2 { margin: 0 10px; width: auto;}
+	.c2 .head_title{ display: block;}
+	.c2 .content{ margin-right: 0;}
+	
+	/*index ===============*/
+	.banner_index_b{ display: block;}
+	.banner_index_b p.logo{ font-size: 32px; color: #fff; font-weight: bolder;}
+	.main_index_m .top_nav { display: none;}
+	
+	
+}
+/*768************************************************************************************************************/
+@media screen and (max-width:768px){
+	.c1{ padding: 50px 10px 0;}
+	.c1 .item{ width: calc(96%/2); padding: 0 10px;}
+	.c1 .item:nth-child(2n){ margin-right: 0px;}
+
+	.content .box02 .pictxt{ margin: 10px auto;}
+	.pictxt .pic{ width: 50%; float: left; margin-right: 10px;}
+
+	.video_area{ padding:10px;}
+	.video_area .part_video{ width: 100%;}
+
+
+	/* buy ===============*/
+	.box:nth-of-type(odd) .pic{ width: 100%;}
+	.box:nth-of-type(even) .pic{ width: 100%; margin-right: 0; margin-left: 0;}
+	.box:nth-of-type(even) .info01{ text-align: left;}
+	/* liveband ===============*/
+	.liveband .box .pic{ width: 100%;}
+	/* market ============*/
+	.box02 .item{ width: calc(98%/2);}
+	.box02 .item:nth-of-type(even){ margin-right: 0px;}
+	
+	/* prize ==============================*/
+	.content .box04 .pictxt .pic{ width:100%;}
+	.content .box04 .pictxt p{ width:100%; float: none;}
+	
+	/* newslist ============*/
+	.cell{ display: block; float: left; width: 50%;}
+
+
+}
+
+/*480************************************************************************************************************/
+@media screen and (max-width:480px){
+
+/* newslist ==============================*/
+.box02 label{ padding: 5px 10px;}
+.row{ display: block; overflow: visible;}
+.cell{ display: block; width: 95%; margin: 5px auto 15px auto;}
+.table_box .row .info{ padding-top: 0; padding-bottom: 0;}
+	
+/* news ==============================*/
+.content .box02{ width: 100%;}
+.content .box02 .pictxt{ padding: 10px;}
+.pictxt .pic{ width: 100%; float: none; margin: 0 auto; }
+.pictxt .pic img{ max-width: 100%; height: auto;}
+.pictxt .date{ color: #636363; font-size: 14px;}
+.pictxt h4{ font-size: 20px;}
+
+/* market ============*/
+.box02 .item{ width: 100%;}
+
+	
+/* hashtag ==============================*/
+.btn_group{ text-align: center; margin: 10px; }
+.btn_group a{ margin: 5px; }	
+	
+	
+}

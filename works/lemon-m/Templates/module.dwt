@@ -1,0 +1,159 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, minimal-ui" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>大檸檬</title>
+<!-- TemplateEndEditable -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+<link href="js/jquery.bxslider/jquery.bxslider.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="css/style.css" type="text/css" >
+<script src="js/jquery.1.9.1.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/jquery.bxslider/jquery.bxslider.js"></script>
+
+<script src="js/common.js"></script>
+
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+</head>
+
+<body>
+<!--FB plugins 共用元素 開始 -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v3.0';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<!--FB plugins 共用元素 結束 -->
+
+<div class="wrapper_box" id="wrapper_box">
+        
+    <!--wrapper 開始 -->
+    <div class="wrapper">
+        <!--header 開始-->
+        <div class="header clearfix">
+            <!--inner 開始-->
+            <div class="inner">
+
+                <h2><a class="main_logo" href="index.htm" title="回首頁">鍵盤大檸檬</a></h2>
+                <div class="social">
+				   <a href="https://www.facebook.com/ET.Lemons" target="_blank"><i class="fab fa-facebook-square" style="font-size:32px;"></i></a>
+				   <a href="https://www.instagram.com/etdalemon/" target="_blank"><i class="fab fa-instagram" style="font-size:32px;"></i></a>
+<!--					   <a href="#" target="_blank"><i class="fab fa-youtube" style="font-size:32px;"></i></a>-->
+				</div>
+                <!--選單 開始
+                <div class="nav_2">
+                    <a href="http://fashion.ettoday.net/video/"><em class="icon_1"></em>影音</a>
+                    <a href="https://www.facebook.com/ETFashion.tw/" target="_blank"><em class="icon_2"></em></a>
+                    <a href="https://www.instagram.com/fashion.ettoday/" target="_blank"><em class="icon_3"></em></a>
+                </div>
+                <!--選單 結束-->
+                
+                <!-- search 搜尋 開始 -->
+                <div class="search">
+
+                    <!-- 搜尋按鈕 開始 -->
+                    <div class="icon_open"><!----></div>
+                    <div class="icon_close"><!----></div>
+                    <!-- 搜尋按鈕 結束 -->
+    
+                    <!-- google搜尋 開始 -->
+                    <div class="gsbox">
+                        <form id="cse-search-box" method="get" action="search.htm">
+                          <input class="keyword" type="text" name="keywords" size="26"/>
+                          <input class="send" type="image" name="sa" src="images/search.png"/>
+                        </form>
+                    </div>
+                <!-- google搜尋 結束 -->
+
+            </div>
+            <!-- search 搜尋 結束 -->
+
+            </div>
+            <!--inner 結束-->
+        </div>
+        <!--header 結束-->
+    
+    
+		<!--lemon_menu 開始-->
+		<div class="lemon_menu">
+			<ul class="inner">
+				<li><a href="newslist.htm">最新檸檬報</a></li>
+				<li><a href="newslist.htm">趨勢文章</a></li>
+				<li><a href="javascript: void(0)">熱門主題</a>
+					 <div class="sub">
+						<a href="topic.htm">小檸檬</a>
+						<a href="topic.htm">兩性</a>
+						<a href="topic.htm">職場</a>
+						<a href="topic.htm">奇聞</a>
+						<a href="topic.htm">運勢</a>
+						<a href="topic.htm">校園</a>
+						<a href="topic.htm">正妹</a>
+					 </div>
+				 </li>
+				 <li><a href="submission.htm">我要投稿</a></li>
+				 <li><a href="editor-list.htm">作者一覽</a></li>
+				 <li><a href=javascript:alert('連至活動公版')>限時專題1</a></li> 
+				 <li><a href=javascript:alert('連至活動公版')>限時專題2</a></li> 
+			</ul>
+		</div>
+		<!--lemon_menu 結束-->
+
+        <!--container 開始-->
+        <div class="container">
+           <!-- TemplateBeginEditable name="EditRegion1" -->EditRegion1<!-- TemplateEndEditable -->
+            
+            <!--r1 開始-->
+			<div class="r1"><!-- TemplateBeginEditable name="EditRegion4" -->EditRegion4<!-- TemplateEndEditable -->
+			
+				<!--c1 開始-->
+				<div class="c1"><!-- TemplateBeginEditable name="EditRegion5" -->EditRegion5<!-- TemplateEndEditable -->
+					
+				</div>
+				<!--c1 結束-->
+				
+		  </div>
+          <!--r1 結束-->  
+            
+      </div>
+        <!--container 結束-->
+        
+        <!--gototop 回到最上面 開始-->
+      	<a class="gototop" href="#wrapper_box">回到最上面</a>
+        <!--gototop 回到最上面 開始-->
+        
+        
+    </div>
+    <!--wrapper 結束 -->
+   
+</div>
+<!--wrapper_box 結束 -->
+ <!--footer 開始-->
+ <div class="footer" itemscope itemprop="publisher" itemtype="https://schema.org/Organization">
+	<div class="menu_1 clearfix">
+	<a href="#" onclick="location.replace('http://www.ettoday.net/changeReadType.php?rtype=1&rurl=http%3A%2F%2Fwww.ettoday.net%2Fdalemon%2Fpost%2F11360');">電腦版</a>|
+	<a href="http://www.ettoday.net/about-ettoday.htm" target="_blank">關於我們</a>|
+	<a itemprop="email" href="mailto:service@ettoday.net" content="service@ettoday.net">聯絡我們</a>
+	</div>
+
+	<p><span itemprop="name">東森新聞雲股份有限公司</span> 版權所有
+		<br> 非經授權，不許轉載本網站內容
+		<br> © ETtoday.net All Rights Reserved.
+		<br> 電話：
+		<span itemprop="telephone">+886-2-5555-6366</span>
+	</p>
+	<!--本區隱藏 開始-->
+	<span class="footer_logo" itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+		<link itemprop="url" href="//static.ettoday.net/style/dalemon2016-m/images/push.jpg">
+	</span>
+	<!--本區隱藏 結束-->
+ </div>
+
+</body>
+</html>
+

@@ -1,0 +1,702 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, minimal-ui" />
+	<title>新聞內頁</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+	 crossorigin="anonymous">
+	<link href="js/jquery.bxslider/jquery.bxslider.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<script src="js/jquery.1.9.1.js"></script>
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.bxslider/jquery.bxslider.js"></script>
+	<script src="js/common.js"></script>
+</head>
+
+<body class="news-page">
+	<!--FB plugins 共用元素 開始 -->
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v3.0';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+	<!--FB plugins 共用元素 結束 -->
+
+	<div class="wrapper_box" id="wrapper_box">
+
+		<!--wrapper 開始 -->
+		<div class="wrapper">
+
+			<!--et_sticky 模組-置頂吸住 開始-->
+			<div id="et_sticky">
+				<!--part_breadcrumb_2 麵包屑 開始-->
+				<div class="part_breadcrumb_2 clearfix">
+					<!--麵包屑 開始-->
+					<div class="menu_bread_crumb clearfix" itemscope itemtype="https://schema.org/BreadcrumbList">
+						<!-- 第一層 開始 -->
+						<div itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement">
+							<a itemscope itemtype="https://schema.org/Thing" itemprop="item" href="https://www.ettoday.net/dalemon">
+								<span itemprop="name">鍵盤大檸檬</span>
+							</a>
+							<meta itemprop="position" content="1" />
+						</div>
+						<!-- 第一層 結束 -->
+						&gt;
+						<!-- 第二層 開始 -->
+						<div itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement">
+							<a itemscope itemtype="https://schema.org/Thing" itemprop="item" href="javascript:;">
+								<span itemprop="name">鄉民共和國</span>
+							</a>
+							<meta itemprop="position" content="2" />
+						</div>
+						<!-- 第二層 結束 -->
+					</div>
+					<!--麵包屑 結束-->
+				</div>
+				<!-- part_breadcrumb_2 麵包屑 結束-->
+			</div>
+			<!--et_sticky 模組-置頂吸住 結束-->
+
+
+
+
+			<!--header 開始-->
+			<div class="header clearfix">
+				<!--inner 開始-->
+				<div class="inner">
+
+					<h2><a class="main_logo" href="index.htm" title="回首頁">鍵盤大檸檬</a></h2>
+					<div class="social">
+						<a class="fb" href="https://www.facebook.com/ET.Lemons" target="_blank"><i class="fab fa-facebook-square" style="font-size:32px;"></i></a>
+						<a class="ig" href="https://www.instagram.com/etdalemon/" target="_blank"><i class="fab fa-instagram" style="font-size:32px;"></i></a>
+						<!--<a href="#" target="_blank"><i class="fab fa-youtube" style="font-size:32px;"></i></a>-->
+					</div>
+					<!--選單 開始-->
+					<!-- <div class="nav_2">
+                    <a href="http://fashion.ettoday.net/video/"><em class="icon_1"></em>影音</a>
+                    <a href="https://www.facebook.com/ETFashion.tw/" target="_blank"><em class="icon_2"></em></a>
+                    <a href="https://www.instagram.com/fashion.ettoday/" target="_blank"><em class="icon_3"></em></a>
+                </div>-->
+					<!--選單 結束-->
+
+					<!-- search 搜尋 開始 -->
+					<div class="search">
+
+						<!-- 搜尋按鈕 開始 -->
+						<div class="icon_open">
+							<!---->
+						</div>
+						<div class="icon_close">
+							<!---->
+						</div>
+						<!-- 搜尋按鈕 結束 -->
+
+						<!-- google搜尋 開始 -->
+						<div class="gsbox">
+							<form id="cse-search-box" method="get" action="search.htm">
+								<input class="keyword" type="text" name="keywords" size="26" />
+								<input class="send" type="image" name="sa" src="images/search.png" />
+							</form>
+						</div>
+						<!-- google搜尋 結束 -->
+
+					</div>
+					<!-- search 搜尋 結束 -->
+
+				</div>
+				<!--inner 結束-->
+			</div>
+			<!--header 結束-->
+
+
+			<!--lemon_menu 開始-->
+			<div class="lemon_menu">
+				<ul class="inner">
+					<li><a href="newslist.htm">最新檸檬報</a></li>
+					<li><a href="newslist.htm">趨勢文章</a></li>
+					<li><a href="javascript: void(0)">熱門主題</a>
+						<div class="sub">
+							<a href="topic.htm">小檸檬</a>
+							<a href="topic.htm">兩性</a>
+							<a href="topic.htm">職場</a>
+							<a href="topic.htm">奇聞</a>
+							<a href="topic.htm">運勢</a>
+							<a href="topic.htm">校園</a>
+							<a href="topic.htm">正妹</a>
+						</div>
+					</li>
+					<li><a href="submission.htm">我要投稿</a></li>
+					<li><a href="editor-list.htm">作者一覽</a></li>
+					<li><a href=javascript:alert('連至活動公版')>限時專題1</a></li>
+					<li><a href=javascript:alert('連至活動公版')>限時專題2</a></li>
+				</ul>
+			</div>
+			<!--lemon_menu 結束-->
+
+			<!--container 開始-->
+			<div class="container">
+				<!--r1 開始-->
+				<div class="r1">
+					<!--c1 開始-->
+					<div class="c1">
+
+
+						<!--作者開始-->
+						<div class="penname_part_pictxt_1 clearfix">
+							<a class="pic" href="editor-news.htm"><img src="images/pen-b1.jpg" data-original="images/pen-b1.jpg"></a>
+							<h3><span><a href="editor-news.htm">作者王小明</a></span></h3>
+							<p class="info"><span class="article_count"><strong>9,999</strong>篇文章</span> | <span class="fan_count"><strong>150,000</strong>人訂閱</span></p>
+							<p class="summary">我是簡介五六七八九十我是簡介五六七八貳十我是簡介五六七八參十我是簡介五六七八肆..</p>
+							<div class="menu">
+								<a class="btn_subscription" href="javascript:;" onclick="window.open('https://feedburner.google.com/fb/a/mailverify?uri=ettoday/dalemon&loc=zh_TW', '東森新聞雲', config='height=500,width=500,scrollbars=no');">訂閱</a>
+								<a class="fb-like" data-href="https://www.facebook.com/seventeen.centimeter/" data-layout="button_count"
+								 data-action="like" data-size="small" data-show-faces="false" data-share="false"></a>
+								<a class="fans" href="#" target="_blank">粉絲團</a>
+								<a class="blog" href="#" target="_blank">Blog</a>
+								<a class="icon_instagram" href="" target="_blank"></a>
+								<a class="btn_more" href="editor-news.htm" target="_blank">所有文章</a>
+							</div>
+						</div>
+						<!--作者結束-->
+
+
+						<!--新聞模組 開始-->
+						<div class="subject_news">
+							<h2 class="title">我是標題五六七八九十我是標題五六七八貳十我是標題五</h2>
+
+							<span class="date">2018年6月27日 12:24</span>
+
+
+							<script>
+								//改變文字大小===========================
+						$(function(){
+						
+						 var listCookieName = "w7";//定義cookie名稱
+						 
+						 //初始高亮
+						 $(".font_size_switch a").eq(0).addClass("current");
+						 
+						 $(".font_size_switch a").click(function(e){
+						  e.preventDefault();
+						  var sSize = $(this).attr("class");
+						  $(this).addClass("current").siblings().removeClass("current");
+						  $(".subject_news").removeClass("size_s size_m size_l").addClass(sSize);
+						  $.cookie(listCookieName, sSize, {expires: 365}); //覆蓋掉cookie紀錄
+						 })
+						 
+						 //初始偵測
+						 if($.cookie(listCookieName)) {  //如果電腦有cookie紀錄
+						  var sSize = $.cookie(listCookieName);
+						  $(".font_size_switch ."+ sSize).addClass("current").siblings().removeClass("current");
+						  $(".subject_news").addClass( sSize );
+						   }
+						})
+
+					  </script>
+
+							<!--font_size_switch 改變文字大小 開始-->
+							<div class="font_size_switch clearfix">
+								<a href="#" class="size_s current">小</a>
+								<a href="#" class="size_m">中</a>
+								<a href="#" class="size_l">大</a>
+							</div>
+							<!--font_size_switch 改變文字大小 結束-->
+
+							<p class="talk">我是摘要五六七八九十我是摘要五六七八貳十我是摘要五六七八九十我是摘要五六七八九十我是摘要五六七八九十我是摘要五六七八九十我是摘要五六七八九十我是摘要五六七八九十我是摘要五六七八九十我是摘要五六七八九十我是摘要五六七八九十我是摘要五六七八九十</p>
+
+							<!--sharebox_1 分享組件 開始-->
+							<div class="sharebox_1 clearfix">
+
+								<!--menu_1 開始-->
+								<div class="menu_1 clearfix">
+									<a class="fb" href="javascript:;" onClick="window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent('★★★網址★★★'),'facebook-share-dialog','width=626,height=436');return false;"></a>
+									<a class="fb-messenger" href="fb-messenger://share/?link=★★網址★★★"></a>
+									<a class="line" href="http://line.naver.jp/R/msg/text/?★★★網頁標題★★★%0D%0A★★網址★★★"></a>
+									<a class="gplus" href="javascript:;" onClick="window.open('https://plus.google.com/share?url='+encodeURIComponent('★★★網址★★★'),'g+','width=626,height=436')"></a>
+									<a class="weibo" href="javascript:void((function(s,d,e,r,l,p,t,z,c){var%20f='http://v.t.sina.com.cn/share/share.php?appkey=1263254066',u=z||d.location,p=['&url=',e(u),'&title=',e(t||d.title),'&source=',e(r),'&sourceUrl=',e(l),'&content=',c||'gb2312','&pic=',e(p||'')].join('');function%20a(){if(!window.open([f,p].join(''),'mb',['toolbar=0,status=0,resizable=1,width=440,height=430,left=',(s.width-440)/2,',top=',(s.height-430)/2].join('')))u.href=[f,p].join('');};if(/Firefox/.test(navigator.userAgent))setTimeout(a,0);else%20a();})(screen,document,encodeURIComponent,'','','★★★推圖連結★★★','★★★網頁標題★★★','★★★網址★★★','utf-8'));"></a>
+									<a class="twitter" href="javascript: void(window.open('http://twitter.com/home/?status=' .concat(encodeURIComponent('★★★網頁標題★★★')) .concat('★★★網頁摘要★★★') .concat(encodeURIComponent('★★★網址★★★'))));"></a>
+
+
+								</div>
+								<!--menu_1 結束-->
+								<!--menu_2 開始-->
+								<div class="menu_2 clearfix">
+
+									<!--fb讚 開始-->
+									<div class="fb-like fb_iframe_widget" data-href="https://www.ettoday.net/dalemon/post/36459" data-layout="button_count"
+									 data-action="like" data-show-faces="false" data-share="false" fb-xfbml-state="rendered"
+									 fb-iframe-plugin-query="action=like&amp;app_id=146858218737386&amp;container_width=0&amp;href=https%3A%2F%2Fwww.ettoday.net%2Fdalemon%2Fpost%2F36459&amp;layout=button_count&amp;locale=en_US&amp;sdk=joey&amp;share=false&amp;show_faces=false"><span
+										 style="vertical-align: bottom; width: 77px; height: 20px;"><iframe name="f1130046f2c6e74" width="1000px"
+											 height="1000px" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media"
+											 title="fb:like Facebook Social Plugin" src="https://www.facebook.com/v2.7/plugins/like.php?action=like&amp;app_id=146858218737386&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2FxaOI6zd9HW9.js%3Fversion%3D42%23cb%3Df3886c0998c0ff%26domain%3Dwww.ettoday.net%26origin%3Dhttps%253A%252F%252Fwww.ettoday.net%252Ff259b32c1989d24%26relation%3Dparent.parent&amp;container_width=0&amp;href=https%3A%2F%2Fwww.ettoday.net%2Fdalemon%2Fpost%2F36459&amp;layout=button_count&amp;locale=en_US&amp;sdk=joey&amp;share=false&amp;show_faces=false"
+											 style="border: none; visibility: visible; width: 77px; height: 20px;" class=""></iframe></span></div>
+									<!--fb讚 結束-->
+
+									<!--限制級 開始-->
+									<div class="adult">
+									</div>
+									<!--							<script src="http://static.ettoday.net/style/adult/adult-alert.js"></script>-->
+									<!--限制級 結束-->
+
+								</div>
+								<!--menu_2 結束-->
+							</div>
+							<!-- sharebox_1 分享組件 結束-->
+
+
+
+
+
+							<!--本文 開始-->
+							<div class="story">
+								<p>關於台灣人到日本旅遊，有個都市傳說是這樣的：「無法溝通的時候，寫中文他們就懂了！」先不討論這件事是否屬實，但近幾年在日本年輕人之間，的確有種名為「偽中國語」的文字流行起來，專門用來傳LINE或簡訊。</p>
+								<p><strong>▼看得懂這段對話在說啥嗎？</strong><br />
+									<img src="images/d1.jpg" alt="「歯磨毛」啥意思？日節目用偽中國語和中國店員溝通　結果大驚奇。（圖／取自秒拍）" width="600" height="450" /></p>
+								<p>所謂「偽中國語」，就是完全不使用平假名或片假名，而只用漢字作為溝通文字。不過問題來了，這種對日本人來說還算能夠解讀的文字，看在真正的中文使用者眼裡，也能被讀懂嗎？</p>
+
+								<!--大影音 開始-->
+								<div class="video">
+									<iframe src="https://www.youtube.com/embed/atGbcYTjZCY" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+								</div>
+								<!--大影音 結束-->
+
+								<!--關鍵字  橫列關鍵字選單 開始-->
+								<div class="keyword">關鍵字：
+									<span><a href="search.htm">關鍵字一</a></span>
+									<span><a href="search.htm">關鍵字二</a></span>
+									<span><a href="search.htm">關鍵字三</a></span>
+									<span><a href="search.htm">關鍵字四</a></span>
+									<span><a href="search.htm">關鍵字五</a></span>
+									<span><a href="search.htm">關鍵字六</a></span>
+								</div>
+								<!--關鍵字  橫列關鍵字選單 結束-->
+
+							</div>
+							<!--本文 結束-->
+
+
+						</div>
+						<!--新聞模組 開始- 結束-->
+
+
+
+						<!--給本文來顆檸檬吧 開始-->
+						<div class="block block_1">
+							<!--block_title 開始-->
+							<div class="block_title">
+								<span><i class="fab fa-envira"></i> 給本文來顆檸檬吧</span>
+							</div>
+							<!--block_title 結束-->
+
+							<!--block_content 開始-->
+							<div class="block_content">
+
+								<!--操作 開始-->
+								<div class="operate_1">
+
+									<!--menu 開始-->
+									<ul class="menu">
+										<li class="lemon_icon_vote_do" value="1"><span>25%</span></li>
+										<li class="lemon_icon_vote_do" value="2"><span>0%</span></li>
+										<li class="lemon_icon_vote_do" value="3"><span>25%</span></li>
+										<li class="lemon_icon_vote_do" value="6"><span>25%</span></li>
+										<li class="lemon_icon_vote_do" value="7"><span>0%</span></li>
+										<li class="lemon_icon_vote_do" value="8"><span>25%</span></li>
+									</ul>
+									<!--menu 結束-->
+
+
+									<div class="caret"></div>
+									<!--content 開始-->
+
+									<!--content 開始-->
+									<div class="content">
+										<!--組-->
+										<div class="item">
+											<h5>今日最驚</h5>
+											<a href="news.htm">我是標題五六七八九十我是標題五六七八貳十我是標題五</a>
+											<a href="news.htm">我是標題五六七八九十我是標題五六七八貳十我是標題五</a>
+											<a href="news.htm">我是標題五六七八九十我是標題五六七八貳十我是標題五</a>
+										</div>
+										<!--組-->
+										<div class="item">
+											<h5>今日最酸</h5>
+											<a href="news.htm">我是標題五六七八九十我是標題五六七八貳十我是標題五</a>
+											<a href="news.htm">我是標題五六七八九十我是標題五六七八貳十我是標題五</a>
+											<a href="news.htm">我是標題五六七八九十我是標題五六七八貳十我是標題五</a>
+										</div>
+										<!--組-->
+										<div class="item">
+											<h5>今日最瞎</h5>
+											<a href="news.htm">我是標題五六七八九十我是標題五六七八貳十我是標題五</a>
+											<a href="news.htm">我是標題五六七八九十我是標題五六七八貳十我是標題五</a>
+											<a href="news.htm">我是標題五六七八九十我是標題五六七八貳十我是標題五</a>
+										</div>
+										<!--組-->
+										<div class="item">
+											<h5>今日最宅</h5>
+											<a href="news.htm">我是標題五六七八九十我是標題五六七八貳十我是標題五</a>
+											<a href="news.htm">我是標題五六七八九十我是標題五六七八貳十我是標題五</a>
+											<a href="news.htm">我是標題五六七八九十我是標題五六七八貳十我是標題五</a>
+										</div>
+										<!--組-->
+
+										<div class="item">
+											<h5>今日最萌</h5>
+											<a href="news.htm">我是標題五六七八九十我是標題五六七八貳十我是標題五</a>
+											<a href="news.htm">我是標題五六七八九十我是標題五六七八貳十我是標題五</a>
+											<a href="news.htm">我是標題五六七八九十我是標題五六七八貳十我是標題五</a>
+										</div>
+										<!--組-->
+										<div class="item">
+											<h5>今日最暖</h5>
+											<a href="news.htm">我是標題五六七八九十我是標題五六七八貳十我是標題五</a>
+											<a href="news.htm">我是標題五六七八九十我是標題五六七八貳十我是標題五</a>
+											<a href="news.htm">我是標題五六七八九十我是標題五六七八貳十我是標題五</a>
+										</div>
+										<!--組-->
+									</div>
+									<!--content 結束-->
+
+									<!--APP下載 開始-->
+									<div id="app-download" class="download_app">
+										<a href="http://www.ettoday.net/events/app/et_dalemon.htm" target="_blank">低潮嗎？快來一劑神療癒！讓鍵盤大檸檬APP帶你上雲端</a>
+									</div>
+									<!--APP下載 結束-->
+									<!--part_social_1 社群操作 開始-->
+									<div class="part_social_1 clearfix">
+										<a class="fb" href="https://www.facebook.com/ET.Lemons" target="_blank"></a>
+										<a class="line" href="http://line.naver.jp/ti/p/%23today" target="_blank"></a>
+										<a class="youtube" href="https://www.youtube.com/user/ettoday" target="_blank"></a>
+										<a class="message scrollgo" href="#" rel=".fb-comments">留言</a>
+									</div>
+									<!--part_social_1 社群操作 結束-->
+
+								</div>
+								<!--操作 結束-->
+							</div>
+							<!--block_content 結束-->
+						</div>
+						<!--給本文來顆檸檬吧 結束-->
+
+
+
+
+
+
+
+						<!--最新留言 開始-->
+						<div class="block block_1">
+							<!--block_title 開始-->
+							<div class="block_title">
+								<span><i class="fab fa-envira"></i> 最新留言</span>
+							</div>
+							<!--block_title 結束-->
+
+							<!--block_content 開始-->
+							<div class="block_content">
+								<!--FB留言 開始-->
+								<div class="fb-comments" data-href="http://www.ettoday.net/dalemon/post/11360" data-width="100%" data-numposts="5"
+								 data-colorscheme="light"></div>
+								<!--FB留言 結束-->
+							</div>
+							<!--block_content 結束-->
+						</div>
+						<!--最新留言 結束-->
+
+
+
+						<!--推薦閱讀 開始-->
+						<div class="block block_1">
+							<!--block_title 開始-->
+							<div class="block_title">
+								<span><i class="fab fa-envira"></i> 推薦閱讀</span>
+							</div>
+							<!--block_title 結束-->
+
+							<!--block_content 開始-->
+							<div class="block_content">
+
+								<!-- part_pictxt_2 開始 -->
+								<div class="part_pictxt_2">
+
+									<!-- 組 開始 -->
+									<div class="piece clearfix">
+										<!-- 左box 開始 -->
+										<div class="box">
+											<!--pic 開始-->
+											<div class="pic">
+												<a href="news.htm"><img src="images/b1.jpg" alt="" /></a>
+											</div>
+											<!--pic 結束-->
+											<!--count 開始-->
+											<div class="count">
+												<!--fb分享 開始-->
+												<div class="fb-share-button" data-href="https://www.ettoday.net/dalemon/post/36535" data-layout="button_count"
+												 data-size="small" data-mobile-iframe="true"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.ettoday.net%2Fdalemon%2Fpost%2F36535&amp;src=sdkpreparse"
+													 class="fb-xfbml-parse-ignore">分享</a></div>
+												<!--fb分享 結束-->
+											</div>
+											<!--count 結束-->
+										</div>
+										<!-- 左box 結束 -->
+										<!--右info 開始-->
+										<div class="info">
+											<a class="editor" href="editor-news.htm"><i class="fas fa-pencil-alt"></i> 王小明</a>
+											<h3 class="title"><a href="news.htm">我是標題五六七八九十我是標題五六七八貳十我是標題五</a></h3>
+											<p class="summary">我是摘要五六七八九十我是摘要五六七八貳十我是摘要五六七八我是摘要五六七八九十我是摘要五六七八貳十我是摘要五六七八..</p>
+										</div>
+										<!--右info 結束-->
+									</div>
+									<!-- 組 結束-->
+
+									<!-- 組 開始 -->
+									<div class="piece clearfix">
+										<!-- 左box 開始 -->
+										<div class="box">
+											<!--pic 開始-->
+											<div class="pic">
+												<a href="news.htm"><img src="images/b1.jpg" alt="" /></a>
+											</div>
+											<!--pic 結束-->
+											<!--count 開始-->
+											<div class="count">
+												<!--fb分享 開始-->
+												<div class="fb-share-button" data-href="https://www.ettoday.net/dalemon/post/36535" data-layout="button_count"
+												 data-size="small" data-mobile-iframe="true"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.ettoday.net%2Fdalemon%2Fpost%2F36535&amp;src=sdkpreparse"
+													 class="fb-xfbml-parse-ignore">分享</a></div>
+												<!--fb分享 結束-->
+											</div>
+											<!--count 結束-->
+										</div>
+										<!-- 左box 結束 -->
+										<!--右info 開始-->
+										<div class="info">
+											<a class="editor" href="editor-news.htm"><i class="fas fa-pencil-alt"></i> 王小明</a>
+											<h3 class="title"><a href="news.htm">我是標題五六七八九十我是標題五六七八貳十我是標題五</a></h3>
+											<p class="summary">我是摘要五六七八九十我是摘要五六七八貳十我是摘要五六七八我是摘要五六七八九十我是摘要五六七八貳十我是摘要五六七八..</p>
+										</div>
+										<!--右info 結束-->
+									</div>
+									<!-- 組 結束-->
+
+									<!-- 組 開始 -->
+									<div class="piece clearfix">
+										<!-- 左box 開始 -->
+										<div class="box">
+											<!--pic 開始-->
+											<div class="pic">
+												<a href="news.htm"><img src="images/b1.jpg" alt="" /></a>
+											</div>
+											<!--pic 結束-->
+											<!--count 開始-->
+											<div class="count">
+												<!--fb分享 開始-->
+												<div class="fb-share-button" data-href="https://www.ettoday.net/dalemon/post/36535" data-layout="button_count"
+												 data-size="small" data-mobile-iframe="true"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.ettoday.net%2Fdalemon%2Fpost%2F36535&amp;src=sdkpreparse"
+													 class="fb-xfbml-parse-ignore">分享</a></div>
+												<!--fb分享 結束-->
+											</div>
+											<!--count 結束-->
+										</div>
+										<!-- 左box 結束 -->
+										<!--右info 開始-->
+										<div class="info">
+											<a class="editor" href="editor-news.htm"><i class="fas fa-pencil-alt"></i> 王小明</a>
+											<h3 class="title"><a href="news.htm">我是標題五六七八九十我是標題五六七八貳十我是標題五</a></h3>
+											<p class="summary">我是摘要五六七八九十我是摘要五六七八貳十我是摘要五六七八我是摘要五六七八九十我是摘要五六七八貳十我是摘要五六七八..</p>
+										</div>
+										<!--右info 結束-->
+									</div>
+									<!-- 組 結束-->
+
+
+								</div>
+								<!-- part_pictxt_2 結束 -->
+							</div>
+							<!--block_content 結束-->
+
+						</div>
+						<!--推薦閱讀 結束-->
+
+						<!-- 播吧熱門影音 開始 -->
+						<!--影音圖集 .etvideo_collect_1  熱門影音 .etvideo_collect_2 開始===================-->
+						<link rel="stylesheet" type="text/css" href="//static.ettoday.net/style/video-ad/03/css/etvideo_collect_1+2.css">
+						<link rel="stylesheet" type="text/css" href="//static.ettoday.net/style/video-ad/03/js/jquery.bxslider/jquery.bxslider.css">
+						<script src="//static.ettoday.net/style/video-ad/03/js/jquery.bxslider/jquery.bxslider.js"></script>
+						<script>
+							//影音圖集 etvideo_collect_1================
+							$(function () {
+								var mySlider_video = $('.etvideo_collect_1 .run .inner').bxSlider({
+									slideWidth: 385, //修改左右露出
+									minSlides: 2, //修改左右露出
+									maxSlides: 2, //修改左右露出
+									auto: true,
+									pause: 4000,
+									autoDelay: 3000,
+									pager: false,
+									slideMargin: 10,
+									moveSlides: 1,
+									onSliderLoad: function () {
+										$('.etvideo_collect_1').css({
+											height: "auto"
+										});
+										$('.etvideo_collect_1 .run .inner .piece img').show();
+									}
+								});
+							});
+						</script>
+
+
+
+						<!--影音圖集 .etvideo_collect_1 開始-->
+						<!--影音圖集 etvideo_collect_1 結束-->
+
+
+						<!--etvideo_collect_2 熱門影音 開始-->
+						<div class="etvideo_collect_2 clearfix">
+							<h2 class="title">熱門影音<a class="et_more" href="https://boba.ettoday.net/">更多&gt;&gt;</a></h2>
+							<!--content 內容 開始-->
+							<div class="content">
+
+
+								<!--組-->
+								<a class="piece clearfix" href="https://boba.ettoday.net/videonews/88057?from=mw-hot">
+									<div class="pic"><img src="//cdn2.ettoday.net/film/images/88/b88057.jpg" alt="" /></div>
+									<h3 class="headline">蔥油餅、蚵蛋包、龍鳳腿！　來去一趟宜蘭狂暴吃貨之旅</h3>
+								</a>
+								<!--組-->
+
+
+								<!--MobileWeb 圖文原生廣告 開始-->
+								<script language="JavaScript" type="text/javascript">
+									<!-- <![CDATA[
+									var ts = Math.random();
+									document.write('<scr' +
+										'ipt language="JavaScript" type="text/javascript" src="https://ad.ettoday.net/ads.php?bid=mobileweb_video_1&rr=' +
+										ts + '"></scr' + 'ipt>');
+									// ]]> -->
+								</script>
+								<!--MobileWeb 圖文原生廣告 結束-->
+
+								<!--MobileWeb 圖文原生廣告 開始-->
+								<script language="JavaScript" type="text/javascript">
+									<!-- <![CDATA[
+									var ts = Math.random();
+									document.write('<scr' +
+										'ipt language="JavaScript" type="text/javascript" src="https://ad.ettoday.net/ads.php?bid=mobileweb_video_2&rr=' +
+										ts + '"></scr' + 'ipt>');
+									// ]]> -->
+								</script>
+								<!--MobileWeb 圖文原生廣告 結束-->
+
+								<!--MobileWeb 圖文原生廣告 開始-->
+								<script language="JavaScript" type="text/javascript">
+									<!-- <![CDATA[
+									var ts = Math.random();
+									document.write('<scr' +
+										'ipt language="JavaScript" type="text/javascript" src="https://ad.ettoday.net/ads.php?bid=mobileweb_video_3&rr=' +
+										ts + '"></scr' + 'ipt>');
+									// ]]> -->
+								</script>
+								<!--MobileWeb 圖文原生廣告 結束-->
+
+								<!--組-->
+								<a class="piece clearfix" href="https://boba.ettoday.net/videonews/88285?from=mw-hot">
+									<div class="pic"><img src="//cdn2.ettoday.net/film/images/88/b88285.jpg" alt="" /></div>
+									<h3 class="headline">不斷攪拌調節速度最後往上拉 台南傳統椪糖DIY過程超療癒❤</h3>
+								</a>
+								<!--組-->
+
+
+								<!--組-->
+								<a class="piece clearfix" href="https://boba.ettoday.net/videonews/88265?from=mw-hot">
+									<div class="pic"><img src="//cdn2.ettoday.net/film/images/88/b88265.jpg" alt="" /></div>
+									<h3 class="headline">「吧」代表生氣、問穿著說好看　學會對待女友不怕鬧分手！</h3>
+								</a>
+								<!--組-->
+
+
+								<!--組-->
+								<a class="piece clearfix" href="https://boba.ettoday.net/videonews/88597?from=mw-hot">
+									<div class="pic"><img src="//cdn2.ettoday.net/film/images/88/b88597.jpg" alt="" /></div>
+									<h3 class="headline">掃描式微波爐、結帳只要10秒　帶你實際體驗7-11無人超商！</h3>
+								</a>
+								<!--組-->
+
+
+								<!--組-->
+								<a class="piece clearfix" href="https://boba.ettoday.net/videonews/88595?from=mw-hot">
+									<div class="pic"><img src="//cdn2.ettoday.net/film/images/88/b88595.jpg" alt="" /></div>
+									<h3 class="headline">6歲弟SWAG遊台中14個景點 超精準對拍網友全驚呆！</h3>
+								</a>
+								<!--組-->
+
+
+							</div>
+							<!--content 內容 結束-->
+
+							<!--更多 開始-->
+							<div class="et_more_box"><a class="et_more" href="http://boba.ettoday.net/">更多&gt;&gt;</a></div>
+							<!--更多 結束-->
+
+						</div>
+						<!--etvideo_collect_2 熱門影音 結束-->
+						<!--影音圖集 .etvideo_collect_1  熱門影音 .etvideo_collect_2 結束====================-->
+						<!-- 播吧熱門影音 結束 -->
+
+
+						<!-- part_menu_2 開始-->
+						<div class="part_menu_2">
+							<a class="gototocomments scrollgo" href="#" rel=".fb-comments">留言</a>
+						</div>
+						<!-- part_menu_2 結束-->
+
+					</div>
+					<!--c1 結束-->
+
+				</div>
+				<!--r1 結束-->
+
+			</div>
+			<!--container 結束-->
+
+			<!--gototop 回到最上面 開始-->
+			<div class="gototop">回到最上面</div>
+			<!--gototop 回到最上面 開始-->
+
+
+		</div>
+		<!--wrapper 結束 -->
+
+	</div>
+	<!--wrapper_box 結束 -->
+	<!--footer 開始-->
+	<div class="footer" itemscope itemprop="publisher" itemtype="https://schema.org/Organization">
+		<div class="menu_1 clearfix">
+			<a href="#" onclick="location.replace('http://www.ettoday.net/changeReadType.php?rtype=1&rurl=http%3A%2F%2Fwww.ettoday.net%2Fdalemon%2Fpost%2F11360');">電腦版</a>|
+			<a href="http://www.ettoday.net/about-ettoday.htm" target="_blank">關於我們</a>|
+			<a itemprop="email" href="mailto:service@ettoday.net" content="service@ettoday.net">聯絡我們</a>
+		</div>
+
+		<p><span itemprop="name">東森新聞雲股份有限公司</span> 版權所有
+			<br> 非經授權，不許轉載本網站內容
+			<br> © ETtoday.net All Rights Reserved.
+			<br> 電話：
+			<span itemprop="telephone">+886-2-5555-6366</span>
+		</p>
+		<!--本區隱藏 開始-->
+		<span class="footer_logo" itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+			<link itemprop="url" href="//static.ettoday.net/style/dalemon2016-m/images/push.jpg">
+		</span>
+		<!--本區隱藏 結束-->
+	</div>
+
+</body>
+
+</html>

@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>news-m</title>
+    <!-- ★CSS、JS 開始 -->
+    <link href="//static.ettoday.net/style/mobileweb2014/css/style.css" rel="stylesheet"/>
+    <script src="//static.ettoday.net/style/mobileweb2014/js/all.js"></script>        
+    <!-- ★CSS、JS 結束 -->   
+</head>
+<body>
+
+    <div class="nav_2" style="display:none;"></div>
+           
+    <!-- common2.js 開始 -->
+    <script src="//static.ettoday.net/style/mobileweb2014/js/common2.js"></script>
+    <!-- common2.js 結束 -->
+    
+
+    <script>
+        //大選輪播========================================================
+        $(function(){
+            //首頁---------------
+            if( $(".gallery_1").length > 0 ){
+                $('.gallery_1 .run .inner').bxSlider({
+                    controls : true,
+                    //randomStart : true,  //亂數初始張
+                    mode : 'horizontal', //轉場效果
+                    captions : true,     //標題
+                    auto : true,         //自動輪播
+                    pause : 3000,		 //單張停留時間
+                    adaptiveHeight: true,//自適應高
+                    useCSS:false,        //換成jquery animate,修正chrome動畫bug
+                    autoHover: true,  //設置鼠標mouseover將會使自動滾動暫停 
+                })
+            }
+        })
+    </script>
+    <style>
+    .gallery_1{ width:100%; max-width: 768px; height: 385px; margin: 0px auto 20px; margin-top: 5px;}
+    .gallery_1 .run{ width:100%; max-width:768px; height: 385px;}
+    .gallery_1 .run .inner .piece{ width:100%; }
+    .gallery_1 .run .inner .piece .table_1 table{ width:100%; background: #fff;  }
+    .gallery_1 .run .inner .piece .table_1 table tr{ font-size: 16px; text-align: center; }
+    .gallery_1 .run .inner .piece .table_1 table tr td{ padding: 5px; }
+    .gallery_1 .run .inner .piece .table_1 table td.six{ font-weight: bold; text-align: left; background: #F0C71B;  }
+    .gallery_1 .run .inner .piece .table_1 table td.others{ font-weight: bold; text-align: left;  background: #52ACDD; }
+    .gallery_1 .run .inner .piece .table_1 table tr td.city{ width: 2%; padding: 15px; }
+    .gallery_1 .run .inner .piece .table_1 table td.candidate{ background: #D1D1D1; }
+    .gallery_1 .run .inner .piece .table_1 table td.num{ background: #D1D1D1;}
+    .gallery_1 .run .inner .piece .table_1 table td span{ margin-right: 10px;}
+    .gallery_1 .run .inner .piece .table_1 table tr td.more{ font-weight: bold; text-align: center; background: #DA401B; padding: 0px; }
+    .gallery_1 .run .inner .piece .table_1 table tr td a{ display: block; float: right;}
+    .gallery_1 .run .inner .piece .table_1 table tr td a.btn{ display: block; float: none; padding: 8px; color: #fff; /*border: 1px solid #DA401B;*/}
+
+    .gallery_1 .bx-controls .bx-pager { display: none; }
+
+    @media all and (max-width: 768px) {
+        .gallery_1{ height: 300px;}
+        .gallery_1 .run{ height: 300px;}
+        .gallery_1 .run .inner .piece .table_1 table tr{ font-size: 14px;}
+        .gallery_1 .run .inner .piece .table_1 table tr td.city{ width: 2%; padding: 5px; }   
+        .gallery_1 .run .inner .piece .table_1 table td span{ margin-right: 5px;}
+        
+        .gallery_1 .run .inner .piece .table_1 table tr td.more{ font-size:12px;}
+        .gallery_1 .run .inner .piece .table_1 table tr td a.btn{ padding: 2px; }
+    }
+
+    @media all and (max-width: 367px) {
+        .gallery_1 .run .inner .piece .table_1 table td.candidate{ width: 17%;} 
+    }
+    </style>
+        
+    <!--gallery_1 開始-->
+    <div class="gallery_1">
+        <!--滾動 開始-->
+        <div class="run">
+            <!--inner 開始-->
+            <div class="inner">
+                <!--組 開始-->
+                <div class="piece">
+                    <!--table_1 開始-->
+                    <div class="table_1">
+                        <table>
+                            <tr>
+                                <td class="six" colspan="6">六都即時開票狀況</td>
+                            </tr>
+                            <tr>  
+                                <td class="city" rowspan="2">台北市</td>
+                                <td class="candidate">柯文哲</td>
+                                <td class="num"><span>999999</span>票</td>
+
+                                <td class="city"  rowspan="2">台中市</td>
+                                <td class="candidate">盧秀燕</td>
+                                <td class="num"><span>999999</span>票</td>
+                                
+                            </tr>
+                            <tr>
+                                <!--台北市-->
+                                <td class="candidate">丁守中</td>
+                                <td class="num"><span>999999</span>票</td>
+                                <!--台中市-->
+                                <td class="candidate">林佳龍</td>
+                                <td class="num"><span>999999</span>票</td>
+                                
+                            </tr>
+                            <tr>  
+                                <td class="city"  rowspan="2">新北市</td>
+                                <td class="candidate">蘇貞昌</td>
+                                <td class="num"><span>999999</span>票</td>
+
+                                <td class="city"  rowspan="2">台南市</td>
+                                <td class="candidate">蘇煥智</td>
+                                <td class="num"><span>999999</span>票</td>
+                                
+                            </tr>
+                            <tr> 
+                                <!--新北市-->
+                                <td class="candidate">侯友宜</td>
+                                <td class="num"><span>999999</span>票</td>
+                                <!--台南市-->
+                                <td class="candidate">高思博</td>
+                                <td class="num"><span>999999</span>票</td>
+
+                            </tr>
+                            <tr>  
+                                <td class="city"  rowspan="2">桃園市</td>
+                                <td class="candidate">鄭文燦</td>
+                                <td class="num" ><span>999999</span>票</td>
+
+                                <td class="city"  rowspan="2">高雄市</td>
+                                <td class="candidate">韓國瑜</td>
+                                <td class="num" ><span>999999</span>票</td>
+
+                            </tr>
+                            <tr>
+                                <!--桃園市-->
+                                <td class="candidate">陳學聖</td>
+                                <td class="num" ><span>999999</span>票</td>
+
+                                <!--高雄市-->
+                                <td class="candidate">陳其邁</td>
+                                <td class="num" ><span>999999</span>票</td>
+                            </tr>
+                            <tr>
+                                <td class="six" colspan="6"><a href="mayor.htm" target="_blank">詳細看更多 ></a></td> 
+                            </tr>
+                                
+                        </table>
+                    </div>
+                    <!--table_1 結束-->
+                </div>
+                <!--組 結束--> 
+
+                <!--組 開始-->
+                <div class="piece">
+                    <!--table_1 開始-->
+                    <div class="table_1">
+                        <table>
+                            <tr>
+                                <td class="others" colspan="6">16 縣市即時開票狀況</td>
+                            </tr>
+                            <tr>  
+                                <td class="city" rowspan="2">基隆市</td>
+                                <td class="candidate">林右昌</td>
+                                <td class="num"><span>999999</span>票</td>
+
+                                <td class="city"  rowspan="2">宜蘭縣</td>
+                                <td class="candidate">林姿妙</td>
+                                <td class="num"><span>999999</span>票</td>
+                                
+                            </tr>
+                            <tr>
+                                <!--基隆市-->
+                                <td class="candidate">謝立功</td>
+                                <td class="num"><span>999999</span>票</td>
+                                <!--宜蘭縣-->
+                                <td class="candidate">陳歐珀</td>
+                                <td class="num"><span>999999</span>票</td>
+                                
+                            </tr>
+                            <tr>  
+                                <td class="city"  rowspan="2">新竹市</td>
+                                <td class="candidate">林智堅</td>
+                                <td class="num"><span>999999</span>票</td>
+
+                                <td class="city"  rowspan="2">嘉義市</td>
+                                <td class="candidate">黃敏惠</td>
+                                <td class="num"><span>999999</span>票</td>
+                                
+                            </tr>
+                            <tr> 
+                                <!--新竹市-->
+                                <td class="candidate">許明財</td>
+                                <td class="num"><span>999999</span>票</td>
+                                <!--嘉義市-->
+                                <td class="candidate">涂醒哲</td>
+                                <td class="num"><span>999999</span>票</td>
+
+                            </tr>
+                            <tr>  
+                                <td class="city"  rowspan="2">彰化縣</td>
+                                <td class="candidate">魏明谷</td>
+                                <td class="num" ><span>999999</span>票</td>
+
+                                <td class="city"  rowspan="2">澎湖縣</td>
+                                <td class="candidate">賴峰偉</td>
+                                <td class="num" ><span>999999</span>票</td>
+
+                            </tr>
+                            <tr>
+                                <!--彰化縣-->
+                                <td class="candidate">王惠美</td>
+                                <td class="num" ><span>999999</span>票</td>
+
+                                <!--澎湖縣-->
+                                <td class="candidate">陳光復</td>
+                                <td class="num" ><span>999999</span>票</td>
+                            </tr>
+                            <tr>
+                                <td class="others" colspan="6"><a href="alderman.htm" target="_blank">詳細看更多 ></a></td> 
+                            </tr>
+                                
+                        </table>
+                    </div>
+                    <!--table_1 結束-->
+                </div>
+                <!--組 結束-->
+
+                <!--組 開始-->
+                <div class="piece">
+                    <!--table_1 開始-->
+                    <div class="table_1">
+                        <table>
+                            <tr>
+                                <td class="others" colspan="6">16 縣市即時開票狀況</td>
+                            </tr>
+                            <tr>  
+                                <td class="city" rowspan="2">新竹縣</td>
+                                <td class="candidate">楊文科</td>
+                                <td class="num"><span>999999</span>票</td>
+
+                                <td class="city"  rowspan="2">雲林縣</td>
+                                <td class="candidate">張麗善</td>
+                                <td class="num"><span>999999</span>票</td>
+                                
+                            </tr>
+                            <tr>
+                                <!--新竹縣-->
+                                <td class="candidate">鄭朝方</td>
+                                <td class="num"><span>999999</span>票</td>
+                                <!--雲林縣-->
+                                <td class="candidate">李進勇</td>
+                                <td class="num"><span>999999</span>票</td>
+                                
+                            </tr>
+                            <tr>  
+                                <td class="city"  rowspan="2">苗栗縣</td>
+                                <td class="candidate">徐耀昌</td>
+                                <td class="num"><span>999999</span>票</td>
+
+                                <td class="city"  rowspan="2">嘉義縣</td>
+                                <td class="candidate">吳育仁</td>
+                                <td class="num"><span>999999</span>票</td>
+                                
+                            </tr>
+                            <tr> 
+                                <!--苗栗縣-->
+                                <td class="candidate">徐定禎</td>
+                                <td class="num"><span>999999</span>票</td>
+                                <!--嘉義縣-->
+                                <td class="candidate">翁章梁</td>
+                                <td class="num"><span>999999</span>票</td>
+
+                            </tr>
+                            <tr>  
+                                <td class="city"  rowspan="2">南投縣</td>
+                                <td class="candidate">林明溱</td>
+                                <td class="num" ><span>999999</span>票</td>
+
+                                <td class="city"  rowspan="2">屏東縣</td>
+                                <td class="candidate">蘇清泉</td>
+                                <td class="num" ><span>999999</span>票</td>
+
+                            </tr>
+                            <tr>
+                                <!--南投縣-->
+                                <td class="candidate">洪國浩</td>
+                                <td class="num" ><span>999999</span>票</td>
+
+                                <!--屏東縣-->
+                                <td class="candidate">潘孟安</td>
+                                <td class="num" ><span>999999</span>票</td>
+                            </tr>
+                            <tr>
+                                <td class="others" colspan="6"><a href="mayor.htm" target="_blank">詳細看更多 ></a></td> 
+                            </tr>
+                                
+                        </table>
+                    </div>
+                    <!--table_1 結束-->
+                </div>
+                <!--組 結束-->
+
+                <!--組 開始-->
+                <div class="piece">
+                    <!--table_1 開始-->
+                    <div class="table_1">
+                        <table>
+                            <tr>
+                                <td class="others" colspan="6">16 縣市即時開票狀況</td>
+                            </tr>
+                            <tr>  
+                                <td class="city" rowspan="2">花蓮縣</td>
+                                <td class="candidate">徐榛蔚</td>
+                                <td class="num"><span>999999</span>票</td>
+
+                                <td class="city"  rowspan="2">連江縣</td>
+                                <td class="candidate">劉增應</td>
+                                <td class="num"><span>999999</span>票</td>     
+                            </tr>
+                            <tr>
+                                <!--花蓮縣-->
+                                <td class="candidate">劉曉玫</td>
+                                <td class="num"><span>999999</span>票</td>
+
+                                <!--連江縣-->
+                                <td class="candidate">蘇柏豪</td>
+                                <td class="num"><span>999999</span>票</td>
+                            </tr>
+                            <tr>  
+                                <td class="city"  rowspan="2">台東縣</td>
+                                <td class="candidate">饒慶鈴</td>
+                                <td class="num"><span>999999</span>票</td>
+                                
+                                <td class="more" colspan="3"><a class="btn" href="index.htm" target="_blank"></a></td>
+
+                            </tr>
+                            <tr> 
+                                <!--台東縣-->
+                                <td class="candidate">劉櫂豪</td>
+                                <td class="num"><span>999999</span>票</td>
+
+                                <td class="more" colspan="3"><a class="btn" href="index.htm" target="_blank">更詳細的22縣市長開票狀況</a></td>
+                            </tr>
+                            <tr>  
+                                <td class="city"  rowspan="2">金門縣</td>
+                                <td class="candidate">楊鎮浯</td>
+                                <td class="num"><span>999999</span>票</td>  
+                                
+                                <td class="more" colspan="3"><a class="btn" href="index.htm" target="_blank">前往2018九合一大選專區</a></td>                                                  
+                            </tr>
+                            <tr> 
+                                <!--金門縣-->
+                                <td class="candidate">陳福海</td>
+                                <td class="num"><span>999999</span>票</td>
+                                
+                                <td class="more" colspan="3"><a class="btn" href="index.htm" target="_blank"></a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td class="others" colspan="6"><a href="mayor.htm" target="_blank">詳細看更多 ></a></td> 
+                            </tr>
+                                
+                        </table>
+                    </div>
+                    <!--table_1 結束-->
+                </div>
+                <!--組 結束-->
+                                            
+            </div>
+            <!--inner 結束-->
+        </div>
+        <!--滾動 結束-->
+    </div>
+    <!--gallery_1 結束-->
+        
+            
+</body>
+</html>
+        

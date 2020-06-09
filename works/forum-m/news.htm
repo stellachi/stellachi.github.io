@@ -1,0 +1,542 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, minimal-ui" />
+<title>內頁</title>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+<link rel="stylesheet" href="css/style.css" type="text/css" >
+<script src="js/jquery.1.9.1.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/jquery.bxslider/jquery.bxslider.js"></script>
+<link href="js/jquery.bxslider/jquery.bxslider.css" rel="stylesheet" type="text/css" />
+<script src="js/common.js"></script>
+</head>
+
+<body class="news-page">
+<!--FB plugins 共用元素 開始 -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v3.0';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<!--FB plugins 共用元素 結束 -->
+
+<div class="wrapper_box" id="wrapper_box">
+        
+    <!--wrapper 開始 -->
+    <div class="wrapper">
+        <!--header 開始-->
+        <div class="header clearfix">
+            <!--inner 開始-->
+            <div class="inner">
+
+                <h2><a class="main_logo" href="index.htm" title="回首頁">雲論</a></h2>
+                <!--選單 開始
+                <div class="nav_2">
+                    <a href="http://fashion.ettoday.net/video/"><em class="icon_1"></em>影音</a>
+                    <a href="https://www.facebook.com/ETFashion.tw/" target="_blank"><em class="icon_2"></em></a>
+                    <a href="https://www.instagram.com/fashion.ettoday/" target="_blank"><em class="icon_3"></em></a>
+                </div>
+                <!--選單 結束-->
+                
+                <!-- search 搜尋 開始 -->
+                <div class="search">
+
+                    <!-- 搜尋按鈕 開始 -->
+                    <div class="icon_open"><!----></div>
+                    <div class="icon_close"><!----></div>
+                    <!-- 搜尋按鈕 結束 -->
+    
+                    <!-- google搜尋 開始 -->
+                    <div class="gsbox">
+                        <form id="cse-search-box" method="get" action="search.htm">
+                          <input class="keyword" type="text" name="keywords" size="26"/>
+                          <input class="send" type="image" name="sa" src="images/search.png"/>
+                        </form>
+                    </div>
+                <!-- google搜尋 結束 -->
+
+            </div>
+            <!-- search 搜尋 結束 -->
+
+            </div>
+            <!--inner 結束-->
+        </div>
+        <!--header 結束-->
+        
+        
+        <!--side_menu 側欄選單 開始-->
+        <div class="side_menu">
+            <!--btn_switch 選單開關 開始-->
+            <input id="btn_switch" type="checkbox"></input>
+            <label for="btn_switch"></label>
+            <!--btn_switch 選單開關 結束-->
+            
+            
+            <!--nav 選單內容 開始-->
+            <div class="nav">
+                <!--粉絲團 開始-->
+<!--
+                <div style="padding-top: 50px;">
+                
+                 </div>
+-->
+                 <!--粉絲團 結束-->
+                 
+                <!--ul 開始-->
+                <ul class="inner">
+                    <li><a href="index.htm">焦點評論</a></li>
+					<li><a href="newslist.htm">公民發聲</a></li>
+					<li><a href="newslist.htm">政治外交</a></li>
+					<li><a href="newslist.htm">財經科技</a></li>
+					<li><a href="newslist.htm">司法人權</a></li>
+					<li><a href="newslist.htm">行動法庭</a></li>
+					<li><a href="newslist.htm">教育生活</a></li>
+					<li><a href="newslist.htm">健康美妍</a></li>
+					<li><a href="newslist.htm">星光影評</a></li>
+					<li><a href="newslist.htm">圖文專區</a></li>
+					<li><a href="column-list.htm">雲論菁英</a></li>
+					<li><a href="#">自訂欄位1</a></li>
+					<li><a href="#">自訂欄位2</a></li>
+               		<li><a href=javascript:;alert("使用活動公版頁")>我要投稿/我要伸冤</a></li>
+               		<li><a href="https://www.ettoday.net/events/app/ettoday_app.htm" target="_blank">ETtoday新聞雲App</a></li>
+<!--               		<li><a href="http://events.ettoday.net/about-ettoday/index.htm" target="_blank">關於我們</a></li>-->
+<!--               		<li><a href="javascript:;" onclick="location.replace('#');">電腦版</a></li>-->
+               		
+                </ul>
+                <!--ul 結束-->
+                
+                <!--footer 開始-->
+				<div class="footer">
+				 	<!--粉絲團 開始-->
+					 <div class="fb-page" data-href="https://www.facebook.com/ETtoday88/" data-width="200" data-small-header="true" data-adapt-container-width="false" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/ETtoday88/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/ETtoday88/">雲論</a></blockquote></div>
+					 <!--粉絲團 結束-->
+					 
+					&nbsp;&nbsp;&nbsp;<a href="javascript:;" onclick="location.replace('#');">電腦版</a>
+					| 
+					<a href="//events.ettoday.net/about-ettoday/index.htm">關於我們</a>
+					<br>
+					<a href="mailto:editor88@ettoday.net">投稿信箱</a>
+					|
+					<a href="mailto:service@ettoday.net">聯絡信箱</a>
+					<p>東森新聞雲股份有限公司 版權所有</br>
+						非經授權，不許轉載本網站內容</br>
+						© ETtoday.net All Rights Reserved.</p>
+				</div>
+               <!--footer 結束-->
+            </div>
+            <!--nav 選單內容 結束-->        
+        </div>
+        <!--side_menu 側欄選單 結束-->
+
+        
+    
+    
+        <!--forum_menu 開始-->
+        <div class="forum_menu">
+            <ul class="inner">
+                <li><a href="index.htm">焦點評論</a></li>
+				<li><a href="newslist.htm">公民發聲</a></li>
+				<li><a href="newslist.htm">政治外交</a></li>
+				<li><a href="newslist.htm">財經科技</a></li>
+				<li><a href="newslist.htm">司法人權</a></li>
+				<li><a href="newslist.htm">行動法庭</a></li>
+				<li><a href="newslist.htm">教育生活</a></li>
+				<li><a href="newslist.htm">健康美妍</a></li>
+				<li><a href="newslist.htm">星光影評</a></li>
+				<li><a href="newslist.htm">圖文專區</a></li>
+				<li><a href="column-list.htm">雲論菁英</a></li>
+				<li><a href="#">自訂欄位1</a></li>
+				<li><a href="#">自訂欄位2</a></li>
+            </ul>
+        </div>
+        <!--forum_menu 結束-->
+        
+        <!--container 開始-->
+        <div class="container"> <!--r1 開始-->
+			<div class="r1"> <!--c1 開始-->
+				<div class="c1"> <!--et_sticky 模組-置頂吸住 開始-->
+				<div id="et_sticky">
+					<!--part_breadcrumb_2 麵包屑 開始-->
+					<div class="part_breadcrumb_2 clearfix">
+						<!--麵包屑 開始-->
+						<div class="menu_bread_crumb clearfix">
+							<!-- 第一層 開始 -->
+							<div>
+								<a href="#">
+									<span itemprop="name">ETtoday雲論</span>
+								</a>
+							</div>
+							<!-- 第一層 結束 -->
+							&gt;
+							<!-- 第二層 開始 -->
+
+							<div>
+								<a href="#">
+									<span itemprop="name">細類名稱</span>
+								</a>
+							</div>
+							<!-- 第二層 結束 -->
+						</div>
+						<!--麵包屑 結束-->
+					</div>
+					<!-- part_breadcrumb_2 麵包屑 結束-->
+				</div>
+				<!--et_sticky 模組-置頂吸住 結束-->
+
+				
+				
+				
+					
+				<!-- breadcrumb_box 開始-->
+					<div class="breadcrumb_box clearfix">
+
+						  <!--麵包屑 開始--> 
+						  <div class="part_breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+								  <!-- 第一層 開始-->
+								  <div itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement">
+										  <a itemscope itemtype="https://schema.org/Thing" itemprop="item" href="https://www.ettoday.net">
+												  <span itemprop="name">ETtoday新聞雲</span>
+										  </a>
+										  <meta itemprop="position" content="1" />
+								  </div>
+								  <!-- 第一層 結束-->
+								  &gt;
+								  <!-- 第二層 開始-->
+								  <div itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement">
+										  <a itemscope itemtype="https://schema.org/Thing" itemprop="item" href="index.htm">
+												  <span itemprop="name">雲論</span>
+										  </a>
+										  <meta itemprop="position" content="2" />
+								  </div>
+								  <!-- 第二層 結束-->
+								  &gt;
+								  <!-- 第三層 結束-->
+								  <div itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement">
+										  <a itemscope itemtype="https://schema.org/Thing" itemprop="item">
+												  <span itemprop="name">細類名稱</span>
+										  </a>
+										  <meta itemprop="position" content="3" />
+								  </div>
+								  <!-- 第三層 結束-->
+						  </div>
+						  <!--麵包屑 結束-->
+							
+					</div>
+					<!-- breadcrumb_box 結束-->
+		    
+		    	 	<!--新聞模組 開始-->
+					<article>
+						<div class="subject_article">                                                                                                                   
+						<header>                                                                                             
+							<h1 class="title" itemprop="headline">我是標題五六七八九十我是標題五六七八貳十我是標題五</h1>
+						</header>
+						
+						
+						<img src="images/voice.png">
+						
+						<!--sharebox_1 分享組件 開始-->
+                      <div class="sharebox_1 clearfix"> 
+                          
+                          <!--menu_1 開始-->
+                          <div class="menu_1 clearfix">
+                              <a class="fb" href="javascript:;" onClick="window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent('★★★網址★★★'),'facebook-share-dialog','width=626,height=436');return false;"></a>
+                               <a class="fb-messenger" href="fb-messenger://share/?link=★★網址★★★"></a>
+
+                              <a class="line" href="http://line.naver.jp/R/msg/text/?★★★網頁標題★★★%0D%0A★★網址★★★"></a>
+                              <a class="gplus" href="javascript:;" onClick="window.open('https://plus.google.com/share?url='+encodeURIComponent('★★★網址★★★'),'g+','width=626,height=436')"></a>
+                               <a class="weibo" href="javascript:void((function(s,d,e,r,l,p,t,z,c){var%20f='http://v.t.sina.com.cn/share/share.php?appkey=1263254066',u=z||d.location,p=['&url=',e(u),'&title=',e(t||d.title),'&source=',e(r),'&sourceUrl=',e(l),'&content=',c||'gb2312','&pic=',e(p||'')].join('');function%20a(){if(!window.open([f,p].join(''),'mb',['toolbar=0,status=0,resizable=1,width=440,height=430,left=',(s.width-440)/2,',top=',(s.height-430)/2].join('')))u.href=[f,p].join('');};if(/Firefox/.test(navigator.userAgent))setTimeout(a,0);else%20a();})(screen,document,encodeURIComponent,'','','★★★推圖連結★★★','★★★網頁標題★★★','★★★網址★★★','utf-8'));"></a>    
+                          </div>
+                          <!--menu_1 結束-->
+                          
+                          <!--menu_2 開始-->
+                          <div class="menu_2">
+							  <!--fb讚新聞 開始-->
+							  <a class="fb-like" data-href="#" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></a>
+							  <!--fb讚新聞 結束-->
+
+							  <!--限制級 開始-->
+								<div class="adult">
+								  </div>
+								<!--<script src="http://static.ettoday.net/style/adult/adult-alert.js"></script>-->
+								<!--限制級 結束-->
+
+								<!--fb讚粉絲 開始-->
+								<div class="fb-page" data-href="https://www.facebook.com/ETtoday88/" data-width="250" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="false"><blockquote cite="https://www.facebook.com/ETtoday88/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/ETtoday88/">雲論</a></blockquote>
+								</div>
+								<!--fb讚粉絲 結束-->
+                     		</div>
+                     		<!--menu_2 結束-->
+                      </div>
+                      <!-- sharebox_1 分享組件 結束-->
+                      
+                       
+                      
+                      
+
+					<!--時間 開始-->
+					<time class="date" itemprop="datePublished" datetime="2018-08-01T12:00:00+08:00">
+					2018年08月01日 12:00
+					</time>
+					<!--時間 結束-->
+					
+					<!--font_size_switch 改變文字大小 開始-->
+					  <div class="font_size_switch clearfix"> 
+						  <a href="#" class="size_s current">小</a> 
+						  <a href="#" class="size_m">中</a> 
+						  <a href="#" class="size_l">大</a> 
+					  </div>
+					  <!--font_size_switch 改變文字大小 結束-->
+						
+						
+						
+
+						
+
+						<!--本文 開始-->
+						<div class="story" itemprop="articleBody">
+							<p><img src="images/d1.jpg" alt="▲▼稅,賦稅,課稅。（圖／視覺中國CFP）" width="600" height="400" /></p>
+							<p><strong>▲台灣濫稅情況嚴重，不僅讓投資、人才紛紛出走，更讓新創產業還沒賺錢就得先受稅賦之苦。（圖／視覺中國CFP）</strong></p>
+							<p>我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文我是本文</p>
+						</div>
+						<!--本文 結束-->
+						
+						<!-- 筆名區塊 開始 -->
+						<div class="part_pictxt_1">
+							<!-- 組 開始 -->
+							<div class="box clearfix">
+								<a class="pic-box" href="column-news.htm" target="_blank"><img src="images/pen-b1.jpg"></a>
+								<span style="background: red; color:yellow;">★使用筆名系統★</span>
+								<h3 class="title"><a href="column-news.htm">專欄名稱</a></h3>
+								<p><a href="column-news.htm" target="_blank">主筆名稱</a></p>
+								<p>我是介紹五六七八九十我是介紹五六七八貳十我是介紹五六七八參十我是介紹五..</p>
+							</div>
+							<!-- 組 結束-->
+							
+							<h3 class="titlebox" style="margin:0px">★主筆名稱★最新文章<!--<span style="background: red; color:yellow;">★使用筆名系統★</span>-->
+							<a href="column-news.htm" style="float:right; margin-right: 10px; ">看更多 <i class="fas fa-arrow-circle-right"></i></a></h3>
+							<!--list 開始-->
+							<div class="list">
+								<p><a href="news.htm" target="_blank">我是標題五六七八九十我是標題五六七八貳十我是標題五</a></p>
+								<p><a href="news.htm" target="_blank">我是標題五六七八九十我是標題五六七八貳十我是標題五</a></p>
+								<p><a href="news.htm" target="_blank">我是標題五六七八九十我是標題五六七八貳十我是標題五</a></p>
+								<p><a href="news.htm" target="_blank">我是標題五六七八九十我是標題五六七八貳十我是標題五</a></p>
+								<p><a href="news.htm" target="_blank">我是標題五六七八九十我是標題五六七八貳十我是標題五</a></p>
+							</div>
+							<!--list 結束-->
+						</div>
+						<!-- 筆名區塊 結束 -->
+						
+						<!--關鍵字 開始-->                                        
+						<div class="area_keyword"><span>關鍵字</span>
+							<a href="search.htm">關鍵字一</a><a href="search.htm">關鍵字二</a><a href="search.htm">關鍵字三</a>
+						</div>
+						<!--關鍵字 結束-->  
+
+						
+						<!--.part_menu_1 操作 文未 開始-->
+						<div class="part_menu_1" >
+							<a class="btn message scrollgo" href="#" rel=".fb-comments">點這裡，留個言吧!</a>
+<!--							<a class="btn rss" href="#">rss</a>-->
+							<a class="btn fb" href="javascript:;" onClick="window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent('https://www.ettoday.net/news/20180218/1115758.htm'),'facebook-share-dialog','width=626,height=436');return false;" title="分享到 Facebook" target="_blank">FB</a>
+							<a class="btn gplus" href="javascript:;" onClick="window.open('https://plus.google.com/share?url='+encodeURIComponent('https://www.ettoday.net/news/20180218/1115758.htm'),'g+','width=626,height=436')" title="分享到 Google+" target="_blank">G+</a>
+<!--							<a class="btn ig" href="#">ig</a>-->
+							<a class="btn weibo" href="javascript:void((function(s,d,e,r,l,p,t,z,c){var%20f='http://v.t.sina.com.cn/share/share.php?appkey=1263254066',u=z||d.location,p=['&url=',e(u),'&title=',e(t||d.title),'&source=',e(r),'&sourceUrl=',e(l),'&content=',c||'gb2312','&pic=',e(p||'')].join('');function%20a(){if(!window.open([f,p].join(''),'mb',['toolbar=0,status=0,resizable=1,width=440,height=430,left=',(s.width-440)/2,',top=',(s.height-430)/2].join('')))u.href=[f,p].join('');};if(/Firefox/.test(navigator.userAgent))setTimeout(a,0);else%20a();})(screen,document,encodeURIComponent,'','','https://static.ettoday.net/images/3122/d3122102.jpg','台灣創業家屍首　堆出經濟低迷的超徵稅收奇蹟 | 論壇 | ETtoday新聞雲','https://www.ettoday.net/news/20180218/1115758.htm','utf-8'));">Weibo</a>
+<!--							<a class="btn twitter" href="#">twitter</a>-->
+							<a class="messenger" href="fb-messenger://share/?link=https://www.ettoday.net/news/20180218/1115758.htm"><i class="fab fa-facebook-messenger" style="font-size: 41px; width:30px; height: 30px; margin-right: 10px; color:#0072FF;"></i></a>
+							<a class="line" href="//line.naver.jp/R/msg/text/?台灣創業家屍首　堆出經濟低迷的超徵稅收奇蹟%0D%0Ahttps://www.ettoday.net/news/20180218/1115758.htm" rel="nofollow"><i class="fab fa-line" style="font-size: 41px; width:30px; height: 30px; margin-right: 10px; color:#4ECD00;"></i></a>
+<!--							<a class="wechat" href="#"><i class="fab fa-weixin" style="font-size: 41px; width:30px; height: 30px; margin-right: 20px; color:#3CB034;"></i></a>-->
+							
+						</div>
+						<!--.part_menu_1 操作 文未 結束-->
+						
+						<!--粉絲團 開始-->
+						<div class="fb-page" data-href="https://www.facebook.com/ETtoday88/" data-width="250" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="false"><blockquote cite="https://www.facebook.com/ETtoday88/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/ETtoday88/">雲論</a></blockquote>
+						</div>
+						<!--粉絲團 結束-->
+						
+						<!--最新評論 開始-->
+						<div class="text_ticker_1 gallery_1" style="display:none">
+						<em>最新評論</em>
+						
+						<!--滾動 開始-->
+						<div class="run">
+							<!--inner 開始-->
+							<div class="inner">
+
+							<div class="piece">
+							<a href="news.htm" target="_blank">我是標題五六七八九十我是標題五</a>
+							</div>
+
+							<div class="piece">
+							<a href="news.htm" target="_blank">我是標題五六七八九十我是標題五六七八貳十我是標題五</a>
+							</div>
+
+							</div>
+							<!--inner 結束-->
+						</div>
+						<!--滾動 結束-->
+						
+						</div>
+						<!--最新評論 結束-->
+						
+						
+						<!--gallery_1 開始-->
+						<div class="gallery_1 text_ticker_1">
+						
+							<em>最新評論</em>
+							<!--滾動 開始-->
+						   <div class="run">
+								<!--inner 開始-->
+							   <div class="inner">
+									<!--組 開始-->
+								   <div class="txt">
+									   <a href="news.htm" target="_blank">我是標題五六七八九十我是標題五</a>
+									</div>
+									<!--組 結束--> 
+
+									<!--組 開始-->
+								   <div class="txt">
+										<a href="news.htm" target="_blank">我是標題五六七八九十我是標題五六七八貳十我是標題五</a>
+									</div>
+									<!--組 結束-->                     
+
+								</div>
+								<!--inner 結束-->
+						   </div>
+							<!--滾動 結束-->
+						</div>
+						<!--gallery_1 結束-->  
+						
+   
+					</article>                                                           
+					<!--新聞模組 結束-->
+                                                                                                                                                                                                                                                                                                                                                                      
+                    <!--推薦閱讀 開始-->
+					<div class="block block_z">
+						<div class="block_title">
+							<h3>推薦閱讀</h3>
+						</div>
+						<div class="part_txt_1">
+							<!--inner 開始-->
+							<div class="inner">
+								<a href="news.htm"><i class="far fa-play-circle"></i>我是標題五六七八九十我是標題五六七八貳十我是標題五</a>
+								<a href="news.htm">我是標題五六七八九十我是標題五六七八貳十我是標題五</a>
+								<a href="news.htm"><i class="far fa-play-circle"></i>我是標題五六七八九十我是標題五六七八貳十我是標題五</a>
+								<a href="news.htm">我是標題五六七八九十我是標題五六七八貳十我是標題五</a>
+								<a href="news.htm"><i class="far fa-play-circle"></i>我是標題五六七八九十我是標題五六七八貳十我是標題五</a>
+								<a href="news.htm">我是標題五六七八九十我是標題五六七八貳十我是標題五</a>
+								<a href="news.htm"><i class="far fa-play-circle"></i>我是標題五六七八九十我是標題五六七八貳十我是標題五</a>
+								<a href="news.htm">我是標題五六七八九十我是標題五六七八貳十我是標題五</a>
+								<a href="news.htm"><i class="far fa-play-circle"></i>我是標題五六七八九十我是標題五六七八貳十我是標題五</a>
+								<a href="news.htm">我是標題五六七八九十我是標題五六七八貳十我是標題五</a>
+							</div>
+							<!--inner 結束-->
+						</div>
+					</div>
+					<!--推薦閱讀 結束--> 
+                                                                                                                                                                                                                                                                                                                                                                      
+                    <!--相關新聞 開始-->
+					<div class="block block_z">
+						<div class="block_title">
+							<h3>相關新聞</h3>
+						</div>
+						<div class="part_txt_1">
+							<!--inner 開始-->
+							<div class="inner">
+								<a href="news.htm"><i class="far fa-play-circle"></i>我是標題五六七八九十我是標題五六七八貳十我是標題五</a>
+								<a href="news.htm">我是標題五六七八九十我是標題五六七八貳十我是標題五</a>
+								<a href="news.htm"><i class="far fa-play-circle"></i>我是標題五六七八九十我是標題五六七八貳十我是標題五</a>
+								<a href="news.htm">我是標題五六七八九十我是標題五六七八貳十我是標題五</a>
+								<a href="news.htm"><i class="far fa-play-circle"></i>我是標題五六七八九十我是標題五六七八貳十我是標題五</a>
+							</div>
+							<!--inner 結束-->
+						</div>
+					</div>
+					<!--相關新聞 結束-->                                                                                                                                                                                                                                                                                                                                                     <h3 class="titlebox">我要投稿/伸冤</h3>
+	      
+					<!--gallery_1 開始-->
+					<div class="gallery_1">
+						<!--滾動 開始-->
+					   <div class="run">
+							<!--inner 開始-->
+						   <div class="inner">
+								<!--組 開始-->
+							   <div class="piece">
+								   <a href=javascript:alert("使用活動公版頁")><img src="https://fakeimg.pl/640x480/?text=Banner1" title="投稿無處去？來雲論給你一個暢所欲言的舞台！"></a>  
+								</div>
+								<!--組 結束--> 
+
+								<!--組 開始-->
+							   <div class="piece">
+									<a href=javascript:alert("使用活動公版頁")><img src="https://fakeimg.pl/640x480/?text=Banner2" title="面對司法不公　雲論替你解析討公道"></a>
+								</div>
+								<!--組 結束-->                     
+
+							</div>
+							<!--inner 結束-->
+					   </div>
+						<!--滾動 結束-->
+					</div>
+					<!--gallery_1 結束-->                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+                                                                                                                                                                                                                                                                                                                                                                       
+                                                           
+                               
+					
+					<!--讀者迴響 開始-->
+					<h3 class="titlebox">讀者迴響</h3>
+					<!--FB留言 開始-->
+					<div class="fb-comments" data-href="https://www.ettoday.net/news/20180218/1115758.htm" data-numposts="5" data-colorscheme="light" width="100%"></div>
+					<!--FB留言 結束-->
+					<!--讀者迴響 結束-->
+		    			
+				</div>
+				<!--c1 結束-->
+				
+		  </div>
+          <!--r1 結束-->  
+            
+      </div>
+        <!--container 結束-->
+        
+        <!--滾回上面 gototop 開始-->
+        <div class="gototop">回到最上面</div>
+        <!--滾回上面 gototop 結束-->
+        
+        
+    </div>
+    <!--wrapper 結束 -->
+   
+</div>
+<!--wrapper_box 結束 -->
+<!--footer 開始-->
+ <div class="footer" itemscope itemprop="publisher" itemtype="https://schema.org/Organization">
+	<div class="menu_1 clearfix">
+	<a href="#" onclick="location.replace('http://www.ettoday.net/changeReadType.php?rtype=1&rurl=http%3A%2F%2Fwww.ettoday.net%2Fdalemon%2Fpost%2F11360');">電腦版</a>|
+	<a href="https://events.ettoday.net/about-ettoday/index.htm" target="_blank">關於我們</a>|
+	<a href="mailto:service@ettoday.net" content="service@ettoday.net">廣告刊登/合作提案</a><br>
+	<a href="https://www.ettoday.net/member/clause_duty.php" target="_blank">免責聲明</a>|
+	<a href="https://www.ettoday.net/member/clause_privacy.php" target="_blank">隱私權政策</a>|
+	<a href="https://www.ettoday.net/member/clause_copyright.php" target="_blank">著作權聲明</a>
+</div>
+
+	<p><span itemprop="name">東森新聞雲股份有限公司</span> 版權所有
+		<br> 非經授權，不許轉載本網站內容
+		<br> © ETtoday.net All Rights Reserved.
+		<br> 電話：
+		<span itemprop="telephone">+886-2-5555-6366</span>
+	</p>
+	<!--本區隱藏 開始-->
+	<span class="footer_logo" itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+		<link itemprop="url" href="//static.ettoday.net/style/dalemon2016-m/images/push.jpg">
+	</span>
+	<!--本區隱藏 結束-->
+ </div>
+
+</body>
+</html>
+
