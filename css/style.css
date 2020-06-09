@@ -1,0 +1,477 @@
+@charset "utf-8";
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+	display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+}
+
+/* change colours to suit your needs */
+ins {
+   /* background-color:#ff9;*/
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    /*background-color:#ff9;*/
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+ol, ul { list-style: none; }
+
+/*border-box*/
+* {
+ -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+ -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+ box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+/*所有通用設定-----------------------------------------------------------------------*/
+body { font-family:"微軟正黑體", Arial, Helve tica, sans-serif; font-size:15px; line-height:1.5; font-weight:normal; letter-spacing: 2px; color:#000;}
+
+/*預設連結狀態*/
+a:link, a:visited { color:#000; text-decoration:none; }
+a:hover, a:active { color:#000; text-decoration:none; }
+
+/*圖片無框*/
+a img { border:none; }
+
+/*h標題設定*/
+h1 { font-size:15px; font-weight: normal;}
+h2 { font-size:15px; font-weight: normal;}
+h3 { font-size:13px; font-weight: normal;}
+h4 { font-size:13px; font-weight: normal;}
+
+/*清除 clearfix*/
+.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+.clearfix {*zoom: 1; _zoom: 1; }
+
+
+/*wrapper ===================*/
+.wrapper_box{ width: 100%; position: relative;/*padding:30px 0px 0px;*/}
+.wrapper{ }
+
+
+/*header ====================*/
+.header_box{ width:100%; background: rgba(0,0,0,0.9); position: fixed; z-index: 900;}
+.header{ height:48px; max-width:1200px; margin:0 auto; position:relative;}
+.header img{ position: absolute; top:8px; left:10px;}
+.header h1{ color:#fff; position: absolute; top:15px; left:42px;}
+/*main_nav*/
+.main_nav{ display: flex; justify-content:flex-end; line-height: 48px; }
+.main_nav ul li{ display: inline-block; padding: 0px 15px; }
+.main_nav ul li a{ display: block; color:#fff;}
+.main_nav ul li a:hover{ opacity:0.65;}
+
+
+/*container =================*/
+.container_box{ width:100%; margin:0 auto; padding:38px 0px 10px 0px;}
+.container{ width:100%;}
+.r1{ /*clear:both;*/}
+.c1{ width:100%;}
+
+
+/*footer ====================*/
+.footer_box{ clear:both; width: 100%; margin:0 auto; background-color:#000;}
+.footer{ width:100%; margin: 0 auto; padding:50px 0px; font-size:15px; text-align: center; color:#fff; }
+/*版權*/						
+.footer address{ font-style:normal; color:#fff;}
+.footer p{ font-size: 22px; margin: 30px auto 10px;}
+.footer .footer_menu{ display: flex; justify-content: center;}
+.footer .footer_menu a{ display: block; width:30px; height: 30px; margin-right:20px;}
+.footer .footer_menu a:nth-last-of-type(1){ margin-right:0px; }
+.footer a:link, .footer a:visited { color:#fff;}
+.footer a:hover, .footer a:active { color:#D0D0D0;}
+.footer .footer_menu a i{ font-size: 30px;}
+
+
+/*block_1*/
+.block_1{ margin: 0 auto; padding: 130px 50px;}
+.block_1:nth-of-type(2n){ background: #f9f9f9;}
+.block_1 .block_title{ text-align: center; margin-bottom: 50px;}
+.block_1 .block_title h2{ font-weight:normal; font-size: 40px;}
+.block_1 .block_content{ }
+
+
+/*gototop*/
+.gototop { width: 82px; height: 82px; text-indent: -9999px; background: url(../images/gototop.png) no-repeat; background-size: 60px 60px; opacity: 0.9; position: fixed; bottom: 5%; right: 2%; cursor: pointer; z-index: 10; transition:transform .5s; display: none;}
+.gototop:hover{ transform: scale(1.1);}
+
+
+/*side ====================*/
+/*開關按鈕*/
+.side_open{ width: 28px; height: 28px; background: url(../images/btn_side.png) center top no-repeat; background-size: cover; position: fixed; right: 8px; top: 11px; z-index: 1000; cursor: pointer; display: none; }
+.side_close { width: 28px; height: 28px; background: url(../images/btn_side.png) center bottom no-repeat; background-size: cover; position: absolute; right: 8px; top: 11px; cursor: pointer; }
+/*側欄選單*/
+.side_menu{ width: 100%; height: 100%; background: rgba(0,0,0,0.9); position: fixed; left: 0; top: 0;
+  -webkit-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  -webkit-transform: translateY(-120%);
+  -ms-transform: translateY(-120%);
+  transform: translateY(-120%);
+  z-index: 200;
+  display: block;}
+.side_menu .menu{ padding-top: 20%;}
+.side_menu .menu li { height:50px; }
+.side_menu .menu li a { display: block; width: 100px; height:50px; line-height:50px; text-align: center; font-size: 14px; color: #fff; margin: 0 auto;/*border-bottom: 1px solid #333;*/ }
+.side_menu .menu li a:hover, .side_menu .menu li a:active{ opacity:0.65;}
+
+
+/* 輪播==================================*/
+/*外掛歸零*/
+.gallery_1{ }
+.gallery_1 .bx-wrapper{ margin:0 auto;/*外掛歸零*/}
+.gallery_1 .bx-wrapper .bx-viewport{ border:0px solid rgba(0,0,0,0.9);/*外掛歸零*/ box-shadow:0px 0px 0px rgba(0,0,0,0.9);/*外掛歸零*/  left:0px;/*外掛歸零*/}
+.gallery_1 .bx-wrapper .bx-controls-direction a{ margin-top:-35px; z-index:50;}/*上下頁位置調整*/
+/*樣式*/
+.gallery_1{ width:100%;/*max-width:640px;*/ height:auto; margin:10px auto 0px; overflow:hidden; background: rgba(0,0,0,0.9);
+-webkit-tap-highlight-color: transparent; outline: 0;/*去除連結的藍底*/}
+.gallery_1 .piece{ background:rgba(0,0,0,0.9); padding-bottom: 0px;}
+.gallery_1 .piece > a{ display:block; height:0px; padding-bottom:calc(56.5% + 35px);/*預留圖說高度*/ overflow:hidden; position:relative; text-align:center; overflow:hidden;}
+.gallery_1 img{ width:auto; height:100%; max-width:inherit; /*padding-bottom:35px;預留圖說高度*/ position:absolute; top:0px; right:0px; bottom:0px; left:0px; margin:auto;/*置中*/  display:none;}/*CSS:先隱藏圖片，JS:圖集load之後再show(修正會閃圖:先看到第一張圖再看到random的圖)*/
+/* 左右頁切換箭頭 */
+.gallery_1 .bx-wrapper .bx-prev{ background-image:url(../images/arrow_01.png); display: none;}
+.gallery_1 .bx-wrapper .bx-next{ background-image:url(../images/arrow_01.png); display: none;}
+/* 標題 */
+.gallery_1 .bx-wrapper .bx-caption{ width:100%; height:35px; line-height:35px; background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.6) 20%, rgba(0,0,0,0.9) 100%); padding:0px 10px; position:absolute; left:0px; bottom:0px;  cursor: pointer;}
+.gallery_1 .bx-wrapper .bx-caption span{ height:35px; line-height:35px; font-size:20px; font-weight:bold; color:#FFF; font-family: Meiryo, "Meiryo UI", "Microsoft JhengHei UI", "Microsoft JhengHei", sans-serif; padding:0px 5px;}
+
+
+/*ABOUT ME ====================*/
+/*pictxt*/
+.pictxt{ width:100%; max-width: 1200px; margin: 0 auto 30px; display: flex;/*介紹垂直置中*/} 
+.pictxt .pic{ width:30%; float: left; margin-right: 5%; }
+.pictxt .pic img{ width:100%; border-radius: 50%; }
+.pictxt .info{ width:65%; float: right; margin: auto;/*介紹垂直置中*/ }
+.pictxt .info .btn{ display: block; width:100px; padding: 10px; border:1px solid #000; border-radius: 10px; margin-top: 20px; background: #f9f9f9; color: #000;}
+.pictxt .info .btn:hover{ background: #000; color: #fff;}
+
+
+/*TECHNICAL SKILLS ====================*/
+/*tab頁籤*/
+.tab{ width:36%; height:470px; max-width: 1200px; margin: 0 auto 30px; }
+.tab .part{ display: flex; justify-content: center; margin-bottom: 20px;}
+.tab .part h3{ }
+.tab .part h3 a.topic{ display: block; width: 100%; text-align: center; padding: 5px 15px; font-size: 20px; background: #f9f9f9; color:#000; }
+#t1{ background:#000; color:#fff; }/*預設*/
+
+.tab .inner{ display: none;}
+#content1{ display:block }/*預設*/
+
+/*content內容*/
+.tab .inner ul{ list-style: circle; list-style-position:inside; }
+.tab .inner ul li{ line-height: 2;}
+
+
+/*RESUME ====================*/
+/*group*/
+.group{ width:100%; max-width: 1200px; margin: 0 auto 30px; padding-bottom: 40px; border-bottom: 1px solid #000;}
+.group:nth-last-of-type(1){ border-bottom: none;}
+.group h3{ font-size: 20px; margin-bottom: 10px;}
+.group span{ background: #000; color:#fff; padding: 4px 20px;} 
+.group p{ margin-top: 8px;} 
+
+/*item*/
+.item{ width:43%; float: left; margin-right: 5%;}
+.item p.info{ margin-top: 10px;}
+
+
+/*LATEST WORKS ====================*/
+/*.part_pictxt_1*/
+.part_pictxt_1{ width:100%; max-width: 1200px; margin: 0 auto 30px; padding-bottom: 40px; /*border:1px solid blue;*/}
+.part_pictxt_1 .piece{ width:31%; height:250px; overflow:hidden; margin:0px 3% 40px 0px; float: left; cursor: pointer; border:1px solid #D0D0D0;/*box-shadow:5px 8px 30px #ccc;*/}
+.part_pictxt_1 .piece:nth-of-type(3n){ margin-right: 0px; }
+
+.part_pictxt_1 .piece .content{ transition:margin-top .5s ease-out .2s; padding:10px;}
+
+.part_pictxt_1 .piece .content:hover{ margin-top:-230px;}/*hover時的位移*/
+.part_pictxt_1 .piece .content .box1{ margin-bottom:20px; text-align: center;}
+.part_pictxt_1 .piece .content .box1 .pic{ display:block; width:100%; height:190px; line-height:185px; text-align:center; overflow:hidden; /*border:1px solid #D0D0D0;*/ margin-bottom:10px;}
+.part_pictxt_1 .piece .content .box1 .pic img{ max-width:100%; max-height:auto; vertical-align:middle;}
+
+.part_pictxt_1 .piece .content .box2{ height:210px; position:relative; cursor:context-menu; }
+.part_pictxt_1 .piece .content .box2 span{ display: inline-block; background: #000; color:#fff; padding: 4px 20px; margin: 5px 0px;}
+.part_pictxt_1 .piece .content .box2 p{ }
+.part_pictxt_1 .piece .content .box2 ul li{ list-style: circle; list-style-position:inside; margin-bottom: 10px; }
+.part_pictxt_1 .piece .content .box2 .btn{ position:absolute; bottom:0px; right: 0px; z-index: 1;}
+.part_pictxt_1 .piece .content .box2 a{ display:block; width:100px; height:40px; line-height:38px; text-align:center; border-radius:5px; background: #f9f9f9; color:#000; border:1px solid #000; float: left; margin-right: 10px; transition: all .2s ease-out;  /*font-size:13px; */  }
+.part_pictxt_1 .piece .content .box2 a:nth-last-of-type(1){ margin-right: 0px;}
+.part_pictxt_1 .piece .content .box2 a:hover{ background:#000; color:#fff; } 
+
+
+
+
+
+/*小於1024*/
+@media only screen and ( max-width:1024px){
+
+/*TECHNICAL SKILLS ====================*/
+/*tab頁籤*/
+.tab{ width:63%; }
+
+
+/*LATEST WORKS ====================*/
+/*.part_pictxt_1*/
+.part_pictxt_1 .piece{ width:47%; height: 300px;}
+.part_pictxt_1 .piece:nth-of-type(3n){ margin:0px 3% 40px 0px; }
+.part_pictxt_1 .piece:nth-of-type(2n){ margin-right: 0px; }
+
+.part_pictxt_1 .piece .content:hover{ margin-top:-280px;}/*hover時的位移*/
+.part_pictxt_1 .piece .content .box1 .pic{ height:240px; line-height:235px; }
+.part_pictxt_1 .piece .content .box2{ height: 250px;}
+
+}
+
+
+
+
+
+/*小於768*/
+@media only screen and ( max-width:768px){	
+
+/*side ====================*/
+.side_open{ display: block;  }
+
+
+/*main_nav*/
+.main_nav{ display: none;}	
+
+
+/*gototop*/
+.gototop { width: 45px; height: 45px; background-size: 45px 45px; right: 3%;}
+
+
+/* 輪播==================================*/
+/*外掛歸零*/
+.gallery_1 .piece{ padding-bottom: 30px;}
+    
+
+/*ABOUT ME ====================*/
+/*pictxt*/
+.pictxt{ width:100%; display: block;} 
+.pictxt .pic{ width:60%; float: none; margin: 0 auto 50px;}
+.pictxt .info{ width:100%; float: none; }
+.pictxt .info .btn{ margin: 20px auto 0px; }
+
+
+/*TECHNICAL SKILLS ====================*/
+/*tab頁籤*/
+.tab{ width:80%;}
+.tab .part h3 a.topic{ padding: 5px 10px; font-size: 14px; }	
+	
+
+/*RESUME ====================*/
+/*item*/
+.item{ width:100%; float: none; margin-right: 0px; margin-bottom: 30px;}
+
+
+/*LATEST WORKS ====================*/
+/*.part_pictxt_1*/
+.part_pictxt_1 .piece{ height: 250px;}
+
+.part_pictxt_1 .piece .content:hover{ margin-top:-230px; }/*hover時的位移*/
+.part_pictxt_1 .piece .content .box1 .pic{ height:190px; line-height:185px; }
+.part_pictxt_1 .piece .content .box2{ height: 210px; }
+	
+}
+
+
+
+
+
+/*小於670*/
+@media only screen and ( max-width:670px){	
+
+/*LATEST WORKS ====================*/
+/*.part_pictxt_1*/
+.part_pictxt_1 .piece{ height: 249px;}
+
+.part_pictxt_1 .piece .content:hover{ margin-top:-220px;}/*hover時的位移*/
+.part_pictxt_1 .piece .content .box1 .pic{ height:180px; line-height:175px;  }
+.part_pictxt_1 .piece .content .box2{ height: 215px; }
+	
+}
+
+
+
+
+
+/*小於620*/
+@media only screen and ( max-width:620px){	
+
+/*LATEST WORKS ====================*/
+/*.part_pictxt_1*/
+.part_pictxt_1 .piece{ width:100%; height: 330px;}
+.part_pictxt_1 .piece:nth-of-type(3n){ margin-right: 0px; }
+.part_pictxt_1 .piece:nth-of-type(2n){ margin-right: 0px; }	
+
+.part_pictxt_1 .piece .content:hover{ margin-top:-320px;}/*hover時的位移*/
+.part_pictxt_1 .piece .content .box1 .pic{ height:270px; line-height:265px; }
+.part_pictxt_1 .piece .content .box2{ height: 300px; }
+
+}
+
+
+
+/*小於550*/
+@media only screen and ( max-width:550px){	
+
+/*LATEST WORKS ====================*/
+/*.part_pictxt_1*/
+.part_pictxt_1 .piece{ height: 290px;}	
+
+.part_pictxt_1 .piece .content:hover{ margin-top:-280px;}/*hover時的位移*/
+.part_pictxt_1 .piece .content .box1 .pic{ height:230px; line-height:225px; }
+.part_pictxt_1 .piece .content .box2{ height: 260px; }
+    
+}
+
+
+
+
+
+/*小於414*/
+@media only screen and ( max-width:414px){
+	
+/*footer ====================*/
+.footer{ padding:50px 10px; }	
+
+
+/*ABOUT ME ====================*/
+/*pictxt*/
+.pictxt .pic{ width:100%;}
+
+	
+/*TECHNICAL SKILLS ====================*/
+/*tab頁籤*/
+.tab{ width:100%;}
+.tab .part h3 a.topic{ padding: 5px 8px; font-size: 13px; }	
+
+	
+/*LATEST WORKS ====================*/
+/*.part_pictxt_1*/
+.part_pictxt_1 .piece{ height:240px;}
+.part_pictxt_1 .piece .content .box1 .pic{ height:180px; line-height:175px; }
+.part_pictxt_1 .piece .content .box2{ height: 210px; }
+.part_pictxt_1 .piece .content .box2 span{ display: none;}
+
+.part_pictxt_1 .piece .content:hover{ margin-top:-230px;}/*hover時的位移*/
+
+	
+}
+
+
+
+/*小於380*/
+@media only screen and ( max-width:380px){	
+
+/*block_1*/    
+.block_1 .block_title h2{ font-size: 38px;}
+.block_1:nth-of-type(3){ padding: 130px 16px;} /*TECHNICAL SKILLS*/
+.block_1.w{ padding: 130px 40px;} /*LATEST WORKS*/
+    
+
+/*LATEST WORKS ====================*/
+/*.part_pictxt_1*/
+.part_pictxt_1 .piece{ height:230px;}
+.part_pictxt_1 .piece .content .box1{ margin-bottom:20px; text-align: center;}
+.part_pictxt_1 .piece .content .box1 .pic{ height:170px; line-height:165px; border: none; margin-bottom:5px; }
+		
+.part_pictxt_1 .piece .content .box2{ height:220px; font-size: 14px; padding-top: 20px;}
+.part_pictxt_1 .piece .content .box2 span{ display: none;}
+.part_pictxt_1 .piece .content .box2 a{ width:70px; }
+	
+	
+}
+
+
+/*小於320*/
+@media only screen and ( max-width:320px){
+   
+	
+}
+
