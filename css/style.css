@@ -256,7 +256,7 @@ h4 { font-size:13px; font-weight: normal;}
 .group p{ margin-top: 8px;} 
 
 /*item*/
-.item{ width:43%; float: left; margin-right: 5%;}
+.item{ width:43%; float: left; margin-right: 5%; margin-bottom: 5%;}
 .item p.info{ margin-top: 10px;}
 
 
