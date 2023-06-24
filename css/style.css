@@ -292,7 +292,7 @@ h4 { font-size:13px; font-weight: normal;}
 
 /*TECHNICAL SKILLS ====================*/
 /*tab頁籤*/
-.tab{ width:63%; }
+.tab{ width:60%; }
 
 
 /*LATEST WORKS ====================*/
@@ -344,11 +344,6 @@ h4 { font-size:13px; font-weight: normal;}
 .pictxt .info .btn{ margin: 20px auto 0px; }
 
 
-/*TECHNICAL SKILLS ====================*/
-/*tab頁籤*/
-.tab{ width:80%;}
-.tab .part h3 a.topic{ padding: 5px 10px; font-size: 14px; }	
-	
 
 
 
@@ -369,6 +364,12 @@ h4 { font-size:13px; font-weight: normal;}
 
 /*小於670*/
 @media only screen and ( max-width:670px){	
+
+/*TECHNICAL SKILLS ====================*/
+/*tab頁籤*/
+.tab{ width:100%;}
+.tab .part h3 a.topic{ padding: 5px 10px; font-size: 14px; }	
+
 
 /*LATEST WORKS ====================*/
 /*.part_pictxt_1*/
@@ -403,6 +404,9 @@ h4 { font-size:13px; font-weight: normal;}
 
 /*小於550*/
 @media only screen and ( max-width:550px){	
+/*TECHNICAL SKILLS ====================*/
+/*tab頁籤*/
+.block_1:nth-of-type(3){ padding: 130px 16px;} //*TECHNICAL SKILLS*/
 
 /*LATEST WORKS ====================*/
 /*.part_pictxt_1*/
@@ -455,7 +459,7 @@ h4 { font-size:13px; font-weight: normal;}
 
 /*block_1*/    
 .block_1 .block_title h2{ font-size: 38px;}
-.block_1:nth-of-type(3){ padding: 130px 16px;} /*TECHNICAL SKILLS*/
+/*.block_1:nth-of-type(3){ padding: 130px 16px;} *//*TECHNICAL SKILLS*/
 .block_1.w{ padding: 130px 40px;} /*LATEST WORKS*/
     
 
